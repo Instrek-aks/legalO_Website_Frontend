@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* Additional mobile responsiveness styles */
+@media (max-width: 640px) {
+  /* Ensure proper text wrapping on mobile */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Improve button touch targets on mobile */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Exception for carousel dots - they should be small */
+  .carousel-dot {
+    min-height: unset !important;
+    min-width: unset !important;
+  }
+
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Smooth scrolling for better mobile experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Better focus states for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #c6930a;
+  outline-offset: 2px;
+}
+
+/* Touch device improvements for dropdowns */
+@media (hover: none) and (pointer: coarse) {
+  /* Ensure dropdowns work on touch devices */
+  .legal-o-dropdown-container {
+    position: relative;
+  }
+
+  /* Improve touch targets */
+  .legal-o-dropdown-container button,
+  .legal-o-dropdown-container a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better touch feedback */
+  .legal-o-dropdown-container button:active,
+  .legal-o-dropdown-container a:active {
+    background-color: rgba(234, 72, 32, 0.1);
+  }
+}
+
+/* Ensure dropdowns are visible on touch devices when opened */
+.legal-o-dropdown-container .opacity-100 {
+  pointer-events: auto;
+}
+
+.legal-o-dropdown-container .opacity-0 {
+  pointer-events: none;
+}
