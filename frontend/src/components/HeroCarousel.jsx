@@ -12,7 +12,7 @@ const slides = [
     description:
       "India doesn't just need more lawyers it needs bold, visionary legal minds. ",
     image: {
-      mobile: "/pic2MU.jpg",
+      mobile: "/imageM.jpg",
       desktop: "/pic2.jpg",
     },
     cta: "Join the Movement",
