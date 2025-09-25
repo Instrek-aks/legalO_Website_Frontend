@@ -25,6 +25,7 @@ const Header = () => {
     { name: "ABOUT OLYMPIAD", href: "/about" },
     { name: "CONTENT", href: "/courses", hasDropdown: true },
     { name: "EDUCATION", href: "/courses" },
+    { name: "PODCASTS", href: "/podcasts" },
 
     //{ name: "UPCOMING EVENTS", href: "/events" },
     //{ name: "Login/Register", href: "/register", isButton: true },
@@ -124,7 +125,7 @@ const Header = () => {
                 onClick={() => setTimeout(() => window.location.reload(), 100)}
               >
                 <img
-                  src="/logoN.jpg"
+                  src="/logopng.png"
                   alt="Legal Olympiad Logo"
                   className="h-12 w-auto sm:h-16 object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="eager"

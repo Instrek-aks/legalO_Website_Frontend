@@ -12,7 +12,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
           {/* Logo */}
           <div className="mb-4 sm:mb-6">
             <img
-              src="/logoN.jpg"
+              src="/logopng.png"
               alt="Legal Olympiad"
               className="w-20 h-10 sm:w-25 sm:h-12"
             />
