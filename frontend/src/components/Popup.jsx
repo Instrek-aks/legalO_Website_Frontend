@@ -1,4 +1,3 @@
-import { X } from "lucide-react";
 import { Dialog, DialogContent } from "../components/ui/Dialogs";
 import { Button } from "../components/ui/Button";
 
@@ -7,25 +6,29 @@ import React from "react";
 export default function WelcomePopup({ isOpen, onClose }) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-md p-0 bg-gray-100 border-0 shadow-xl rounded-xl">
+      <DialogContent className="w-[90vw] max-w-xs sm:max-w-md p-0 bg-gray-100 border-0 shadow-xl rounded-xl">
         {/* Content */}
-        <div className="flex flex-col items-center text-center p-8">
+        <div className="flex flex-col items-center text-center p-4 sm:p-8">
           {/* Logo */}
-          <div className="mb-6">
-            <img src="/logoN.jpg" alt="Legal Olympiad" className="w-25 h-12" />
+          <div className="mb-4 sm:mb-6">
+            <img
+              src="/logoN.jpg"
+              alt="Legal Olympiad"
+              className="w-20 h-10 sm:w-25 sm:h-12"
+            />
           </div>
 
           {/* Illustration */}
-          <div className="mb-6">
+          <div className="mb-4 sm:mb-6">
             <img
               src="/welcome.jpg"
               alt="Courthouse illustration"
-              className="w-48 h-36 object-contain"
+              className="w-36 h-28 sm:w-48 sm:h-36 object-contain"
             />
           </div>
 
           {/* Welcome text */}
-          <h2 className="text-xl font-semibold text-accent mb-8">
+          <h2 className="text-lg sm:text-xl font-semibold text-accent mb-6 sm:mb-8">
             Registration will begin shortly.
           </h2>
 
@@ -33,7 +36,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
           <Button
             onClick={onClose}
             variant="outline"
-            className="bg-[#C6930A] px-8"
+            className="bg-[#C6930A] px-6 sm:px-8 py-2 text-sm sm:text-base"
           >
             Close
           </Button>
