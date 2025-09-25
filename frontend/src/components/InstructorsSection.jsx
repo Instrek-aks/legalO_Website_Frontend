@@ -56,7 +56,7 @@ const studentMentors = [
   {
     id: 1,
     name: "Vikas Gogne",
-    role: "Co-Founder",
+    role: "Student Mentor",
     image: "/vikasN.jpg",
     roleColor: "text-[#C6930A]",
     description: "",
@@ -66,7 +66,7 @@ const studentMentors = [
   {
     id: 2,
     name: "Satyam Chaturvedi",
-    role: "Co-Founder",
+    role: "Student Mentor",
     image: "/satyamN.jpg",
     roleColor: "text-[#C6930A]",
     description: "",
@@ -84,7 +84,7 @@ const TeamMemberCard = ({ member, index }) => (
   >
     <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 sm:hover:-translate-y-2 overflow-hidden border border-gray-100 h-full flex flex-col">
       {/* Image Container */}
-      <div className="relative h-48 sm:h-44 md:h-52 lg:h-64 overflow-hidden">
+      <div className="relative h-72 sm:h-64 md:h-73 lg:h-72 overflow-hidden">
         <img
           src={member.image}
           alt={member.name}
@@ -151,11 +151,11 @@ const TeamMemberCard = ({ member, index }) => (
 
 const InstructorsSection = () => {
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-gray-50 via-white to-orange-50">
+    <section className="py-16 sm:py-20 md:py-24 lg:pt-10 bg-gradient-to-br from-gray-50 via-white to-orange-50">
       <div className="container mx-auto px-4">
         {/* Leadership Team Section */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-black mb-6 text-center">
             Meet Our <span className="text-[#C6930A]">Leadership Team</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -179,7 +179,7 @@ const InstructorsSection = () => {
         {/* Student Mentors Section */}
         <div className="mt-16 sm:mt-20">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-black mb-6 text-center">
               Our <span className="text-[#C6930A]">Student Mentors</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
