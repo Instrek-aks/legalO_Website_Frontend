@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import WelcomePopup from "./Popup";
 import { Button } from "../components/ui/Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -44,6 +45,7 @@ const HeroCarousel = () => {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -119,7 +121,7 @@ const HeroCarousel = () => {
                 <Button
                   size="sm"
                   className="bg-[#C6930A] hover:bg-[#C6930A] text-white text-xs sm:text-sm w-32 sm:w-auto px-4 sm:px-6"
-                  onClick={() => navigate("/courses")}
+                  onClick={() => setIsPopupOpen(true)}
                 >
                   Register Now
                 </Button>
@@ -150,6 +152,12 @@ const HeroCarousel = () => {
       >
         <ChevronRight size={24} className="sm:w-6 sm:h-6" />
       </button>
+
+      {/* Popup */}
+      <WelcomePopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
 
       {/* Dots Indicator */}
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-3">
