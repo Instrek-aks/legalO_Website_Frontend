@@ -35,7 +35,7 @@ const slides = [
     description:
       " It's a battlefield of ideas, a test of conviction, and a launchpad for changemakers.",
     image: {
-      mobile: "/pic3.png",
+      mobile: "/pic3M.png",
       desktop: "/pic3.png",
     },
   },
