@@ -6,8 +6,7 @@ const instructors = [
     image: "/Vineet.webp",
     roleColor: "text-[#C6930A]",
     description: "Leading the vision and strategic direction of Legal Olympiad",
-    linkedin:
-      "https://in.linkedin.com/in/vinksharma?original_referer=https%3A%2F%2Fwww.bing.com%2F",
+    linkedin: "https://www.linkedin.com/in/vineet82/?originalSubdomain=in",
   },
   {
     id: 2,
