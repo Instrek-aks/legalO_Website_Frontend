@@ -57,7 +57,7 @@ const studentMentors = [
     id: 1,
     name: "Vikas Gogne",
     role: "Co-Founder",
-    image: "/lawyer_photo.jpg",
+    image: "/vikasN.jpg",
     roleColor: "text-[#C6930A]",
     description: "",
     linkedin:
@@ -67,7 +67,7 @@ const studentMentors = [
     id: 2,
     name: "Satyam Chaturvedi",
     role: "Co-Founder",
-    image: "/lawyer_photo.jpg",
+    image: "/satyamN.jpg",
     roleColor: "text-[#C6930A]",
     description: "",
     linkedin:
@@ -189,7 +189,7 @@ const InstructorsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-xl mx-auto">
             {studentMentors.map((mentor, index) => (
               <TeamMemberCard key={mentor.id} member={mentor} index={index} />
             ))}
