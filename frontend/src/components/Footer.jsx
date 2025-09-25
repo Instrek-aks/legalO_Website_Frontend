@@ -123,7 +123,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="slide-in-right">
-            <h3 className="text-base sm:text-lg font-bold mb-4 sm:mb-6">
+            <h3 className="text-base sm:text-lg font-bold mb-4 ">
               Contact Info
             </h3>
             <div className="space-y-3 sm:space-y-4">
@@ -137,34 +137,51 @@ const Footer = () => {
                   Greater Kailash, South Delhi, 110048
                 </span>
               </div>
-
-              {/* Phone + Email stacked without gap */}
-              <div>
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <Phone
-                    size={15}
-                    className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
-                  />
-                  <a
-                    href="tel:+19748845246937"
-                    className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
-                  >
-                    +91-9999026602
-                  </a>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <Mail
-                    size={16}
-                    className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
-                  />
-                  <a
-                    href="mailto:info@legalolympiad.com"
-                    className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
-                  >
-                    Partner@legalolympiad.com
-                  </a>
-                </div>
+              <div className="flex items-start gap-2 sm:gap-3">
+                <Phone
+                  size={16}
+                  className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
+                />
+                <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                  +91-9999026602
+                </span>
               </div>
+              <div className="flex items-start gap-2 sm:gap-3">
+                <Mail
+                  size={16}
+                  className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
+                />
+                <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                  Partner@legalolympiad.com
+                </span>
+              </div>
+
+              {/* Phone */}
+              {/* <div className="flex items-start gap-2 sm:gap-3">
+                <Phone
+                  size={16}
+                  className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
+                />
+                <a
+                  href="tel:+19748845246937"
+                  className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
+                >
+                  +91-9999026602
+                </a>
+              </div> */}
+              {/* Email */}
+              {/* <div className="flex items-start gap-2 sm:gap-3">
+                <Mail
+                  size={16}
+                  className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
+                />
+                <a
+                  href="mailto:info@legalolympiad.com"
+                  className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
+                >
+                  Partner@legalolympiad.com
+                </a>
+              </div> */}
             </div>
           </div>
         </div>
