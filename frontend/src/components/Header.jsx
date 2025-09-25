@@ -25,7 +25,7 @@ const Header = () => {
     { name: "ABOUT OLYMPIAD", href: "/about" },
     { name: "CONTENT", href: "/courses", hasDropdown: true },
     { name: "EDUCATION", href: "/courses" },
-    { name: "PODCASTS", href: "/podcasts" },
+    // { name: "PODCASTS", href: "/podcasts" },
 
     //{ name: "UPCOMING EVENTS", href: "/events" },
     //{ name: "Login/Register", href: "/register", isButton: true },
