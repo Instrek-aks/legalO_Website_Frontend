@@ -11,7 +11,7 @@ const slides = [
     description:
       "India doesn't just need more lawyers it needs bold, visionary legal minds. ",
     image: {
-      mobile: "/pic2M.jpg",
+      mobile: "/pic2MU.jpg",
       desktop: "/pic2.jpg",
     },
     cta: "Join the Movement",
@@ -23,8 +23,8 @@ const slides = [
     description:
       "The Legal Olympiad isn’t just an exam it’s a journey to discover your purpose.",
     image: {
-      mobile: "/pic1.jpg",
-      desktop: "/pic1.jpg",
+      mobile: "/studentlaw.png",
+      desktop: "/studentlaw.png",
     },
   },
   {
@@ -106,10 +106,10 @@ const HeroCarousel = () => {
         >
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="text-white max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl slide-in-left">
-              <p className="text-[#ea4820] text-sm sm:text-base md:text-lg font-medium mb-2 sm:mb-4">
+              <p className="text-[#C6930A] text-sm sm:text-base md:text-lg font-medium mb-2 sm:mb-4">
                 {slide.tagline}
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight text-[#C6930A]">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight text-white">
                 {slide.title}
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed opacity-90">
@@ -140,15 +140,15 @@ const HeroCarousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12"
       >
-        <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
+        <ChevronLeft size={24} className="sm:w-6 sm:h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12"
       >
-        <ChevronRight size={20} className="sm:w-6 sm:h-6" />
+        <ChevronRight size={24} className="sm:w-6 sm:h-6" />
       </button>
 
       {/* Dots Indicator */}

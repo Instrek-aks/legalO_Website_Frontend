@@ -49,11 +49,7 @@ const Footer = () => {
               legal skills and career direction.
             </p>
             <div className="flex gap-3 sm:gap-4">
-              <a
-                href="https://in.linkedin.com/company/instrek-technologies"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <Linkedin
                   size={18}
                   className="sm:w-5 sm:h-5 hover:text-[#C6930A] cursor-pointer transition-colors bg-blue-700"
