@@ -14,7 +14,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="slide-in-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black">
-              About LegalOlympiad
+              About Legal Olympiad
             </h1>
             <p className="text-xl  max-w-3xl mx-auto ">
               Discover our mission to transform education through innovative
