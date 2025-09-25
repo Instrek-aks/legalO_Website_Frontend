@@ -133,14 +133,13 @@ const Footer = () => {
                   className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
                 />
                 <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  Address: C-18, Second floor, Pamposh Enclave, New Delhi -
-                  110048
+                  Greater Kailash, South Delhi, 110048
                 </span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
                 <Phone
-                  size={16}
-                  className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
+                  size={15}
+                  className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
                 />
                 <a
                   href="tel:+19748845246937"
@@ -152,7 +151,7 @@ const Footer = () => {
               <div className="flex items-start gap-2 sm:gap-3">
                 <Mail
                   size={16}
-                  className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
+                  className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
                 />
                 <a
                   href="mailto:info@legalolympiad.com"
@@ -192,9 +191,9 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="absolute bottom-4 sm:bottom-8 right-4 sm:right-8 bg-[#C6930A] hover:bg-[#C6930A]/90 text-white p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+        className="absolute bottom-4 sm:bottom-8 right-4 sm:right-8 bg-[#C6930A] hover:bg-[#C6930A]/90 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12"
       >
-        <ArrowUp size={16} className="sm:w-5 sm:h-5" />
+        <ArrowUp size={20} />
       </button>
     </footer>
   );
