@@ -14,7 +14,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
             <img
               src="/logopng.png"
               alt="Legal Olympiad"
-              className="w-20 h-10 sm:w-25 sm:h-12"
+              className="w-25 h-12 sm:w-25 sm:h-12"
             />
           </div>
 
@@ -29,7 +29,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
 
           {/* Welcome text */}
           <h2 className="text-lg sm:text-xl font-semibold text-accent mb-6 sm:mb-8">
-            Registration will begin shortly.
+            Registration for Legal Olympiad will begin shortly.
           </h2>
 
           {/* Close button */}
