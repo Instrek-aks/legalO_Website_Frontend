@@ -25,8 +25,7 @@ const instructors = [
     role: "AI Advisor",
     image: "/Adnan.png",
     roleColor: "text-[#C6930A]",
-    description:
-      "Delivering strategic AI guidance and transformative insights.",
+    description: "Delivering strategic AI guidance and transformative insights",
     linkedin:
       "https://www.linkedin.com/in/adnan-abbasi-bb659a116?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -37,7 +36,7 @@ const instructors = [
     image: "/praveen.JPG",
     roleColor: "text-[#C6930A]",
     description:
-      "Providing seasoned expertise in business strategy and decision-making.",
+      "Providing seasoned expertise in business strategy and decision-making",
     linkedin:
       "https://www.linkedin.com/in/praveen-sharma-640086209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -61,7 +60,7 @@ const studentMentors = [
     image: "/vikasN.jpg",
     roleColor: "text-[#C6930A]",
     description:
-      "Leveraging extensive judicial experience and profound legal acumen.",
+      "Leveraging extensive judicial experience and profound legal acumen",
     linkedin:
       "https://www.linkedin.com/in/vikas-gogne-42918527?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -72,7 +71,7 @@ const studentMentors = [
     image: "/satyamN.jpg",
     roleColor: "text-[#C6930A]",
     description:
-      "Offering judicial expertise coupled with actionable legal insights.",
+      "Offering judicial expertise coupled with actionable legal insights",
     linkedin:
       "https://www.linkedin.com/in/satyam-chaturvedi-18845171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
