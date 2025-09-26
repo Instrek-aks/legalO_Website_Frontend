@@ -14,7 +14,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
             <img
               src="/logopng.png"
               alt="Legal Olympiad"
-              className="w-25 h-12 sm:w-25 sm:h-12"
+              className="w-40 h-16 sm:w-48 sm:h-20"
             />
           </div>
 
@@ -23,7 +23,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
             <img
               src="/welcome.jpg"
               alt="Courthouse illustration"
-              className="w-36 h-28 sm:w-48 sm:h-36 object-contain"
+              className="w-56 h-40 sm:w-72 sm:h-52 object-contain"
             />
           </div>
 
