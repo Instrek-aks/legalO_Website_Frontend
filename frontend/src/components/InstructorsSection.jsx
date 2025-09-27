@@ -18,19 +18,8 @@ const instructors = [
     linkedin:
       "https://in.linkedin.com/in/sanjanawadhwa94?original_referer=https%3A%2F%2Fwww.bing.com%2F",
   },
-
   {
     id: 3,
-    name: "Adnan Abbasi",
-    role: "AI Advisor",
-    image: "/Adnan.png",
-    roleColor: "text-[#C6930A]",
-    description: "Delivering strategic AI guidance and transformative insights",
-    linkedin:
-      "https://www.linkedin.com/in/adnan-abbasi-bb659a116?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    id: 4,
     name: "Praveen Sharma",
     role: "Co-Founder",
     image: "/praveen.JPG",
@@ -40,6 +29,18 @@ const instructors = [
     linkedin:
       "https://www.linkedin.com/in/praveen-sharma-640086209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+
+  {
+    id: 4,
+    name: "Adnan Abbasi",
+    role: "AI Advisor",
+    image: "/Adnan.png",
+    roleColor: "text-[#C6930A]",
+    description: "Delivering strategic AI guidance and transformative insights",
+    linkedin:
+      "https://www.linkedin.com/in/adnan-abbasi-bb659a116?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+
   {
     id: 5,
     name: "Tithika Mittal",
