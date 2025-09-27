@@ -32,7 +32,7 @@ const instructors = [
   {
     id: 4,
     name: "Praveen Sharma",
-    role: "Business Advisor",
+    role: "Co-Founder",
     image: "/praveen.JPG",
     roleColor: "text-[#C6930A]",
     description:
