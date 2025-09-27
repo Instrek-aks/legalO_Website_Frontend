@@ -15,7 +15,7 @@ const events = [
     title: "OLYMPIAD EXAM 2025 ",
     date: "9 Nov",
     time: "10AM",
-    location: "NEW DELHI",
+    location: "ACROSS INDIA",
     image: "/event3.png",
   },
   {
