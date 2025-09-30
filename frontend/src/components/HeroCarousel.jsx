@@ -22,7 +22,7 @@ const slides = [
     tagline: "UNLOCK YOUR POTENTIAL",
     title: "TRANSFORM YOUR CAREER WITH EXPERT GUIDANCE",
     description:
-      "The Legal Olympiad isn’t just an exam it’s a journey to discover your purpose.",
+      "The Legal Olympiad isn't just an exam it's a journey to discover your purpose.",
     image: {
       mobile: "/studentlaw.png",
       desktop: "/studentlaw.png",
