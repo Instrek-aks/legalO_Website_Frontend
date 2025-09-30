@@ -1,8 +1,7 @@
 // SEO Configuration for Legal Olympiad
 export const seoConfig = {
   default: {
-    title:
-      "Legal Olympiad - India's Premier Legal Career Development Platform | LegalO",
+    title: "Legal Olympiad - India's Premier Legal Career Development Platform",
     description:
       "Join India's most comprehensive legal career development platform. Expert mentorship, AI-powered tools, podcasts, and career guidance for aspiring lawyers and legal professionals.",
     keywords:
