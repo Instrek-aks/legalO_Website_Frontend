@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+.seo-heading {
+  position: absolute;
+  left: -9999px; /* moves it off-screen */
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Additional mobile responsiveness styles */
 @media (max-width: 640px) {
   /* Ensure proper text wrapping on mobile */
