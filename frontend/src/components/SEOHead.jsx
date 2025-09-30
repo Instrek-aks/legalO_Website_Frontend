@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import { seoConfig, structuredData } from "../config/seoConfig";
 
 const SEOHead = ({
@@ -19,47 +19,99 @@ const SEOHead = ({
   const finalKeywords = keywords || pageConfig.keywords;
   const finalImage = image || pageConfig.image;
   const finalUrl = url || pageConfig.url;
-  return (
-    <Helmet>
-      {/* Primary Meta Tags */}
-      <title>{finalTitle}</title>
-      <meta name="title" content={finalTitle} />
-      <meta name="description" content={finalDescription} />
-      <meta name="keywords" content={finalKeywords} />
-      <meta name="author" content="Legal Olympiad" />
-      <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
-      <meta name="revisit-after" content="7 days" />
 
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content={type} />
-      <meta property="og:url" content={finalUrl} />
-      <meta property="og:title" content={finalTitle} />
-      <meta property="og:description" content={finalDescription} />
-      <meta property="og:image" content={finalImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="Legal Olympiad" />
-      <meta property="og:locale" content="en_IN" />
+  useEffect(() => {
+    // Update document title
+    document.title = finalTitle;
 
-      {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={finalUrl} />
-      <meta property="twitter:title" content={finalTitle} />
-      <meta property="twitter:description" content={finalDescription} />
-      <meta property="twitter:image" content={finalImage} />
+    // Update meta tags
+    const updateMetaTag = (name, content, property = false) => {
+      const selector = property
+        ? `meta[property="${name}"]`
+        : `meta[name="${name}"]`;
+      let meta = document.querySelector(selector);
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={finalUrl} />
+      if (meta) {
+        meta.setAttribute("content", content);
+      } else {
+        meta = document.createElement("meta");
+        if (property) {
+          meta.setAttribute("property", name);
+        } else {
+          meta.setAttribute("name", name);
+        }
+        meta.setAttribute("content", content);
+        document.head.appendChild(meta);
+      }
+    };
 
-      {/* Structured Data */}
-      {includeStructuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData.organization)}
-        </script>
-      )}
-    </Helmet>
-  );
+    // Update primary meta tags
+    updateMetaTag("title", finalTitle);
+    updateMetaTag("description", finalDescription);
+    updateMetaTag("keywords", finalKeywords);
+    updateMetaTag("author", "Legal Olympiad");
+    updateMetaTag("robots", "index, follow");
+    updateMetaTag("language", "English");
+    updateMetaTag("revisit-after", "7 days");
+
+    // Update Open Graph tags
+    updateMetaTag("og:type", type, true);
+    updateMetaTag("og:url", finalUrl, true);
+    updateMetaTag("og:title", finalTitle, true);
+    updateMetaTag("og:description", finalDescription, true);
+    updateMetaTag("og:image", finalImage, true);
+    updateMetaTag("og:image:width", "1200", true);
+    updateMetaTag("og:image:height", "630", true);
+    updateMetaTag("og:site_name", "Legal Olympiad", true);
+    updateMetaTag("og:locale", "en_IN", true);
+
+    // Update Twitter tags
+    updateMetaTag("twitter:card", "summary_large_image", true);
+    updateMetaTag("twitter:url", finalUrl, true);
+    updateMetaTag("twitter:title", finalTitle, true);
+    updateMetaTag("twitter:description", finalDescription, true);
+    updateMetaTag("twitter:image", finalImage, true);
+
+    // Update canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute("href", finalUrl);
+    } else {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      canonical.setAttribute("href", finalUrl);
+      document.head.appendChild(canonical);
+    }
+
+    // Add structured data
+    if (includeStructuredData) {
+      let structuredDataScript = document.querySelector(
+        'script[type="application/ld+json"]'
+      );
+      if (structuredDataScript) {
+        structuredDataScript.textContent = JSON.stringify(
+          structuredData.organization
+        );
+      } else {
+        structuredDataScript = document.createElement("script");
+        structuredDataScript.setAttribute("type", "application/ld+json");
+        structuredDataScript.textContent = JSON.stringify(
+          structuredData.organization
+        );
+        document.head.appendChild(structuredDataScript);
+      }
+    }
+  }, [
+    finalTitle,
+    finalDescription,
+    finalKeywords,
+    finalImage,
+    finalUrl,
+    type,
+    includeStructuredData,
+  ]);
+
+  return null;
 };
 
 export default SEOHead;
