@@ -7,7 +7,7 @@ export const seoConfig = {
       "Join India's most comprehensive legal career development platform. Expert mentorship, AI-powered tools, podcasts, and career guidance for aspiring lawyers and legal professionals.",
     keywords:
       "legal olympiad, legal career, law students, legal education, legal mentorship, law career guidance, legal professionals, legal olympiad india, legal career development, law olympiad",
-    image: "https://legalolympiad.com/heroImg.jpg",
+    image: "https://legalolympiad.com/logopng.png",
     url: "https://legalolympiad.com",
     type: "website",
   },
