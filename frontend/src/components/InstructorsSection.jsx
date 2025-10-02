@@ -83,7 +83,7 @@ const studentMentors = [
     image: "/Aprajita.JPG",
     roleColor: "text-[#C6930A]",
     description:
-      "Offering judicial expertise coupled with actionable legal insights",
+      "Delivering judicial knowledge paired with implementable legal guidance",
     linkedin:
       "https://www.linkedin.com/in/aprajita-budhwar-122b87162/?originalSubdomain=in",
   },
