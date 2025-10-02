@@ -76,6 +76,17 @@ const studentMentors = [
     linkedin:
       "https://www.linkedin.com/in/satyam-chaturvedi-18845171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    id: 3,
+    name: "Aprajita Budhwar",
+    role: "Student Mentor",
+    image: "/Aprajita.JPG",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Offering judicial expertise coupled with actionable legal insights",
+    linkedin:
+      "https://www.linkedin.com/in/aprajita-budhwar-122b87162/?originalSubdomain=in",
+  },
 ];
 
 // Reusable component for team member cards
