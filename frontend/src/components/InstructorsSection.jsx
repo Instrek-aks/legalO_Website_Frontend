@@ -30,19 +30,19 @@ const instructors = [
       "https://www.linkedin.com/in/praveen-sharma-640086209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
-  {
-    id: 4,
-    name: "Adnan Abbasi",
-    role: "AI Advisor",
-    image: "/Adnan.png",
-    roleColor: "text-[#C6930A]",
-    description: "Delivering strategic AI guidance and transformative insights",
-    linkedin:
-      "https://www.linkedin.com/in/adnan-abbasi-bb659a116?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+  // {
+  //   id: 4,
+  //   name: "Adnan Abbasi",
+  //   role: "AI Advisor",
+  //   image: "/Adnan.png",
+  //   roleColor: "text-[#C6930A]",
+  //   description: "Delivering strategic AI guidance and transformative insights",
+  //   linkedin:
+  //     "https://www.linkedin.com/in/adnan-abbasi-bb659a116?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  // },
 
   {
-    id: 5,
+    id: 4,
     name: "Tithika Mittal",
     role: "Technology Ecosystem Coordinator",
     image: "/tithika.webp",
