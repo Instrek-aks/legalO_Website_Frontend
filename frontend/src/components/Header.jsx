@@ -36,7 +36,7 @@ const Header = () => {
 
   const legalOServices = [
     //{ name: "Olympiad", href: "/legal-o/olympiad" },
-    { name: "BLOGS", href: "/blog" },
+    { name: "BLOGS", href: "https://App.legalolympiad.com" },
     { name: "PODCASTS", href: "/podcasts" },
     // { name: "Find a Mentor", href: "/legal-o/find-mentor" },
     // { name: "Subjects for Tomorrow", href: "/legal-o/subjects" },
