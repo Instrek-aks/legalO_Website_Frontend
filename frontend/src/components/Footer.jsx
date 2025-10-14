@@ -49,11 +49,37 @@ const Footer = () => {
               legal skills and career direction.
             </p>
             <div className="flex gap-3 sm:gap-4">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <Linkedin
-                  size={18}
-                  className="sm:w-5 sm:h-5 hover:text-[#C6930A] cursor-pointer transition-colors bg-blue-700"
-                />
+              <a
+                href="https://www.linkedin.com/company/legalolympiad/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C6930A] transition-colors"
+              >
+                <Linkedin size={18} className="sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="https://x.com/LegalOlympiad"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C6930A] transition-colors"
+              >
+                <Twitter size={18} className="sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/legalolympiad/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C6930A] transition-colors"
+              >
+                <Instagram size={18} className="sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/@LegalOlympiad"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#C6930A] transition-colors"
+              >
+                <Youtube size={18} className="sm:w-5 sm:h-5" />
               </a>
             </div>
           </div>
