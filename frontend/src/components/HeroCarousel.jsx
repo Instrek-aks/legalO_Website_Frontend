@@ -121,7 +121,13 @@ const HeroCarousel = () => {
                 <Button
                   size="sm"
                   className="bg-[#C6930A] hover:bg-[#C6930A] text-white text-xs sm:text-sm w-32 sm:w-auto px-4 sm:px-6"
-                  onClick={() => setIsPopupOpen(true)}
+                  onClick={() =>
+                    window.open(
+                      "https://app.legalolympiad.com",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
                 >
                   Register Now
                 </Button>
