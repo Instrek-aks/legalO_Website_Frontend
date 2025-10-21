@@ -22,7 +22,12 @@ const Header = () => {
 
   const navigation = [
     //{ name: "HOME", href: "/" },
-    { name: "Login/Register", href: "/register", isButton: true },
+    {
+      name: "Login/Register",
+      href: "https://App.legalolympiad.com",
+      isButton: true,
+      isExternal: true,
+    },
     { name: "ABOUT OLYMPIAD", href: "/about" },
     //{ name: "CONTENT", href: "/courses", hasDropdown: true },
     { name: "EDUCATION", href: "/courses" },
@@ -188,12 +193,23 @@ const Header = () => {
                       </div>
                     </>
                   ) : item.isButton ? (
-                    <Link
-                      to={item.href}
-                      className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                    >
-                      {item.name}
-                    </Link>
+                    item.isExternal ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={item.href}
+                        className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                      >
+                        {item.name}
+                      </Link>
+                    )
                   ) : (
                     <Link
                       to={item.href}
@@ -264,13 +280,25 @@ const Header = () => {
                         )}
                       </div>
                     ) : item.isButton ? (
-                      <Link
-                        to={item.href}
-                        className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
+                      item.isExternal ? (
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <Link
+                          to={item.href}
+                          className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      )
                     ) : (
                       <Link
                         to={item.href}
