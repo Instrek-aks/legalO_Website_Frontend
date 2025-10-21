@@ -4,6 +4,7 @@ import { TooltipProvider } from "./components/ui/ToolTip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import FloatingRegisterButton from "./components/FloatingRegisterButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
@@ -34,6 +35,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <FloatingRegisterButton />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

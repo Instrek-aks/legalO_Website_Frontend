@@ -22,8 +22,9 @@ const Header = () => {
 
   const navigation = [
     //{ name: "HOME", href: "/" },
+    { name: "Login/Register", href: "/register", isButton: true },
     { name: "ABOUT OLYMPIAD", href: "/about" },
-    { name: "CONTENT", href: "/courses", hasDropdown: true },
+    //{ name: "CONTENT", href: "/courses", hasDropdown: true },
     { name: "EDUCATION", href: "/courses" },
     // { name: "PODCASTS", href: "/podcasts" },
 
