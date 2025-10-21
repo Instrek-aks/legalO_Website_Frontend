@@ -198,14 +198,14 @@ const Header = () => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                        className="inline-flex items-center justify-center bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-center"
                       >
                         {item.name}
                       </a>
                     ) : (
                       <Link
                         to={item.href}
-                        className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                        className="inline-flex items-center justify-center bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-4 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-center"
                       >
                         {item.name}
                       </Link>
@@ -285,7 +285,7 @@ const Header = () => {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
+                          className="flex items-center justify-center bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           {item.name}
@@ -293,7 +293,7 @@ const Header = () => {
                       ) : (
                         <Link
                           to={item.href}
-                          className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
+                          className="flex items-center justify-center bg-[#C6930A] hover:bg-[#C6930A]/90 text-white py-3 px-4 rounded-lg text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg block text-center"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           {item.name}
