@@ -26,10 +26,10 @@ const PodcastSection = () => {
   const [likeCount, setLikeCount] = useState(187);
   const [thumbnailLoaded, setThumbnailLoaded] = useState(false);
   const [videoStats, setVideoStats] = useState({
-    views: "2.5K",
-    likes: "187",
-    comments: "23",
-    subscribers: "1.2K",
+    views: "5.8K",
+    likes: "8",
+    comments: "14",
+    subscribers: "42",
   });
 
   // Mock comments data
@@ -220,7 +220,7 @@ const PodcastSection = () => {
             {/* Content Section */}
             <div className="p-6 md:p-8">
               {/* Podcast Player Section */}
-              <div className="bg-gradient-to-r from-gray-50 to-orange-50 p-6 rounded-xl border border-orange-200 mb-6">
+              {/* <div className="bg-gradient-to-r from-gray-50 to-orange-50 p-6 rounded-xl border border-orange-200 mb-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#C6930A] to-orange-600 rounded-full flex items-center justify-center">
                     <Headphones size={24} className="text-white" />
@@ -276,7 +276,7 @@ const PodcastSection = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Episode Info */}
               <div className="mb-6">
