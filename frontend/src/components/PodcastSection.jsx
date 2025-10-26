@@ -94,7 +94,8 @@ const PodcastSection = () => {
             Latest Episode
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Legal Olympiad Podcast
+            From Student Leader to India's Top Law Officer - Sr. Advocate Sanjay
+            Jain's Inspiring Journey
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Exclusive conversations with legal luminaries, featuring insights
