@@ -9,6 +9,7 @@ import InstructorsSection from "../components/InstructorsSection";
 import PricingSection from "../components/PricingSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import EventsSection from "../components/EventsSection";
+import PodcastSection from "../components/PodcastSection";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
@@ -32,6 +33,7 @@ const Index = () => {
       <CategoriesSection />
       <CoursesSection />
       <InstructorsSection />
+      <PodcastSection />
       {/* <PricingSection /> */}
       {/* <TestimonialsSection /> */}
       <EventsSection />
