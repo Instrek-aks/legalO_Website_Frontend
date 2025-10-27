@@ -19,17 +19,22 @@ import {
 } from "lucide-react";
 
 const PodcastSection = () => {
+  // YouTube Video ID - Change this to any video you want!
+  const VIDEO_ID = "D9jiBPJqPTs";
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+
   const [isLiked, setIsLiked] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [showComments, setShowComments] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [likeCount, setLikeCount] = useState(187);
-  const [thumbnailLoaded, setThumbnailLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [videoData, setVideoData] = useState(null);
   const [videoStats, setVideoStats] = useState({
-    views: "5.8K",
-    likes: "8",
-    comments: "14",
-    subscribers: "42",
+    views: "8.1K",
+    likes: "40",
+    comments: "18",
+    subscribers: "44",
   });
 
   // Mock comments data
@@ -60,9 +65,64 @@ const PodcastSection = () => {
     },
   ];
 
+  // Fetch real YouTube data - This fetches REAL-TIME analytics!
+  useEffect(() => {
+    const fetchYouTubeData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        console.log(`Fetching analytics for video: ${VIDEO_ID}`);
+        const response = await fetch(`${API_BASE_URL}/api/youtube/${VIDEO_ID}`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (data) {
+          console.log("✅ Real-time YouTube data received:", data);
+          setVideoData(data);
+          setVideoStats({
+            views: data.statistics.viewCount || "5.8K",
+            likes: data.statistics.likeCount || "188",
+            comments: data.statistics.commentCount || "14",
+            subscribers: data.channelInfo?.subscriberCount || "42",
+          });
+
+          // Show if using real data or mock data
+          if (data.mock) {
+            console.warn("⚠️ Using mock data - YouTube API key not configured");
+          } else {
+            console.log("✅ Using REAL YouTube API data!");
+          }
+        }
+      } catch (error) {
+        console.error("❌ Failed to fetch YouTube data:", error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchYouTubeData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const toggleLike = () => {
-    setIsLiked(!isLiked);
-    setLikeCount((prev) => (isLiked ? prev - 1 : prev + 1));
+    const newLikedState = !isLiked;
+    setIsLiked(newLikedState);
+
+    if (videoStats.likes) {
+      const currentLikes =
+        parseInt(videoStats.likes.replace("K", "").replace("M", "")) || 188;
+      setVideoStats((prev) => ({
+        ...prev,
+        likes: newLikedState
+          ? (currentLikes + 1).toString()
+          : (currentLikes - 1).toString(),
+      }));
+    }
   };
 
   const toggleSubscribe = () => {
@@ -74,7 +134,33 @@ const PodcastSection = () => {
   };
 
   const openYouTube = () => {
-    window.open("https://www.youtube.com/watch?v=D9jiBPJqPTs", "_blank");
+    window.open(`https://www.youtube.com/watch?v=${VIDEO_ID}`, "_blank");
+  };
+
+  // YouTube embed URL with all controls enabled
+  const getYouTubeEmbedUrl = () => {
+    return `https://www.youtube.com/embed/${VIDEO_ID}?enablejsapi=1&origin=${window.location.origin}&modestbranding=1&rel=0&controls=1&showinfo=1&playsinline=1&cc_load_policy=0&iv_load_policy=3&loop=0&fs=1&autoplay=0`;
+  };
+
+  // Format date for display
+  const formatDate = (dateString) => {
+    if (!dateString) return "Dec 2024";
+    const date = new Date(dateString);
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return `${months[date.getMonth()]} ${date.getFullYear()}`;
   };
 
   return (
@@ -106,114 +192,19 @@ const PodcastSection = () => {
         {/* Main Podcast Card */}
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]">
-            {/* Video Thumbnail Section */}
+            {/* YouTube Video Embed Section */}
             <div className="relative">
               <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-                {/* Loading State */}
-                {!thumbnailLoaded && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin mb-4 mx-auto"></div>
-                      <p className="text-sm">Loading thumbnail...</p>
-                    </div>
-                  </div>
-                )}
-
-                {/* YouTube Thumbnail */}
-                <img
-                  src="https://img.youtube.com/vi/D9jiBPJqPTs/maxresdefault.jpg"
-                  alt="Legal Olympiad Podcast Episode 1 - Senior Advocate Mr. Sanjay Jain"
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
-                    thumbnailLoaded ? "opacity-100" : "opacity-0"
-                  }`}
-                  onLoad={() => setThumbnailLoaded(true)}
-                  onError={(e) => {
-                    console.log(
-                      "Thumbnail failed to load, trying alternatives..."
-                    );
-                    // Try alternative thumbnail URL
-                    if (e.target.src.includes("maxresdefault")) {
-                      e.target.src =
-                        "https://img.youtube.com/vi/D9jiBPJqPTs/hqdefault.jpg";
-                    } else if (e.target.src.includes("hqdefault")) {
-                      e.target.src =
-                        "https://img.youtube.com/vi/D9jiBPJqPTs/default.jpg";
-                    } else {
-                      // Final fallback to placeholder
-                      console.log(
-                        "All thumbnail attempts failed, showing placeholder"
-                      );
-                      e.target.style.display = "none";
-                      e.target.nextElementSibling.style.opacity = "1";
-                      e.target.nextElementSibling.style.pointerEvents = "auto";
-                      setThumbnailLoaded(true);
-                    }
-                  }}
+                {/* YouTube iframe Embed */}
+                <iframe
+                  src={getYouTubeEmbedUrl()}
+                  title="Legal Olympiad Podcast Episode 1 - Senior Advocate Mr. Sanjay Jain"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  loading="lazy"
                 />
-
-                {/* Fallback Placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center opacity-0 pointer-events-none">
-                  <div className="text-center text-white">
-                    <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto backdrop-blur-sm">
-                      <Play size={32} className="text-white ml-1" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">
-                      Episode 1: Legal Excellence
-                    </h3>
-                    <p className="text-sm opacity-90">
-                      Featuring Senior Advocate Mr. Sanjay Jain
-                    </p>
-                  </div>
-                </div>
-
-                {/* Play Button Overlay */}
-                <button
-                  onClick={() => {
-                    setIsPlaying(!isPlaying);
-                    setTimeout(() => openYouTube(), 500);
-                  }}
-                  className="absolute inset-0 bg-black/30 hover:bg-black/20 transition-all duration-300 flex items-center justify-center group"
-                >
-                  <div
-                    className={`w-20 h-20 bg-[#C6930A] rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300 ${
-                      isPlaying ? "animate-pulse" : ""
-                    }`}
-                  >
-                    {isPlaying ? (
-                      <div className="flex gap-1">
-                        <div className="w-1 h-6 bg-black rounded-full animate-pulse"></div>
-                        <div
-                          className="w-1 h-6 bg-black rounded-full animate-pulse"
-                          style={{ animationDelay: "0.1s" }}
-                        ></div>
-                        <div
-                          className="w-1 h-6 bg-black rounded-full animate-pulse"
-                          style={{ animationDelay: "0.2s" }}
-                        ></div>
-                      </div>
-                    ) : (
-                      <Play size={32} className="text-black ml-1" />
-                    )}
-                  </div>
-                </button>
-
-                {/* Video Stats Overlay */}
-                <div className="absolute top-4 left-4 flex gap-2">
-                  <div className="bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
-                    <Eye size={14} />
-                    {videoStats.views} views
-                  </div>
-                  <div className="bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
-                    <Calendar size={14} />
-                    Dec 2024
-                  </div>
-                </div>
-
-                {/* Duration Badge */}
-                <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
-                  <Clock size={14} />
-                  45:30
-                </div>
               </div>
             </div>
 
@@ -290,7 +281,8 @@ const PodcastSection = () => {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                  Legal Excellence with Senior Advocate Mr. Sanjay Jain
+                  {videoData?.title ||
+                    "Legal Excellence with Senior Advocate Mr. Sanjay Jain"}
                 </h3>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-4">
@@ -334,8 +326,8 @@ const PodcastSection = () => {
                   onClick={openYouTube}
                   className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105"
                 >
-                  <Youtube size={18} />
-                  Watch on YouTube
+                  <ExternalLink size={18} />
+                  View on YouTube
                 </Button>
 
                 <Button
@@ -359,7 +351,7 @@ const PodcastSection = () => {
                   }`}
                 >
                   <Heart size={18} className={isLiked ? "fill-current" : ""} />
-                  {likeCount}
+                  {videoStats.likes}
                 </Button>
 
                 <Button
@@ -501,7 +493,7 @@ const PodcastSection = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Heart size={16} />
-                    <span>{likeCount} Likes</span>
+                    <span>{videoStats.likes} Likes</span>
                   </div>
                 </div>
               </div>

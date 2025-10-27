@@ -9,6 +9,8 @@ A comprehensive website for Legal Olympiad with student registration system.
 - **Data Persistence**: Backend API to save registration data to JSON file
 - **Form Validation**: Client-side and server-side validation
 - **Success Feedback**: User-friendly success messages and error handling
+- **YouTube Integration**: Real-time video statistics from YouTube API
+- **Podcast Section**: Dynamic podcast player with real-time data
 
 ## Project Structure
 
@@ -128,6 +130,7 @@ The frontend will run on `http://localhost:5173`
 - `GET /api/registrations` - Get all registrations
 - `GET /api/registrations/:id` - Get specific registration
 - `DELETE /api/registrations/:id` - Delete registration
+- `GET /api/youtube/:videoId` - Fetch YouTube video statistics
 - `GET /api/health` - Health check
 
 ## Data Storage
@@ -160,11 +163,35 @@ Registration data is stored in `backend/registrations.json` with the following s
 
 ## Usage
 
+### Basic Usage
+
 1. Start both backend and frontend servers
 2. Navigate to the registration form
 3. Fill out all required fields
 4. Submit the form
 5. Check `backend/registrations.json` for saved data
+
+### YouTube API Integration
+
+The website includes real-time YouTube video statistics. To enable this feature:
+
+1. **Get YouTube API Key**:
+
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select existing one
+   - Enable YouTube Data API v3
+   - Create credentials (API Key)
+   - Copy your API key
+
+2. **Configure Backend**:
+
+   - Set the environment variable `YOUTUBE_API_KEY` in your backend
+   - Or modify `backend/server.js` to hardcode your API key
+   - The API endpoint will automatically use mock data if no key is provided
+
+3. **API Endpoint**:
+   - `GET /api/youtube/:videoId` - Returns video statistics
+   - Falls back to mock data if API key is not configured or request fails
 
 ## Development
 
@@ -190,9 +217,11 @@ The project uses Tailwind CSS for styling. Custom styles can be added in:
 
 ### Common Issues
 
-1. **Backend not starting**: Check if port 5000 is available
-2. **Frontend can't connect to backend**: Ensure backend is running on localhost:5000
+1. **Backend not starting**: Check if port 5001 is available
+2. **Frontend can't connect to backend**: Ensure backend is running on localhost:5001
 3. **Form submission fails**: Check browser console for CORS errors
+4. **YouTube data not updating**: Check API key configuration in backend
+5. **CORS errors**: Ensure backend CORS is properly configured
 
 ### Error Messages
 
