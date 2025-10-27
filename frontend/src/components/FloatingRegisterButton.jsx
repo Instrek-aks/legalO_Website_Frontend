@@ -1,7 +1,15 @@
 import { UserPlus } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const FloatingRegisterButton = () => {
-  // Button shows on all pages - always floating
+  const location = useLocation();
+
+  // Hide the register button on the contact page (WhatsApp button is there)
+  const isContactPage = location.pathname === "/contact";
+
+  if (isContactPage) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-6 right-6 z-50 group">
