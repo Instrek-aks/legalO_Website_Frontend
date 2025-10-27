@@ -144,7 +144,7 @@ const PodcastSection = () => {
 
   // Format date for display
   const formatDate = (dateString) => {
-    if (!dateString) return "Dec 2024";
+    if (!dateString) return "Oct 2024";
     const date = new Date(dateString);
     const months = [
       "Jan",
