@@ -137,11 +137,6 @@ const PodcastSection = () => {
     window.open(`https://www.youtube.com/watch?v=${VIDEO_ID}`, "_blank");
   };
 
-  // YouTube embed URL with all controls enabled
-  const getYouTubeEmbedUrl = () => {
-    return `https://www.youtube.com/embed/${VIDEO_ID}?enablejsapi=1&origin=${window.location.origin}&modestbranding=1&rel=0&controls=1&showinfo=1&playsinline=1&cc_load_policy=0&iv_load_policy=3&loop=0&fs=1&autoplay=0`;
-  };
-
   // Format date for display
   const formatDate = (dateString) => {
     if (!dateString) return "Oct 2024";
@@ -192,19 +187,40 @@ const PodcastSection = () => {
         {/* Main Podcast Card */}
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]">
-            {/* YouTube Video Embed Section */}
-            <div className="relative">
-              <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-                {/* YouTube iframe Embed */}
-                <iframe
-                  src={getYouTubeEmbedUrl()}
-                  title="Legal Olympiad Podcast Episode 1 - Senior Advocate Mr. Sanjay Jain"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                  loading="lazy"
+            {/* YouTube Video Preview - Opens in New Window */}
+            <div className="relative cursor-pointer" onClick={openYouTube}>
+              <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden group">
+                {/* Thumbnail Image */}
+                <img
+                  src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
+                  alt="YouTube Video Thumbnail"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
+
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-all duration-300">
+                  <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+                    <Play size={40} className="text-white ml-1" />
+                  </div>
+                </div>
+
+                {/* YouTube Badge */}
+                <div className="absolute top-4 right-4 bg-red-600 px-3 py-1 rounded flex items-center gap-2 shadow-lg">
+                  <Youtube size={16} className="text-white" />
+                  <span className="text-white font-semibold text-sm">
+                    Watch on YouTube
+                  </span>
+                </div>
+
+                {/* Hover Effect Text */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-black/70 backdrop-blur-sm px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-white font-semibold">
+                      Click to watch on YouTube
+                    </p>
+                    <p className="text-white/80 text-sm">Opens in new window</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -321,7 +337,7 @@ const PodcastSection = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap gap-3 mb-6">
+              {/* <div className="flex flex-wrap gap-3 mb-6">
                 <Button
                   onClick={openYouTube}
                   className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105"
@@ -366,7 +382,7 @@ const PodcastSection = () => {
                   <Share2 size={18} />
                   Share
                 </Button>
-              </div>
+              </div> */}
 
               {/* Stats Row */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
@@ -482,7 +498,7 @@ const PodcastSection = () => {
                 </div>
 
                 {/* Social Proof */}
-                <div className="flex items-center justify-center gap-6 text-sm opacity-80">
+                {/* <div className="flex items-center justify-center gap-6 text-sm opacity-80">
                   <div className="flex items-center gap-2">
                     <Users size={16} />
                     <span>{videoStats.subscribers} Subscribers</span>
@@ -495,7 +511,7 @@ const PodcastSection = () => {
                     <Heart size={16} />
                     <span>{videoStats.likes} Likes</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
