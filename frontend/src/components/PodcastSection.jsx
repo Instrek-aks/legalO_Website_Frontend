@@ -31,10 +31,10 @@ const PodcastSection = () => {
   const [error, setError] = useState(null);
   const [videoData, setVideoData] = useState(null);
   const [videoStats, setVideoStats] = useState({
-    views: "8.1K",
-    likes: "40",
-    comments: "18",
-    subscribers: "44",
+    views: "10.4K",
+    likes: "42",
+    comments: "20",
+    subscribers: "47",
   });
 
   // Mock comments data
