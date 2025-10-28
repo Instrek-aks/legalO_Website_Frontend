@@ -21,19 +21,26 @@ import {
 const PodcastSection = () => {
   // YouTube Video ID - Change this to any video you want!
   const VIDEO_ID = "D9jiBPJqPTs";
-  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
 
   const [isLiked, setIsLiked] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [showComments, setShowComments] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [videoData, setVideoData] = useState(null);
+
+  // Static video data and statistics (fallback values)
+  const [videoData, setVideoData] = useState({
+    title:
+      "From Student Leader to India's Top Law Officer - Sr. Advocate Sanjay Jain's Inspiring Journey",
+    publishedAt: "2025-10-25T17:12:39Z",
+    description:
+      "Episode [01] – Legal Olympiad Podcast with Sr Advocate Sanjay Jain\n\nWelcome to the Legal Olympiad Podcast, where we bring you the most inspiring stories from the legal world - mentorship, career insights...",
+    channelTitle: "Legal Olympiad",
+  });
+
   const [videoStats, setVideoStats] = useState({
-    views: "10.4K",
+    views: "10,507",
     likes: "42",
-    comments: "20",
+    comments: "21",
     subscribers: "47",
   });
 
@@ -65,64 +72,57 @@ const PodcastSection = () => {
     },
   ];
 
-  // Fetch real YouTube data - This fetches REAL-TIME analytics!
+  // Try to fetch real data from external API (will likely fail due to CORS)
   useEffect(() => {
-    const fetchYouTubeData = async () => {
-      setLoading(true);
-      setError(null);
+    const fetchRealData = async () => {
       try {
-        console.log(`Fetching analytics for video: ${VIDEO_ID}`);
-        const response = await fetch(`${API_BASE_URL}/api/youtube/${VIDEO_ID}`);
+        console.log("🔄 Attempting to fetch real YouTube data...");
+        const response = await fetch(
+          `https://youtube-stastics-k3c6uhs3j-ajay-kumar-saraswats-projects.vercel.app/api/youtube/stats?url=https://www.youtube.com/watch?v=${VIDEO_ID}`
+        );
 
-        if (!response.ok) {
-          throw new Error(`Failed to fetch: ${response.status}`);
-        }
+        if (response.ok) {
+          const data = await response.json();
+          console.log("📊 API Response:", data);
 
-        const data = await response.json();
+          if (data?.success && data?.data) {
+            const d = data.data;
+            console.log("✅ Real YouTube data loaded successfully!");
 
-        if (data) {
-          console.log("✅ Real-time YouTube data received:", data);
-          setVideoData(data);
-          setVideoStats({
-            views: data.statistics.viewCount || "5.8K",
-            likes: data.statistics.likeCount || "188",
-            comments: data.statistics.commentCount || "14",
-            subscribers: data.channelInfo?.subscriberCount || "42",
-          });
+            // Update with real data
+            setVideoData({
+              title: d.title || videoData.title,
+              publishedAt: d.publishedAt || videoData.publishedAt,
+              description: d.description || videoData.description,
+              channelTitle: d.channelTitle || videoData.channelTitle,
+            });
 
-          // Show if using real data or mock data
-          if (data.mock) {
-            console.warn("⚠️ Using mock data - YouTube API key not configured");
-          } else {
-            console.log("✅ Using REAL YouTube API data!");
+            setVideoStats({
+              views: d.statistics?.viewCount?.toLocaleString() || "10,507",
+              likes: d.statistics?.likeCount?.toLocaleString() || "42",
+              comments: d.statistics?.commentCount?.toLocaleString() || "20",
+              subscribers:
+                d.channelStatistics?.subscriberCount?.toLocaleString() || "47",
+            });
           }
+        } else {
+          console.log(
+            `⚠️ API returned ${response.status}: ${response.statusText}`
+          );
         }
       } catch (error) {
-        console.error("❌ Failed to fetch YouTube data:", error);
-        setError(error.message);
-      } finally {
-        setLoading(false);
+        console.log(
+          "ℹ️ Using static data (API not accessible due to CORS):",
+          error.message
+        );
       }
     };
 
-    fetchYouTubeData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    fetchRealData();
   }, []);
 
   const toggleLike = () => {
-    const newLikedState = !isLiked;
-    setIsLiked(newLikedState);
-
-    if (videoStats.likes) {
-      const currentLikes =
-        parseInt(videoStats.likes.replace("K", "").replace("M", "")) || 188;
-      setVideoStats((prev) => ({
-        ...prev,
-        likes: newLikedState
-          ? (currentLikes + 1).toString()
-          : (currentLikes - 1).toString(),
-      }));
-    }
+    setIsLiked(!isLiked);
   };
 
   const toggleSubscribe = () => {
@@ -297,8 +297,7 @@ const PodcastSection = () => {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                  {videoData?.title ||
-                    "Legal Excellence with Senior Advocate Mr. Sanjay Jain"}
+                  {videoData.title}
                 </h3>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-4">
