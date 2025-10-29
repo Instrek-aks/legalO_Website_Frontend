@@ -41,7 +41,7 @@ const PodcastSection = () => {
     views: "10,507",
     likes: "42",
     comments: "21",
-    subscribers: "47",
+    subscribers: "48",
   });
 
   // Mock comments data
