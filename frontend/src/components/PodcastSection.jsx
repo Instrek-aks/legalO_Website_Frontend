@@ -39,9 +39,9 @@ const PodcastSection = () => {
 
   const [videoStats, setVideoStats] = useState({
     views: "10,507",
-    likes: "42",
+    likes: "45",
     comments: "21",
-    subscribers: "48",
+    subscribers: "49",
   });
 
   // Mock comments data
