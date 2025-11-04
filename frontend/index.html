@@ -39,8 +39,15 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "AW-17679290492");
+
+      // Enable cross-domain tracking between both domains
+      gtag("config", "AW-17679290492", {
+        linker: {
+          domains: ["legalolympiad.com", "app.legalolympiad.com"],
+        },
+      });
     </script>
+
     <meta
       name="title"
       content="Legal Olympiad - India's Premier Legal Career Development Platform"
