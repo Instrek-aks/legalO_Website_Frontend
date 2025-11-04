@@ -12,11 +12,13 @@ import {
 const events = [
   {
     id: 1,
-    title: "OLYMPIAD EXAM 2025 ",
-    date: "9 Nov 2025",
+    title: "LegalO Exam Rescheduled!",
+    date: "14 Mar 2026",
     time: "10AM",
     location: "ACROSS INDIA(In Your College)",
     image: "/event3.png",
+    description:
+      "Now on 14th March 2026 - More time to prepare, more power to you",
   },
   {
     id: 2,
@@ -125,6 +127,12 @@ const EventsSection = () => {
                 <h3 className="text-lg font-bold text-brand-navy mb-4 leading-tight group-hover:text-brand-cyan transition-colors duration-300">
                   {event.title}
                 </h3>
+
+                {event.description && (
+                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                    {event.description}
+                  </p>
+                )}
 
                 <div className="space-y-3 text-sm text-brand-cyan">
                   <div className="flex items-center gap-2">
