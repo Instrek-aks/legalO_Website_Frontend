@@ -19,11 +19,11 @@ export default function WelcomePopup({ isOpen, onClose }) {
         {/* Content */}
         <div className="flex flex-col p-6 sm:p-8">
           {/* Logo */}
-          <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="mb-6 sm:mb-8  flex justify-center">
             <img
               src="/logopng.png"
               alt="LegalO Logo"
-              className="w-40 h-16 sm:w-48 sm:h-20 object-contain"
+              className="w-40 h-16 sm:w-48 sm:h-20 object-contain bg-white"
             />
           </div>
 
