@@ -12,13 +12,12 @@ import {
 const events = [
   {
     id: 1,
-    title: "LegalO Exam Rescheduled!",
+    title: "LegalO Exam",
     date: "14 Mar 2026",
     time: "10AM",
     location: "ACROSS INDIA(In Your College)",
     image: "/event3.png",
-    description:
-      "Now on 14th March 2026 - More time to prepare, more power to you",
+    description: "",
   },
   {
     id: 2,
