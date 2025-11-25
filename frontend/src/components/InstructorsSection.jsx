@@ -87,6 +87,15 @@ const studentMentors = [
     linkedin:
       "https://www.linkedin.com/in/aprajita-budhwar-122b87162/?originalSubdomain=in",
   },
+  {
+    id: 4,
+    name: "Nitish Dham",
+    role: "Mentor",
+    image: "/Nitish.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Advocate on the Delhi Cantonment Board panel, ex-Karanjawala & Co. associate, and NGT/Rajiv Tehlan & Associates alumnus.",
+  },
 ];
 
 // Reusable component for team member cards
