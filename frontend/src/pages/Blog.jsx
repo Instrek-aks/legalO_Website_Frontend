@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowLeft, User } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 //import legalOlympiadLogo from "@/assets/legal-olympiad-logo.png";
 import {
   Dialog,
@@ -196,6 +197,7 @@ const Blog = () => {
           )}
         </DialogContent>
       </Dialog>
+      <Footer />
     </div>
   );
 };
