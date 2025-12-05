@@ -109,7 +109,7 @@ const blogPosts = [
   {
     id: 12,
     title:
-      "SENTINELS OF THE CONSTITUTION: A JURISPRUDENTIAL CHRONICLE OF HISTORIC SUPREME COURT RULINGS",
+      "SENTINELS OF THE CONSTITUTION: A JURISPRUDENT CHRONICLE OF HISTORIC SUPREME COURT RULINGS",
     author: "Legal Olympiad Editorial Board",
     image: "/blog-12.png",
     content:
