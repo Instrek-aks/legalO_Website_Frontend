@@ -96,6 +96,33 @@ const studentMentors = [
     description:
       "Advocate on the Delhi Cantonment Board panel, ex-Karanjawala & Co. associate, and NGT/Rajiv Tehlan & Associates alumnus.",
   },
+  {
+    id: 5,
+    name: "Sumit Misra",
+    role: "Mentor",
+    image: "/sumit.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Senior Advocate with nearly a decade of experience before the Supreme Court of India and Delhi High Court, specialising in criminal, constitutional, and commercial law, with a strong pro bono focus.",
+  },
+  {
+    id: 6,
+    name: "Yugansha Gargey",
+    role: "Mentor",
+    image: "/yug.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "PhD research scholar and Assistant Professor at Shoolini University, specialising in criminal, constitutional, and commercial law, with a strong commitment to pro bono and social justice.",
+  },
+  {
+    id: 7,
+    name: "Vimmy Miglani",
+    role: "Mentor",
+    image: "/vimmy.png",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Assistant Professor (Law) at Punjab College of Law, pursuing a PhD at Guru Nanak Dev University, with expertise in criminal, constitutional, commercial law, and cryptocurrency regulations.",
+  },
 ];
 
 // Reusable component for team member cards
