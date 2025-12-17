@@ -104,7 +104,7 @@ const studentMentors = [
     image: "/sumit.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "Senior Advocate with nearly a decade of experience before the Supreme Court of India and Delhi High Court, specialising in criminal, constitutional, and commercial law, with a strong pro bono focus.",
+      "Advocate with nearly a decade of experience before the Supreme Court of India and Delhi High Court, specialising in criminal, constitutional, and commercial law, with a strong pro bono focus.",
     linkedin: "https://www.linkedin.com/in/sumitmisra92/",
   },
   {
