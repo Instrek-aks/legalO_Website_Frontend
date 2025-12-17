@@ -95,6 +95,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Advocate on the Delhi Cantonment Board panel, ex-Karanjawala & Co. associate, and NGT/Rajiv Tehlan & Associates alumnus.",
+    linkedin: "https://www.linkedin.com/in/nitish-dham-12b12a14b/",
   },
   {
     id: 5,
@@ -104,6 +105,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Senior Advocate with nearly a decade of experience before the Supreme Court of India and Delhi High Court, specialising in criminal, constitutional, and commercial law, with a strong pro bono focus.",
+    linkedin: "https://www.linkedin.com/in/sumitmisra92/",
   },
   {
     id: 6,
@@ -122,6 +124,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Assistant Professor (Law) at Punjab College of Law, pursuing a PhD at Guru Nanak Dev University, with expertise in criminal, constitutional, commercial law, and cryptocurrency regulations.",
+    linkedin: "https://www.linkedin.com/in/vimmy-miglani-683295238/",
   },
 ];
 
