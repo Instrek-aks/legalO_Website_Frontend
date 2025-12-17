@@ -115,6 +115,8 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "PhD research scholar and Assistant Professor at Shoolini University, specialising in criminal, constitutional, and commercial law, with a strong commitment to pro bono and social justice.",
+    linkedin:
+      "https://www.linkedin.com/in/yugasha-gargey-7a6773384/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 7,
@@ -125,6 +127,17 @@ const studentMentors = [
     description:
       "Assistant Professor (Law) at Punjab College of Law, pursuing a PhD at Guru Nanak Dev University, with expertise in criminal, constitutional, commercial law, and cryptocurrency regulations.",
     linkedin: "https://www.linkedin.com/in/vimmy-miglani-683295238/",
+  },
+  {
+    id: 8,
+    name: "Priyanka Chaudhary",
+    role: "Mentor",
+    image: "/priyanka.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Assistant Professor in the Department of Law at Kurukshetra University (KUK), specializing in legal education and academic research",
+    linkedin:
+      "https://www.linkedin.com/in/priyanka-chaudhary-15b376338/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
