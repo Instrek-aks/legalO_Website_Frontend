@@ -125,7 +125,7 @@ const studentMentors = [
     image: "/vimmy.png",
     roleColor: "text-[#C6930A]",
     description:
-      "Assistant Professor (Law) at Punjab College of Law, pursuing a PhD at Guru Nanak Dev University, with expertise in criminal, constitutional, commercial law, and cryptocurrency regulations.",
+      "Assistant Professor of Law at Punjab College of Law, Tarn Taran, specializing in Family Law and Criminal Law. Currently pursuing a PhD under Guru Nanak Dev University, Amritsar, with research focused on Consumer Protection and Cryptocurrency Regulations. She is Actively engaged in exploring diverse and evolving dimensions of law.",
     linkedin: "https://www.linkedin.com/in/vimmy-miglani-683295238/",
   },
   {
