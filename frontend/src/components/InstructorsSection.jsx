@@ -139,6 +139,17 @@ const studentMentors = [
     linkedin:
       "https://www.linkedin.com/in/priyanka-chaudhary-15b376338/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    id: 9,
+    name: "Dr. Ajmer Singh",
+    role: "Mentor",
+    image: "/ajmer.jpg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Assistant Professor and legal scholar with a PhD, dedicated to advancing legal knowledge and guiding the next generation of legal professionals.",
+    linkedin:
+      "https://www.linkedin.com/in/ajmer-singh-a74103214/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
 ];
 
 // Reusable component for team member cards
