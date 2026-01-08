@@ -150,6 +150,36 @@ const studentMentors = [
     linkedin:
       "https://www.linkedin.com/in/ajmer-singh-a74103214/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    id: 10,
+    name: "Naginder Benipal",
+    role: "Mentor",
+    image: "/Naginder.JPG",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Advocate with over 16 years of distinguished legal experience, serving as Senior Panel Counsel for the Union of India before the Delhi High Court. He also represents the Punjab Pollution Control Board (PPCB) and the Punjab Municipal Infrastructure Development Company (PMIDC) as Standing Counsel. His practice spans constitutional, administrative, environmental, and corporate law, with a strong commitment to legal excellence and public service.",
+    linkedin: "https://www.linkedin.com/company/naginder-benipal/",
+  },
+  {
+    id: 11,
+    name: "Ankit Siwach",
+    role: "Mentor",
+    image: "/Ankit.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Advocate with over 3.5 years of legal experience, currently serving as Government Pleader for the Union of India before the Delhi High Court. His practice spans constitutional, administrative, civil, and regulatory matters, marked by a pragmatic courtroom approach and commitment to public legal service.",
+    linkedin: "https://www.linkedin.com/in/ankit-siwach-a9b874179/",
+  },
+  {
+    id: 12,
+    name: "Shashwat Saxena",
+    role: "Mentor",
+    image: "/saxsena.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Practicing Advocate at the District and Sessions Court, Kanpur Nagar, and a dedicated mentor guiding aspiring legal professionals with practical insights, courtroom strategies, and ethical legal practice.",
+    linkedin: "https://www.linkedin.com/in/shashwat-saxena-92832054/",
+  },
 ];
 
 // Reusable component for team member cards
