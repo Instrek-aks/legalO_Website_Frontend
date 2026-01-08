@@ -180,6 +180,16 @@ const studentMentors = [
       "Practicing Advocate at the District and Sessions Court, Kanpur Nagar, and a dedicated mentor guiding aspiring legal professionals with practical insights, courtroom strategies, and ethical legal practice.",
     linkedin: "https://www.linkedin.com/in/shashwat-saxena-92832054/",
   },
+  {
+    id: 13,
+    name: "Naomi Chandra",
+    role: "Mentor",
+    image: "/naomi.jpeg",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Practising advocate with over 18 years of experience in criminal and civil litigation. Empanelled counsel and former Amicus Curiae, actively involved in mentoring law students through practical litigation guidance.",
+    linkedin: "https://www.linkedin.com/in/naomi-chandra-93b1983/",
+  },
 ];
 
 // Reusable component for team member cards
