@@ -80,7 +80,7 @@ const studentMentors = [
     id: 3,
     name: "Aprajita Budhwar",
     role: "Student Mentor",
-    image: "/aprajita.JPG",
+    image: "/Aprajita.jpg",
     roleColor: "text-[#C6930A]",
     description:
       "Delivering judicial knowledge paired with implementable legal guidance",
@@ -93,8 +93,7 @@ const studentMentors = [
     role: "Mentor",
     image: "/Nitish.jpeg",
     roleColor: "text-[#C6930A]",
-    description:
-      "Advocate on the Delhi Cantonment Board panel, ex-Karanjawala & Co. associate, and NGT/Rajiv Tehlan & Associates alumnus.",
+    description: "Delhi Cantonment Board Panel Advocate with hands-on courtroom expertise.",
     linkedin: "https://www.linkedin.com/in/nitish-dham-12b12a14b/",
   },
   {
@@ -104,17 +103,17 @@ const studentMentors = [
     image: "/sumit.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "Advocate with nearly a decade of experience before the Supreme Court of India and Delhi High Court, specialising in criminal, constitutional, and commercial law, with a strong pro bono focus.",
+      "Experienced advocate combining complex litigation expertise with a strong pro bono ethos.",
     linkedin: "https://www.linkedin.com/in/sumitmisra92/",
   },
   {
     id: 6,
-    name: "Yugansha Gargey",
+    name: "Yugasha Gargey",
     role: "Mentor",
     image: "/yug.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "PhD research scholar and Assistant Professor at Shoolini University, specialising in criminal, constitutional, and commercial law, with a strong commitment to pro bono and social justice.",
+      "Assistant Professor and research scholar committed to impactful legal education and justice.",
     linkedin:
       "https://www.linkedin.com/in/yugasha-gargey-7a6773384/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -125,17 +124,17 @@ const studentMentors = [
     image: "/vimmy.png",
     roleColor: "text-[#C6930A]",
     description:
-      "Assistant Professor of Law at Punjab College of Law, Tarn Taran, specializing in Family Law and Criminal Law. Currently pursuing a PhD under Guru Nanak Dev University, Amritsar, with research focused on Consumer Protection and Cryptocurrency Regulations. She is Actively engaged in exploring diverse and evolving dimensions of law.",
+      "Academic expert blending core legal disciplines with doctoral research on cryptocurrency laws.",
     linkedin: "https://www.linkedin.com/in/vimmy-miglani-683295238/",
   },
   {
     id: 8,
-    name: "Priyanka Chaudhary",
+    name: "Dr. Priyanka Chaudhary",
     role: "Mentor",
     image: "/priyanka.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "Assistant Professor in the Department of Law at Kurukshetra University (KUK), specializing in legal education and academic research",
+      "Academic mentor specializing in law teaching and scholarly research.",
     linkedin:
       "https://www.linkedin.com/in/priyanka-chaudhary-15b376338/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -145,8 +144,7 @@ const studentMentors = [
     role: "Mentor",
     image: "/ajmer.jpg",
     roleColor: "text-[#C6930A]",
-    description:
-      "Assistant Professor and legal scholar with a PhD, dedicated to advancing legal knowledge and guiding the next generation of legal professionals.",
+    description: "Academic mentor dedicated to excellence in legal education",
     linkedin:
       "https://www.linkedin.com/in/ajmer-singh-a74103214/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -157,7 +155,7 @@ const studentMentors = [
     image: "/Naginder.JPG",
     roleColor: "text-[#C6930A]",
     description:
-      "Advocate with over 16 years of distinguished legal experience, serving as Senior Panel Counsel for the Union of India before the Delhi High Court. He also represents the Punjab Pollution Control Board (PPCB) and the Punjab Municipal Infrastructure Development Company (PMIDC) as Standing Counsel. His practice spans constitutional, administrative, environmental, and corporate law, with a strong commitment to legal excellence and public service.",
+      "Senior Panel Counsel with 16+ years’ experience in constitutional and public law practice.",
     linkedin: "https://www.linkedin.com/company/naginder-benipal/",
   },
   {
@@ -167,7 +165,7 @@ const studentMentors = [
     image: "/Ankit.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "Advocate with over 3.5 years of legal experience, currently serving as Government Pleader for the Union of India before the Delhi High Court. His practice spans constitutional, administrative, civil, and regulatory matters, marked by a pragmatic courtroom approach and commitment to public legal service.",
+      "Delivering strategic legal counsel shaped by government litigation experience.",
     linkedin: "https://www.linkedin.com/in/ankit-siwach-a9b874179/",
   },
   {
@@ -177,7 +175,7 @@ const studentMentors = [
     image: "/saxsena.jpeg",
     roleColor: "text-[#C6930A]",
     description:
-      "Practicing Advocate at the District and Sessions Court, Kanpur Nagar, and a dedicated mentor guiding aspiring legal professionals with practical insights, courtroom strategies, and ethical legal practice.",
+      "District and Sessions Court practitioner shaping the next generation of legal professionals.",
     linkedin: "https://www.linkedin.com/in/shashwat-saxena-92832054/",
   },
   {
@@ -186,9 +184,18 @@ const studentMentors = [
     role: "Mentor",
     image: "/naomi.jpeg",
     roleColor: "text-[#C6930A]",
-    description:
-      "Practising advocate with over 18 years of experience in criminal and civil litigation. Empanelled counsel and former Amicus Curiae, actively involved in mentoring law students through practical litigation guidance.",
+    description: "Senior litigator and former Amicus Curiae mentoring aspiring lawyers",
     linkedin: "https://www.linkedin.com/in/naomi-chandra-93b1983/",
+  },
+  {
+    id: 14,
+    name: "Tarun Agarwal",
+    role: "Mentor",
+    image: "/tarun.png",
+    roleColor: "text-[#C6930A]",
+    description:
+      "Founder & Managing Partner, TBA Legal, with expertise rooted in top-tier law firms.",
+    linkedin: "https://www.linkedin.com/in/tarun-agarwal-tbalegal9/",
   },
 ];
 
