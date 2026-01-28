@@ -197,6 +197,96 @@ const studentMentors = [
       "Founder & Managing Partner, TBA Legal, with expertise rooted in top-tier law firms.",
     linkedin: "https://www.linkedin.com/in/tarun-agarwal-tbalegal9/",
   },
+  {
+    id: 15,
+    name: "Shreyansh Rathi",
+    role: "Mentor",
+    image: "/shreyansh_new.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Supreme Court & Delhi High Court Advocate handling complex litigation.",
+    linkedin: "https://www.linkedin.com/in/shreyansh-rathi-912358140/",
+  },
+  {
+    id: 16,
+    name: "Purva Kohli",
+    role: "Mentor",
+    image: "/purva_new.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Litigation & Dispute Resolution Lawyer; trained Mediator based in Delhi.",
+    linkedin: "https://www.linkedin.com/in/purva-kohli-2451b7117/",
+  },
+  {
+    id: 17,
+    name: "Anika Bajpai",
+    role: "Mentor",
+    image: "/anika.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Senior Associate & Advocate with strong litigation and corporate advisory experience.",
+    linkedin: "https://www.linkedin.com/in/anika-bajpai-424b1030/",
+  },
+  {
+    id: 18,
+    name: "Rohit Chaturvedi",
+    role: "Mentor",
+    image: "/rohit.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Attorney at Parin Law Office with strong litigation experience and client‑focused legal practice.",
+    linkedin: "https://www.linkedin.com/in/rohit-chaturvedi-a026b239/",
+  },
+  {
+    id: 19,
+    name: "Apurva Sanjeti",
+    role: "Mentor",
+    image: "/apurva.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Legal & Contracting Professional specializing in legal operations and AI-enabled solutions.",
+    linkedin: "https://www.linkedin.com/in/apurva-sanjeti-06737b39/",
+  },
+  {
+    id: 20,
+    name: "Palak Sharma",
+    role: "Mentor",
+    image: "/palak.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Associate Advocate handling litigation, arbitration, and dispute resolution.",
+    linkedin: "https://www.linkedin.com/in/palaksharma30/",
+  },
+  {
+    id: 21,
+    name: "Deveshi Mishra",
+    role: "Mentor",
+    image: "/deveshi.png",
+    roleColor: "text-[#C6930A]",
+    description: "Delhi High Court Advocate handling diverse litigation matters.",
+    linkedin: "https://www.linkedin.com/in/deveshi-mishra/",
+  },
+  {
+    id: 22,
+    name: "Manav Tanwani",
+    role: "Mentor",
+    image: "/manav.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Advocate & Legal Practitioner with litigation and advisory expertise.",
+    linkedin: "https://www.linkedin.com/in/manav-tanwani-a80344109/",
+  },
+  {
+    id: 23,
+    name: "Ritu Raj Srivastava",
+    role: "Mentor",
+    image: "/ritu.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Principal Associate & Advocate at Karanjawala & Co., specializing in litigation and legal advisory.",
+    linkedin: "https://www.linkedin.com/in/ritu-raj-7705a2a0/",
+  },
+  {
+    id: 24,
+    name: "Akash Raj",
+    role: "Mentor",
+    image: "/akash.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "Advocate at Patna High Court with broad litigation experience.",
+    linkedin: "https://www.linkedin.com/in/akash-raj-bb0114131/",
+  },
 ];
 
 // Reusable component for team member cards
@@ -206,13 +296,13 @@ const TeamMemberCard = ({ member, index }) => (
     className="group relative h-full mx-4 sm:mx-0"
     style={{ animationDelay: `${index * 100}ms` }}
   >
-    <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 sm:hover:-translate-y-2 overflow-hidden border border-gray-100 h-full flex flex-col">
+    <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg transition-all duration-500 overflow-hidden border-2 border-gray-100 hover:border-[#C6930A] h-full flex flex-col">
       {/* Image Container */}
-      <div className="relative h-72 sm:h-64 md:h-73 lg:h-72 overflow-hidden">
+      <div className="relative h-72 sm:h-64 md:h-73 lg:h-72 overflow-hidden rounded-t-xl sm:rounded-t-2xl">
         <img
           src={member.image}
           alt={member.name}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover object-top transition-transform duration-700"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -267,8 +357,7 @@ const TeamMemberCard = ({ member, index }) => (
         </div>
       </div>
 
-      {/* Decorative Element */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#C6930A] to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+
     </div>
   </div>
 );
