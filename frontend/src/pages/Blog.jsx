@@ -188,7 +188,7 @@ const Blog = () => {
       <Header />
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="container mx-auto px-6 py-8">
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
@@ -254,7 +254,7 @@ const Blog = () => {
                 <img
                   src={selectedPost.image}
                   alt={selectedPost.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto"
                 />
               </div>
               <p className="mb-4">

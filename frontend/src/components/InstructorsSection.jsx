@@ -6,7 +6,7 @@ const instructors = [
     image: "/Vineet.webp",
     roleColor: "text-[#C6930A]",
     description: "Leading the vision and strategic direction of Legal Olympiad",
-    linkedin: "https://www.linkedin.com/in/vineet82/?originalSubdomain=in",
+    linkedin: "https://www.linkedin.com/in/vineet82/",
   },
   {
     id: 2,
@@ -15,8 +15,7 @@ const instructors = [
     image: "/sanjanO.webp",
     roleColor: "text-[#C6930A]",
     description: "Driving innovation in legal education and mentorship",
-    linkedin:
-      "https://in.linkedin.com/in/sanjanawadhwa94?original_referer=https%3A%2F%2Fwww.bing.com%2F",
+    linkedin: "https://in.linkedin.com/in/sanjanawadhwa94/",
   },
   {
     id: 3,
@@ -26,8 +25,7 @@ const instructors = [
     roleColor: "text-[#C6930A]",
     description:
       "Providing seasoned expertise in business strategy and decision-making",
-    linkedin:
-      "https://www.linkedin.com/in/praveen-sharma-640086209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/praveen-sharma-640086209/",
   },
 
   // {
@@ -48,8 +46,7 @@ const instructors = [
     image: "/tithika.webp",
     roleColor: "text-[#C6930A]",
     description: "Orchestrating technology integration and digital platforms",
-    linkedin:
-      "https://in.linkedin.com/in/tithika-mittal-504775321?original_referer=https%3A%2F%2Fwww.bing.com%2F",
+    linkedin: "https://in.linkedin.com/in/tithika-mittal-504775321/",
   },
 ];
 
@@ -62,8 +59,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Leveraging extensive judicial experience and profound legal acumen",
-    linkedin:
-      "https://www.linkedin.com/in/vikas-gogne-42918527?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/vikas-gogne-42918527/",
   },
   {
     id: 2,
@@ -73,8 +69,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Offering judicial expertise coupled with actionable legal insights",
-    linkedin:
-      "https://www.linkedin.com/in/satyam-chaturvedi-18845171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/satyam-chaturvedi-18845171/",
   },
   {
     id: 3,
@@ -84,8 +79,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Delivering judicial knowledge paired with implementable legal guidance",
-    linkedin:
-      "https://www.linkedin.com/in/aprajita-budhwar-122b87162/?originalSubdomain=in",
+    linkedin: "https://www.linkedin.com/in/aprajita-budhwar-122b87162/",
   },
   {
     id: 4,
@@ -114,8 +108,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Assistant Professor and research scholar committed to impactful legal education and justice.",
-    linkedin:
-      "https://www.linkedin.com/in/yugasha-gargey-7a6773384/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/yugasha-gargey-7a6773384/",
   },
   {
     id: 7,
@@ -135,8 +128,7 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description:
       "Academic mentor specializing in law teaching and scholarly research.",
-    linkedin:
-      "https://www.linkedin.com/in/priyanka-chaudhary-15b376338/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/priyanka-chaudhary-15b376338/",
   },
   {
     id: 9,
@@ -145,8 +137,7 @@ const studentMentors = [
     image: "/ajmer.jpg",
     roleColor: "text-[#C6930A]",
     description: "Academic mentor dedicated to excellence in legal education",
-    linkedin:
-      "https://www.linkedin.com/in/ajmer-singh-a74103214/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/ajmer-singh-a74103214/",
   },
   {
     id: 10,
