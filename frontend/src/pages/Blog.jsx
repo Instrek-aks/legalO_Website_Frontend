@@ -224,10 +224,10 @@ const Blog = () => {
               </div>
               <div className="p-4">
                 <h3
-                  className="text-[#1E3A5F] font-semibold text-sm leading-tight mb-2 line-clamp-2 h-12 overflow-hidden"
+                  className="text-[#1E3A5F] font-semibold text-sm leading-tight mb-2"
                   title={post.title}
                 >
-                  {post.title}
+                  {post.title?.replace(/[—–]/g, "-")}
                 </h3>
                 <p className="text-sm">
                   <span className="text-[#5A6B7D]">Author: </span>
@@ -244,7 +244,7 @@ const Blog = () => {
         <DialogContent className="!left-6 !right-6 !translate-x-0 w-auto max-w-3xl max-h-[80vh] overflow-y-auto bg-white sm:!left-[50%] sm:!right-auto sm:!translate-x-[-50%] sm:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:right-4 [&>button]:top-4 [&>button]:h-8 [&>button]:w-8">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-[#1E3A5F] leading-tight pr-8 sm:pr-8">
-              {selectedPost?.title}
+              {selectedPost?.title?.replace(/[—–]/g, "-")}
             </DialogTitle>
           </DialogHeader>
           <div className="border-t border-[#E5D9C3] my-4" />
@@ -262,7 +262,7 @@ const Blog = () => {
                 <span className="text-[#5A6B7D]">{selectedPost.author}</span>
               </p>
               <div className="text-[#5A6B7D] leading-relaxed whitespace-pre-line">
-                {selectedPost.content}
+                {selectedPost.content?.replace(/[—–]/g, "-")}
               </div>
             </div>
           )}
