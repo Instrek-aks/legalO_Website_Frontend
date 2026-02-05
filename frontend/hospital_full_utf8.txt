@@ -1,0 +1,136 @@
+﻿HOSPITAL INSOLVENCY UNDER THE IBC: CLINICAL MORATORIUM, PATIENT-
+DATA TRUSTS, CBDC MICRO-TRANCHES
+Introduction
+When a normal business collapses, delay burns cash; when a hospital fails, delay harms people.
+IndiaΓÇÖs Insolvency and Bankruptcy Code (IBC) bring order to corporate distress through the
+Corporate Insolvency Resolution Process (CIRP), but the rules were written with factories in mind
+rather than intensive care units. A legal moratorium can pause lawsuits and calls from creditors.1
+It cannot keep oxygen flowing at night, reassure clinicians that surgeries will start on time, or help
+bidders judge clinical risk without mishandling patient records. This essay sets out a
+hospitalΓÇæspecific plan that fits within the IBC. It proposes three linked steps: a Clinical Moratorium
+to keep emergency care, intensive care, operating theatres, oxygen, blood banks, dialysis, and
+diagnostics running while the statutory clock continues;2 PatientΓÇæData Trusts so bidders can
+evaluate performance using consented, limited data; and a Central Bank Digital Currency (CBDC)
+based microΓÇætranches that pay critical suppliers as soon as a service is verified. The aim is simple:
+protect patients, preserve value, and keep the case on time.
+Why Hospitals Require a SectorΓÇæSpecific Insolvency Playbook
+A hospital keeps its value only when care is safe and uninterrupted. Even a short disruption in the
+emergency department, intensive care and operating rooms, oxygen deliveries, blood banking,
+dialysis services, or core diagnostics can cancel surgeries, push staff to leave, and lower bids. The
+IBC already requires the business to keep running3 and protects essential supplies during the
+moratorium.4 However, it defines ΓÇ£essentialsΓÇ¥ as utilities such as electricity, water, telecom, and
+IT rather than clinical services. 5 This essay translates those general rules into clear,
+hospitalΓÇæspecific steps that a resolution professional (RP) can apply from day one, so patient safety
+and financial value rest on the same foundation.
+1 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) s 14(1).
+2 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) s 12.
+3 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) s 20.
+4 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) s 14(2).
+5 Insolvency and Bankruptcy Board of India (Insolvency Resolution Process for Corporate Persons) Regulations,
+2016 reg 32.
+
+-- 1 of 5 --
+
+Pillar I: Statutory Clinical Moratorium within the Existing CIRP Timeline
+A Clinical Moratorium is a practical rule rather than a loophole or a delay. When CIRP begins, the
+RP names the hospitalΓÇÖs critical services, namely emergency care, intensive care, operating
+theatres, oxygen and vacuum lines, the blood bank, dialysis, and core diagnostics such as imaging
+and laboratory services, and protects these services as strictly as power and water. The timelines
+do not change because the case still runs within the IBC limits. The moratorium simply defines
+what continuity means in a hospital so that direct patient care is not delayed by legal processes.6
+Payments stay strict and predictable. Pay for current use now and route older dues through the
+resolution plan. Vendors are paid once the delivery is verified. A short grace window, measured
+in hours, prevents paperwork from creating clinical risk, while preserving the vendorΓÇÖs right to
+stop new deliveries if current bills are not paid.7
+Accountability focuses on results rather than paperwork. If anyone asks the court for more time,
+that request should be earned by showing that continuity actually improved. Use three simple
+checks. First, were beds and other critical services available when patients needed them? Second,
+did cancellations of surgeries and other timeΓÇæsensitive procedures go down? Third, did expected
+recovery for creditors improve compared with liquidation value because care continued safely?
+These checks keep the focus on what matters: direct patient care and value for stakeholders.8
+Pillar II: PatientΓÇæData Trusts for PrivacyΓÇæPreserving Diligence
+Bidders cannot price a hospital from revenue and cost lines alone. They also need a clear picture
+of the care being delivered, who is treated, what outcomes are achieved, and what kind of risk
+exist. Most of this information present inside electronic medical records and related clinical
+systems. Because these records are sensitive and governed by consentΓÇæbased law, a neutral
+governance layer is required.9
+6 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) ss 12, 20.
+7 The Insolvency and Bankruptcy Code, 2016 (31 of 2016) s 14(2A).
+8 Committee of Creditors of Essar Steel India Ltd v Satish Kumar Gupta (2020) 8 SCC 531.
+9 Digital Personal Data Protection Act, 2023 (22 of 2023) ss 6(1), 6(4), 6(7)ΓÇô (9).
+
+-- 2 of 5 --
+
+A PatientΓÇæData Trust provides that layer without creating a new database. The hospital keeps the
+records, and the trust coordinates lawful access. Using existing healthΓÇædata consent mechanisms,10
+the trust grants timeΓÇælimited and purposeΓÇælimited access to only the fields required for diligence,
+such as caseΓÇæmix and payerΓÇæmix profiles, infection rates, lengthΓÇæofΓÇæstay patterns, equipment
+uptime, and discharge outcomes. Identities are not shared. Every access is logged from start to
+finish, and consent can be withdrawn.11 In practice, bidders see the ΓÇ£whatΓÇ¥ of clinical performance
+while the ΓÇ£whoΓÇ¥ remains protected. This reduces privacy risk, increases bidder confidence, and
+supports stronger pricing without compromising rights.
+Pillar III: CBDC MicroΓÇæTranches for JustΓÇæinΓÇæTime Funding of Clinical Essentials
+Hospitals run on minuteΓÇæbyΓÇæminute logistics. If an oxygen refill is acknowledged at 6:10 p.m., the
+supplier should not wait days to be paid. MicroΓÇætranches close this timing gap by putting a small
+programmable escrow inside the resolution plan. If a digitalΓÇærupee (CBDC) wallet is available, it
+serves as the payment rail;12 if not, a tightly specified bank escrow with APIΓÇæbased releases serves
+the same role. Each clinically important event for example an oxygen cylinder signed in on the
+ward, pharmacy stock rising above a safety threshold, or an implant staged in an operating theatre
+which triggers a small, preΓÇæset payment from escrow. Weekly caps, automated alerts, and
+clawbacks handle disputes and discourage misuse. In short, the rule ΓÇ£pay current dues to keep
+essentials flowingΓÇ¥ happens in near real time, within minutes rather than after a committee
+meeting.13 This keeps direct patient care stable and preserves the hospitalΓÇÖs goingΓÇæconcern value.
+Synthesis and Implementation: Doctrinal Fit within the IBC Framework
+All three elements sit within powers the IBC already gives RPs and courts. A resolution plan must
+show how operations will continue, how stakeholders are protected, and how performance will be
+10 National Institution for Transforming India, ΓÇÿNational Digital Health Mission: Strategy OverviewΓÇÖ (2020)
+https://www.niti.gov.in/sites/default/files/2023-02/ndhm_strategy_overview.pdf accessed 8 October 2025.
+11 National Health Authority, Ministry of Health and Family Welfare, ΓÇÿABDM: Health Information Exchange and
+Consent Manager (HIE-CM) ΓÇö consent-based sharingΓÇÖ (Press material, 14 October 2024)
+https://www.mohfw.gov.in/?q=en/pressrelease-87 accessed 10 October 2025.
+12 Reserve Bank of India, ΓÇÿDigital Rupee (eΓé╣) ΓÇô FAQsΓÇÖ (9 January 2025)
+https://www.rbi.org.in/commonman/English/Scripts/FAQs.aspx accessed 11 October 2025.
+13 Reuters, ΓÇÿIndia to broaden e-rupeeΓÇÖs retail access beyond banks, cenbank saysΓÇÖ (5 April 2024)
+https://www.reuters.com/markets/currencies/india-broaden-e-rupee-distribution-beyond-banks-boost-retail-use-
+cenbank-says-2024-04-05/ accessed 12 October 2025.
+
+-- 3 of 5 --
+
+supervised.14 The Clinical Moratorium turns those general duties into concrete clinical obligations
+and assigns responsibility for keeping them in place. The DataΓÇæTrust clause codifies lawful,
+audited, limitedΓÇæpurpose diligence access without bulk copying or openΓÇæended permissions. The
+Digital Escrow clause defines eligible vendors and the verification events that trigger
+microΓÇæpayments, with caps and clawbacks built in. An outcomeΓÇælinked extension clause ties any
+extra time to measurable gains in continuity and expected recovery, so the statutory clock is
+respected and extensions buy real public value rather than breathing space alone.
+Anticipated Objections and Structured Responses
+Privacy worries are addressed by design. The PatientΓÇæData Trust does not centralize records; it
+uses explicit consent, narrows access to what is strictly necessary for a short window, logs every
+read, and allows revocation. Questions about CBDC readiness are handled by being railΓÇæagnostic:
+where digitalΓÇærupee wallets are practical, they are used; where they are not, a programmable bank
+escrow achieves the same operational effect. Fears that these mechanisms might slow the case
+miss the point. The Clinical Moratorium keeps the matter on the statutory clock by removing
+hesitation at the point of care; microΓÇæpayments prevent standoffs with essential vendors that would
+otherwise force adjournments; and any extension must be justified with hard numbers rather than
+hopeful assurances. Once running, clinicians know supplies will arrive and be paid for, bidders
+know what they are buying, and courts see objective indicators rather than ambiguity. Finally,
+emergency-care jurisprudence15 and national standards under the Clinical Establishments Act16
+reinforce the principle that critical care must not be interrupted, which aligns with the Clinical
+MoratoriumΓÇÖs focus on safety during CIRP.
+Conclusion
+The IBC promises speed, order, and outcomes better than liquidation. In healthcare, that promise
+is inseparable from patient safety. A Clinical Moratorium stabilizes the services that define a
+hospitalΓÇÖs value; PatientΓÇæData Trusts allow bidders to understand performance without exposing
+identities; and CBDCΓÇæstyle microΓÇætranches, or their escrow equivalent, move money at the speed
+14 IBC ss 12, 14, 20; IBBI (CIRP) Regulations 2016 reg 32.
+15 Pt Parmanand Katara v Union of India (1989) 4 SCC 286.
+16 Clinical Establishments (Registration and Regulation) Act, 2010 (23 of 2010).
+
+-- 4 of 5 --
+
+of care. Together, these elements turn the usual tension between speed, value, and protection into
+a selfΓÇæreinforcing triangle. Because each piece fits within the tools the law already provides, this
+is a practical path to hospital resolutions that are fast, valuable, and safe by 2030.
+
+-- 5 of 5 --
+
