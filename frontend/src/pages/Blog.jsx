@@ -536,8 +536,184 @@ For the CCI, this framework presents an opportunity to leapfrog incremental evol
     title: "DATA AS AN ASSET DURING INSOLVENCY ABSTRACT",
     author: "Rachit Saxena",
     image: "/blog-15.png",
-    content:
-      "As commerce and enterprise become ever more digital, data has emerged as a critical economic resource. This abstract examines how data should be treated within insolvency processes: whether it qualifies as a proprietary asset, how it may be valued and monetised, and what legal frameworks best protect stakeholders during restructuring or liquidation.\n\nData differs from traditional assets. It is non-rivalrous, often co-owned or co-generated, and frequently subject to contractual and privacy constraints that complicate transfer and realisation. Insolvency practitioners therefore confront a dual challenge: locating value in datasets while navigating regulatory limits on transfer, third-party rights, and obligations to protect personal information.\n\nA principled approach treats data as an actionable commercial asset when the debtor possesses enforceable rights allowing the use, licensing, or assignment of the dataset. Valuation must be pragmatic, combining market comparables for specialised datasets, cost-based measures for curated collections, and discounted cash-flow projections for data products that generate recurring revenue. Transparent valuation protocols help ensure equitable distributions and reduce disputes during resolution.\n\nRegulatory constraints — including data-protection law, confidentiality clauses and contractual licensing terms — often limit the pool of prospective buyers. Insolvency regimes should therefore provide mechanisms for conditional transfers and supervisory approvals that preserve privacy and contractual obligations while enabling value recovery. Courts and practitioners may employ escrow arrangements, redaction protocols, or regulated access regimes to reconcile these competing demands.\n\nFinally, reorganisations should prioritise continuity of essential data services where public interest or systemic risk is implicated. Insolvency frameworks can permit short-term licensing or supervised operation to maintain critical services while a longer-term realisation plan is developed. In all cases, clear guidance on the treatment of data in insolvency promotes predictability, preserves value, and protects the legitimate interests of creditors, customers and data subjects.",
+    content: `The emergence of data as a premier economic asset has highlighted a significant divergence between two major legislations: the Insolvency and Bankruptcy Code, 2016 (IBC) and the Digital Personal Data Protection Act, 2023 (DPDP Act). IBC’s asset value maximization and DPDP Act’s strict data processing limitations are creating an untenable conundrum. The Insolvency Professionals (IPs) are facing a quandary between their duties under IBC and DPDP Act. In this essay we critically analyse this conflict, examining the legal character of data as an asset, the challenges in its valuation, and inadequacy of the current framework.
+
+
+We proposed a multifaceted framework to harmonize this conflict. The solution is based on three pillars: (1) amendments to both IBC and DPDP Act; (2) a mandatory Data Fiduciary in Insolvency Protocol; and (3) a defined, collaborative oversight role for Data Protection Board of India (DPBI). Drawing lessons from international frameworks like UK GDPR and the US’s Chapter 11, we advocate for a legally sound and commercially viable model which transforms data from a liability into a responsibly managed asset.
+
+
+In the Indian economy, data has emerged as the new currency of commerce and a critical asset for corporate value. Companies derive substantial value from customer data, behavioral analytics and proprietary algorithms. But when these data rich businesses enter insolvency, IPs face an unprecedented dilemma: IBC requires them to monetize every asset for the creditor, while the DPDP Act prohibits processing personal data beyond its consented purpose. The constitutional right to privacy now collides with the IBC’s core objective of asset value maximisation, creating a quandary.
+
+
+Let’s understand this conflict by an example. A digital health platform which connects patients with doctors and stores sensitive health records goes insolvent. It has a large database containing patient histories, diagnostic reports, and prescription data. This organisation enters the Corporate Insolvency Resolution Process (CIRP). The Insolvency Professional (IP) receives two resolution plans:
+
+
+Plan A - It is from a small IT firm, offering a modest sum for the company's software and hardware. This plan offers a recovery of 10%.
+
+
+Plan B - It is from a large pharmaceutical company, offering a higher amount for the company's patient database, which would be used for clinical trials and drug efficacy research. This plan promises a 70% recovery for creditors. Here, the IP faces a dilemma of whether to approve the Plan B or to go with the Plan A. Under IBC, duty of asset maximization and commercial wisdom of the Committee of Creditors (CoC) would favor Plan B. Rejecting it could possibly expose the IP to a lawsuit from creditors for failing to secure the best possible recovery. On the other hand, accepting Plan B would involve transferring sensitive personal data for a different purpose and without the consent of the Data Principal which will attract the penalties under the DPDP Act.
+
+
+This conflict poses many questions. Can RPs fulfil their duty to maximize asset value when corporate debtor’s most valuable assets are subject to privacy constraints? How should courts balance creditor interest against data subject rights? This essay does not seek to answer which law should override the other. Instead, it asks: How can the IBC’s asset maximisation goal be reconciled with the DPDP Act’s privacy protections in a manner that respects both legal mandates?
+
+
+IBC VS. DPDP ACT
+To understand the conundrum between IBC and DPDP Act we need to understand the nature of both the legislations. Both the laws work on different paradigms, IBC mandates the asset value maximisation whereas the protection of personal data is the prime objective of the DPDP Act.
+
+
+ASSET VALUE MAXIMISATION UNDER IBC
+The IBC is drafted in such a way which ensures that debtors could not shield valuable assets from the resolution process. In Section 3(27)4 of IBC, which defines property, the phrase “every description of property” and “interest including present or future or vested or contingent interest arising out of, or incidental to, property” suggests that the definition extends to any right or interest that has value and is connected to a resource. A corporate debtor’s right to use, analyze and monetise a customer database can be treated as an interest incidental to data, thus falling under the definition of property.
+
+
+Furthermore, the description of liquidation estate under Section 36 helps us understand what the IP must control. Section 36(3)(d) explicitly includes "intangible assets including but not limited to intellectual property, securities... and financial instruments, insurance policies, contractual rights" as part of the estate. Customer data is generally collected and processed based on the contractual terms so it fits comfortably into the category of intangible assets and contractual rights. The Supreme Court in Victory Iron Works Ltd. v. Jitendra Lohia held that development rights, which are purely intangible and contractual, constitute "property" under Section 3(27) of the IBC. This shows a clear judicial intent that anything which has a significant commercial value should be treated as property. If a right to develop land is considered property then the right to use and monetize a commercially valuable database should also be treated similarly. Furthermore, Section 25 (1) of the IBC mandates that RPs should preserve and protect the assets of the corporate debtor. It places a duty on RPs to extract maximum economic value from all available assets even if they are intangible assets. For tech companies, data is recognised as a crown jewel asset. Its inclusion and exclusion from a sale can dramatically alter the financial viability of a resolution plan.
+
+
+PRIVACY RIGHTS UNDER DPDP ACT
+The DPDP Act’s core principle is the protection of an individual’s personal data. It establishes a framework where the Data Principal has robust rights and control over their personal information. For any lawful processing of data a consent must be taken from the individual (Data principal). This consent must be free, specific, informed, unconditional and unambiguous with a clear affirmative action. A customer clicking “I agree” to a lengthy terms of service is not a specific and informed consent for the future sale of their data in a bankruptcy action. Another major hurdle for an IP is the principle of Purpose Limitation given under Section 5 of DPDP Act. The consent of a Data Principal is tied to a specific purpose and processing data beyond this specific purpose is strictly prohibited. An individual generally gives its data for receiving a product or service, or improving user experience. A sale by the IP constitutes a new, incompatible purpose for which no consent was ever obtained. While dealing with the data assets, the IP does not simply take control of data as a neutral asset. Instead, it acts as a successor Data Fiduciary, inheriting their legal status and obligation. This is a complex legal challenge where IP is bound by two distinct and conflicting legal duties.
+
+
+A data fiduciary is legally obligated to erase the personal data when the Data Principal withdraws consent or as soon as it is reasonable to assume that specific purpose is no longer being served11. Once a company enters insolvency and ceases its operations, the original specific purpose is no longer being served. In this case the RP, which is acting as a successor data fiduciary, is legally obligated to erase the data.
+
+
+THE NON-OBSTANTE CLAUSE AND THE PATH TO STATUTORY HARMONY
+The Non- Obstante clause under Section 238 of the IBC states that its provisions shall have an overriding effect over any other law in the country. This suggests that the RP’s duty to monetize under the IBC should prevail over any restrictions given in the DPDP Act.
+
+
+On the other hand, as per the principle of Generalia Specialibus Non Derogant, a law dealing with a specific subject matter will prevail over an earlier, more general law. The DPDP Act is both a later statute and more specific one compared to IBC, so as per this interpretation DPDP Act would prevail over the IBC. Then which law overrides the other? In this essay we are not going to seek an answer to this question, rather we will change the question to “How can the RP’s duty to maximize value be performed in compliance with the DPDP Act?” For this question a framework is needed which would make the IBC and DPDP Act work in harmony
+
+
+DATA AS A 'DIGITAL ASSET' IN INSOLVENCY
+Before constructing a framework to effectively manage data in insolvency, the legal and economic character of data must be clearly defined. This ambiguity underlies this entire regulatory conflict. To clear the air, a pragmatic and commercially sound characterization is required. Data is undeniably something of great significance. The amount of legal regulation and protection given to data signifies that it has the attributes of a valuable asset. Judiciary also has increasingly recognized data as a form of intangible property deserving legal protection. The Delhi High Court in Burlington Home Shopping Pvt. Ltd. v. Rajnish Chibber held that customer databases constitute protectable assets under copyright law, providing an important precedent for data as property. However, the unique characteristics like non rivalrous nature, replicability and context dependent value makes data different from traditional intangible assets. Other intangible assets like patents and trademarks derive their value from their exclusivity whereas data derives that from aggregation, analysis capabilities and commercial application. This difference makes the valuation of data very challenging.
+
+
+The valuation of data assets is not a simple accounting exercise, it presents many technical and legal challenges. Unlike other assets which have established market value, data derives its value from context, quality, completeness and potential applications. The traditional valuation methodologies are ill equipped to handle the unique nature of data. Furthermore, the value of data depends on its accuracy, completeness and timelines. A database having errors, incomplete entries, or outdated information may have a little to no value for the potential acquirer. The scope and granularity of the consent obtained from a data principle also affects the value of data. A dataset collected with a specific consent for a single purpose has a lower value than one collected with a broader and more flexible consent. Type and sensitivity of data also plays a major role in data valuation. Anonymized or aggregated data falls outside the scope of DPDP Act, so it can be valued and transferred more freely. On the other hand, Sensitive Personal Data, which is the main focus of this essay, holds immense potential value but it also carries legal and regulatory risk.
+
+
+The standard valuation approaches within the Deloitte Data Valuation framework presents significant challenges when applied in an insolvency context. Market Approach relies on comparing the asset to similar assets sold in the market. This is largely unworkable for data because there is no transparent and public market for corporate datasets. These transactions are highly confidential and bespoke which makes it nearly impossible to find reliable and comparable data points. Cost Approach values an asset based on the cost to replace or recreate it. This approach focuses on historical collection costs rather than the true economic potential. It fundamentally misunderstands where the value of data lies. It ignores the network effects, the accumulated behavioral insights and predictive power which makes a mature dataset valuable.
+
+
+Income Approach is the most theoretically appropriate but practically challenging approach. It uses a Discounted Cash Flow (DCF) analysis, which projects the future income stream from a data asset. This is not effective during insolvency proceedings because the value depends heavily on the acquirer’s specific business model, which may be unknown during CIRP. The inadequacy of these models calls for a specialized, techno-legal approach. The quality of data also deteriorates over time which requires depreciation models to check the relevance and value of data assets.
+
+
+A PROPOSED HARMONIZING FRAMEWORK
+To address the current impasse between IBC and DPDP Act, we need a sophisticated and pragmatic solution. We propose a comprehensive, three pillar framework to deal with this issue.
+
+
+PILLAR 1: LEGISLATIVE AMENDMENTS
+Amendments to IBC
+A new Section 3(10A) should be introduced to formally define a Data Asset as “any representation of information, data, facts, concepts, or instructions, including personal data and non-personal data, which has economic value and is part of the assets of the corporate debtor, the processing and transfer of which is subject to the provisions of the Digital Personal Data Protection Act, 2023, and the protocols established under this Code.” Section 36 (3) of the IBC, which defines the liquidation estate, should also be amended to include Data Assets. The proposed proviso is “...provided that the management, transfer, or sale of such Data Assets shall be conducted in accordance with the Data Fiduciary in Insolvency Protocol as prescribed by the Board and in compliance with the Digital Personal Data Protection Act, 2023.”
+
+
+Amendments to DPDP Act
+Section 17 of the DPDP act, which provides exemptions should be supplemented with a new section related to processing of personal data in insolvency proceedings. This new section would create a specific, limited and safe pathway for the transfer of personal data. It would permit the transfer only if the following conditions are fulfilled:
+
+
+a. The transfer is an integral part of a resolution plan approved by the Adjudicating Authority (NCLT) under the IBC.
+
+
+b. The proposed transfer has been reviewed by the Data Protection Board of India (DPBI) as per prescribed protocol.
+
+
+c. The acquirer provides a legally binding undertaking to either adhere to the principle of purpose continuity (using the data for the same or a demonstrably similar purpose for which it was originally collected) or obtain fresh and explicit consent from data principals
+
+
+PILLAR 2: THE "DATA FIDUCIARY IN INSOLVENCY" PROTOCOL
+This protocol should be mandatorily codified in the IBBI (Insolvency Resolution Process for Corporate Persons) Regulations, 2016 to govern the actions of the IP and to designate him as Data Fiduciary in Insolvency.
+
+
+Step 1 : Mandatory Audit and Privacy Impact Assessment (PIA): The IP with the help of an independent data protection expert must conduct a comprehensive data audit, which will map the corporate debtor’s data assets, classify them by type and sensitivity and must assess the legal basis and scope of consent obtained for each dataset. A PIA must also be conducted to identify and evaluate the potential risks to data principals from any proposed transfer.
+
+
+Step 2 : Tiered approach to Data Monetization: After the audit, the data should be categorised into three tiers:
+
+
+● Freely Transferable: This category will consist of the anonymized and non- personal data, which does fall inside the scope of the DPDP Act.
+
+
+● Transferable with Safeguards: This category will consist of the Personal or pseudonymized data where the potential acquirer contractually commits to the “purpose continuity”. This transfer would be permissible under the supervision of the NCLT and DPBI.
+
+
+● Restricted Transfer: This category will consist of Sensitive personal data, or any personal data where purpose continuity is not feasible. The transfer of such would be prohibited unless a fresh and explicit consent, with the help of a consent manager, is obtained from a significant majority of the affected data principals.
+
+
+Step 3: The Data Asset Resolution Plan (DARP)
+If a resolution plan involves the transfer of Tier 2 or Tier 3 data, the IP must prepare a DARP. This is a specialized document which will detail the specific data assets being transferred, the identity of the proposed acquirer, the intended use of data and the safeguards the acquirer will implement to protect the data post transfer.
+
+
+PILLAR 3: A DEFINED AND COLLABORATIVE ROLE FOR THE DATA PROTECTION BOARD OF INDIA
+In our proposed framework the Data Protection Board of India (DPBI) is given a consultative and oversight role. The DARP prepared by IP must be submitted to DPBI for review. The DPBI will then issue either a Certificate of Compliance or a Notice of Concern within a fixed statutory period(e.g. 21 days). A Certificate of Compliance would signal that the proposed data transfer is according to the principles of DPDP Act whereas a detailed Notice of Concern would create a strong but rebuttable presumption against the approval of data transfer under the resolution plan. The NCLT will remain the ultimate adjudicating and approving authority for the resolution plan but this ensures that NCLT’s decision is informed by expert regulatory opinion. Apart from the proposed framework, a model which focuses on the Net Realizable Value (NRV) should also be developed for the valuation of data assets. It will determine the true realizable value of a corporate debtor’s assets by systematically discounting their market value for specific costs and risks associated with ensuring their transfer is compliant with the DPDP Act.
+
+
+INTERNATIONAL COMPARATIVE ANALYSIS
+The framework we proposed in this essay draws upon and adapts best practices from mature international jurisdictions. The US bankruptcy code treats customer lists and personal data as a saleable asset under Section 363 of Bankruptcy Code.23 Section 332 of the US Bankruptcy code talks about the Consumer Privacy Ombudsman (CPO).24 This CPO is an independent expert appointed by the court in the cases which involve sale of personal data. The CPO submits a report about privacy implications and protective measures to the court. The court then makes an informed decision based on that report. This model establishes a dynamic, court- supervised process. It uses the CPO for its expertise but the court is the ultimate arbiter, balancing the economic needs of the creditors with the privacy rights of the consumer.
+
+
+Whereas, the UK's General Data Protection Regulations (UK GDPR) relies on its core principle to tackle this impasse. The processing of personal data by an insolvency practitioner can be justified under Article 6(1)(c) of UK GDPR, which permits processing that is ‘necessary for compliance with legal obligation’.25 An IP’s duties constitute such a legal obligation.26 However, this is not carte blanche. IP steps into the role of the data controller or data processor for the insolvent company and is personally responsible for ensuring compliance with GDPR27. Selling customer data to a third party is a separate activity that requires its own legal basis. These approaches of other jurisdictions provide a decent understanding about how data in insolvency is treated around the globe. We have incorporated the best practices from these countries in our proposed framework.
+
+
+CONCLUSION
+The digitalisation of the Indian economy gave birth to a whole new asset class, yet our laws have been slow to adapt. It is true that information is the oil of the 21st century and analytics is the combustion engine. For some corporations data is the lifeblood of their operations. The direct conflict between Insolvency and Bankruptcy Code, 2016’s asset value maximization principle and Digital Personal Data Protection Act, 2023’s imperative to protect privacy has created a critical legal vacuum. This ambiguity places Insolvency Professionals in a dilemma to choose between their legal obligation under IBC and their duties as a Data Fiduciary under DPDP Act. Inaction is also not a safe option, this choice permits value destruction in insolvency which increases legal and financial risk for all stakeholders.
+
+
+In this essay we have argued that a harmonious approach is needed to clear the path. We have proposed a three pillar framework to effectively handle this conflict. The legislative recognition of data as a new class of assets, having a mandatory Data Fiduciary in Insolvency protocol and a collaborative oversight role of the Data Protection Board of India is necessary to bridge this statutory gap. The proposed solution is a practical, legally sound and commercially astute framework which transforms data from a liability during insolvency into a realizable asset. It ensures that the economic value of data can be unlocked for the benefit of creditors but in a manner that respects individual privacy rights. To move forward, lawmakers, regulators and legal practitioners must act decisively.
+
+
+BIBLIOGRAPHY
+Primary Sources
+
+
+● Digital Personal Data Protection Act, No. 22 of 2023, Gazette of India, Extra., Part II, sec. 1 (Aug. 11, 2023).
+
+
+● Insolvency and Bankruptcy Code, No. 31 of 2016, Gazette of India, Extra., Part II, sec. 1 (May 28, 2016).
+
+
+● UK General Data Protection Regulation, art. 6(1)(c).
+
+
+● 11 U.S.C. § 363 (2018).
+
+
+● 11 U.S.C. § 332 (2018).
+
+
+Secondary Sources: Articles, Reports, and Web Sources
+
+
+● Association of Chartered Certified Accountants (ACCA). "GDPR Guidance for Insolvency Practitioners." May 2019. https://www.accaglobal.com/content/dam/ACCA_Global/Technical/insolv/GDPR%20Gu idance%20for%20Insolvency%20Practitioners.pdf (last visited July 13, 2025).
+
+
+● Deloitte. "Data Valuation: Understanding the Value of Your Data Assets." Deloitte Global, May 2021. https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Finance/Valuation-D ata-Digital.pdf (last visited July 13, 2025).
+
+
+● Hoffmann, Jan Felix. "Digital Data in Insolvency Proceedings." In Legal Theory and Interpretation in a Dynamic Society: Contributions to the 7th Seoul-Freiburg Law Faculties Symposium 2021, at 255 (2021).
+
+
+● Laura Veldkamp, Valuing Data as an Asset, 27 Rev. Fin. 1545 (2023).
+
+
+● Ministry of Electronics & IT. "Salient Features of the Digital Personal Data Protection Bill, 2023." Press Information Bureau, August 9, 2023. https://www.pib.gov.in/PressReleaselframePage.aspx?PRID=1947264 (last visited July 12, 2025).
+
+
+● Peralta, Verónika. "Data Freshness and Data Accuracy: A State of the Art." Instituto de Computación, Facultad de Ingeniería, Universidad de la República, 2006.
+
+
+● Rubinstein, Ira S. "Big Data: The End of Privacy or a New Beginning?" International Data Privacy Law 3 (2013): 74.
+
+
+● Singer, Norman J., and J.D. Shambie Singer. Sutherland Statutes and Statutory Construction § 51:05. 7th ed. Clark Boardman Callaghan, 2008.
+
+
+● The Insolvency Service. Technical Manual, § 81A.40. August 2012.
+
+
+Cases
+
+
+● Burlington Home Shopping Pvt. Ltd. v. Rajnish Chibber, 61 (1995) DLT 6.
+
+
+● Victory Iron Works Ltd. v. Jitendra Lohia, 2021 SCC OnLine SC 260.`,
   },
 
   {
