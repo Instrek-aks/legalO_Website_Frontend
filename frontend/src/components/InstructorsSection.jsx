@@ -278,6 +278,15 @@ const studentMentors = [
     description: "Advocate at Patna High Court with broad litigation experience.",
     linkedin: "https://www.linkedin.com/in/akash-raj-bb0114131/",
   },
+  {
+    id: 25,
+    name: "Meenal Duggal",
+    role: "Mentor",
+    image: "/meenal.jpg",
+    roleColor: "text-[#C6930A]",
+    description: "An experienced Advocate with 8 years of practice, offering guidance rooted in real-world legal expertise.",
+    linkedin: "https://www.linkedin.com/in/meenal-duggal-b3002222b/",
+  },
 ];
 
 // Reusable component for team member cards
@@ -326,7 +335,7 @@ const TeamMemberCard = ({ member, index }) => (
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-7 h-7 sm:w-7 sm:h-7 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-300 flex-shrink-0"
+                className="w-7 h-7 sm:w-7 sm:h-7 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-300 flex-shrink-0 focus:outline-none"
                 aria-label={`Open ${member.name}'s LinkedIn profile`}
                 title={`Open ${member.name}'s LinkedIn profile`}
               >
