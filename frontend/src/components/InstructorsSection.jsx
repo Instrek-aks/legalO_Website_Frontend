@@ -43,7 +43,7 @@ const instructors = [
     id: 4,
     name: "Tithika Mittal",
     role: "Technology Ecosystem Coordinator",
-    image: "/tithika.webp",
+    image: "/tithika_mittal.jpeg",
     roleColor: "text-[#C6930A]",
     description: "Orchestrating technology integration and digital platforms",
     linkedin: "https://in.linkedin.com/in/tithika-mittal-504775321/",
