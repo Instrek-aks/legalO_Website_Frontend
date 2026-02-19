@@ -46,6 +46,8 @@ const instructors = [
     image: "/tithika_mittal.jpeg",
     roleColor: "text-[#C6930A]",
     description: "Orchestrating technology integration and digital platforms",
+    imageClass: "scale-[1.7] origin-top",
+    badgeClass: "absolute top-1 right-2 sm:right-4",
     linkedin: "https://in.linkedin.com/in/tithika-mittal-504775321/",
   },
 ];
@@ -287,6 +289,15 @@ const studentMentors = [
     description: "An experienced Advocate with 8 years of practice, offering guidance rooted in real-world legal expertise.",
     linkedin: "https://www.linkedin.com/in/meenal-duggal-b3002222b/",
   },
+  {
+    id: 26,
+    name: "Nehal Godhania",
+    role: "Mentor",
+    image: "/nehal.jpeg",
+    roleColor: "text-[#C6930A]",
+    description: "A seasoned Legal Professional with 10 years of cross-border contract and compliance expertise.",
+    linkedin: "https://www.linkedin.com/in/nehal-godhania-a94838166/",
+  },
 ];
 
 // Reusable component for team member cards
@@ -302,13 +313,14 @@ const TeamMemberCard = ({ member, index }) => (
         <img
           src={member.image}
           alt={member.name}
-          className="w-full h-full object-cover object-top transition-transform duration-700"
+          className={`w-full h-full object-cover object-top transition-transform duration-700 ${member.imageClass || ""
+            }`}
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
         {/* Role Badge */}
-        <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
+        <div className={member.badgeClass || "absolute top-2 sm:top-4 right-2 sm:right-4"}>
           <span className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800 border border-orange-200">
             {member.role}
           </span>
