@@ -1,0 +1,67 @@
+Arbitration, in the context of high -stakes global commerce, is fundamentally chosen for its 
+promise of expedited justice, yet disputes  often arise where immediate, pre -tribunal relief is 
+necessary to prevent irreparable harm. The figure who grants this relief is the Emergency 
+Arbitrator (EA), a creature of institutional rules who can be appointed and pass an order in a 
+matter of days.1 While the concept of the EA has been readily adopted by leading arbitral 
+institutions worldwide, its legal status in India was, for many years, a source of profound 
+doctrinal uncertainty, residing in a twilight zone where it was neither statutorily recognis ed nor 
+routinely enforced.  
+ 
+**Legislative Silence and the Duplicative Justice Trap:**
+India ’s principal arbitration statute, the Arbitration and Conciliation Act, 1996 (A&C Act), 
+remained deliberately silent on the Emergency Arbitrator, a mechanism that was pr oposed but 
+ultimately not incorporated into the 2015 amendments. This omission created a gap: an EA 
+order, though passed pursuant to institutional rules freely chosen by the parties, did not have a 
+clear, direct path to enforcement under the Act. Parties w ho won an EA order were forced into 
+a complicated legal workaround, typically having to file an application before an Indian court 
+under Section 9 of the A&C Act to obtain an identical, parallel relief, thereby frustrating the 
+very essence of quick, party -autonomy -driven arbitration.2 This uncertainty was a significant 
+deterrent to parties considering India as an arbitration seat.  
+This judicial ambivalence was put to the test  by the Supreme Court in 2021 .3 The Supreme 
+Court provided the much -needed clarity by unequivocally holding that an order passed by an 
+Emergency Arbitrator in an India -seated arbitration is enforceable under the A&C Act. The y 
+achieved this by interpreting the EA order as an interim meas ure granted by an arbitral tribunal 
+under Section 17(1) of the Act, which, by virtue of Section 17(2), is deemed to be an order of 
+the Court and enforceable as such.4 
+The reasoning was the unwavering principle of party autonomy. If the  parties had expressl y 
+agreed to the rules of the arbitral institution which contained the provision for an Emergency 
+Arbitrator, they were bound by the outcome of that process. The re is no express or implied bar 
+in the A&C Act against the enforcement of such orders, thereby v iewing the EA as an important 
+step in aid of decongesting the civil courts and affording expeditious interim relief. 
+                                            
+1 Abhinav Gupta & Sriroopa Neogi, 'Emergency Arbitration in India: A Critical Appraisal of the Institutional 
+Framework' (2021) 14 NUJS L Rev 641.  
+2 Arbitration and Conciliation Act 1996, s 9.  
+3 Amazon.com NV Investment Holdings LLC v. Future Retail Ltd & Ors  [2021] 10 SCC 416.  
+4 Arbitration and Conciliation Act 1996, s 17.  Furthermore, potential delays  were curtailed  by ruling that an order for enforcement of the EA 
+order  under Section 17(2) is not appealable under Section 375 of the Act, which ensures finality 
+and speed in the enforcement process.  
+ 
+**The Incomplete Bridge  and the Path to Parity**
+This definitive resolution consciously confined the jurisdiction to India -seated arbitrations, 
+utilizing an expansive i nterpretation of the enforcement mechanism under Part I, specifically 
+Section 17(2) of the A&C Act. Crucially, this judicial breakthrough did not extend its purview 
+to Part II of the Act, which governs foreign -seated arbitrations. This fundamental distinct ion 
+arises because EA measures, being inherently provisional and not final awards on the merits, 
+fall outside the strict definition of an 'award' enforceable under the New York Convention.6 
+Therefore, the same principle of party autonomy that guaranteed sw ift relief domestically 
+encounters a structural barrier internationally,  and imposing a clear strategic risk on parties 
+seeking urgent protective relief against assets located in India.    
+Such foreign EA orders are not directly enforceable as 'foreign awa rds' or 'interim measures' 
+under the current statutory scheme. Consequently, a party must still seek relief under Section 
+9, using the EA order merely as highly persuasive evidence in an independent court application. 
+This dichotomy shows us where legislat ive reform is still needed to align India's practice with 
+true global standards and provide a comprehensive, clear mechanism for all emergency arbitral 
+orders, irrespective of the seat, thereby ensuring that the legal bridge built is solidified by clear 
+statutory mandate.  
+This significantly bolstered India's pro -arbitration credentials.  This proved the Indian 
+judiciary ’s dedication to upholding party autonomy, transforming the enforceability of EA 
+orders into a swift, non -appealable process for domestic arbitrations. This success, however, is  
+geographically constrained to Part I. The Section 9  workaround sacrific es efficiency for critical  
+protective measures. India ’s strategic goal must be to legislate beyond this judicial fix. Only 
+through the explicit statutory recognition proposed in the Draft Bill, extending direct 
+enforcement to all seats,  can India genuinely secure its position as a globally consistent 
+arbitration hub.  
+                                            
+5 Arbitration and Concilia tion Act 1996, s 37.  
+6 Convention on the Recognition and Enforcement of Foreign Arbitral Awards (New York, 10 June 1958).
