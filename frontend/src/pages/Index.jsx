@@ -10,10 +10,12 @@ import PricingSection from "../components/PricingSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import EventsSection from "../components/EventsSection";
 import PodcastSection from "../components/PodcastSection";
+import AcademicCollaborations from "../components/AcademicCollaborations";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
 import PerformanceOptimizer from "../components/PerformanceOptimizer";
+import { LogoCarousel } from "../components/LogoCoraousel";
 
 const Index = () => {
   return (
@@ -34,6 +36,10 @@ const Index = () => {
       <CoursesSection />
       <PodcastSection />
       <InstructorsSection />
+      <section id="inline">
+        <LogoCarousel />
+      </section>
+
       {/* <PricingSection /> */}
       {/* <TestimonialsSection /> */}
       <EventsSection />

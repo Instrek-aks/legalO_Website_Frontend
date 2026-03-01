@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* Logo Carousel Animation */
+@keyframes animate-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+.animate-scroll {
+  animation: animate-scroll 30s linear infinite;
+}
+
 .seo-heading {
   position: absolute;
   left: -9999px; /* moves it off-screen */
