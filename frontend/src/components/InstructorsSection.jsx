@@ -77,7 +77,7 @@ const studentMentors = [
     id: 3,
     name: "Aprajita Budhwar",
     role: "Student Mentor",
-    image: "/Aprajita.jpg",
+    image: "/aprajita.JPG",
     roleColor: "text-[#C6930A]",
     description:
       "Delivering judicial knowledge paired with implementable legal guidance",
