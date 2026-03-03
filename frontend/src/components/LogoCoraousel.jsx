@@ -1,7 +1,7 @@
 import { LogoSection } from "./LogoSection";
 
 const engagementLogos = [
-  { name: "", image: "/img1.jpeg", scale: "scale-125" },
+  { name: "", image: "/img1.jpeg", scale: "scale-110" },
   { name: "", image: "/img2.jpeg" },
   { name: "", image: "/img3.jpeg" },
   { name: "", image: "/img4.jpeg" },

@@ -40,12 +40,12 @@ export const LogoSection = ({
               <div
                 key={index}
                 className="flex-shrink-0 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 
-                           bg-[var(--color-gray-900)] rounded-lg border border-white/10 
-                           hover:bg-gray-800/50 hover:border-white/20 transition-all duration-300 
-                           hover:scale-105 hover:shadow-xl hover:shadow-white/5
+                           bg-[var(--color-gray-600)] rounded-lg border border-white/20 
+                           hover:bg-[var(--color-gray-700)] hover:border-white/40 transition-all duration-300 
+                           hover:scale-105 hover:shadow-xl hover:shadow-black/10
                            group"
               >
-                <div className="w-full h-full flex justify-center items-center p-1 sm:p-2">
+                <div className="w-full h-full flex justify-center items-center p-0">
                   <img
                     src={logo.image}
                     alt={logo.name}
