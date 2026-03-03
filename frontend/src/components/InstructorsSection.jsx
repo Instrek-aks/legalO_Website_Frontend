@@ -46,7 +46,6 @@ const instructors = [
     image: "/tithika_mittal.jpeg",
     roleColor: "text-[#C6930A]",
     description: "Orchestrating technology integration and digital platforms",
-    imageClass: "scale-[1.7] origin-top",
     badgeClass: "absolute top-1 right-2 sm:right-4",
     linkedin: "https://in.linkedin.com/in/tithika-mittal-504775321/",
   },
