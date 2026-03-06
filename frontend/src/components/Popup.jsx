@@ -33,7 +33,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
               LegalO Exam Rescheduled!
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed">
-              Now on 14th March 2026 - More time to prepare, more power to you
+              Now on 28th March 2026 - More time to prepare, more power to you
             </p>
           </div>
 

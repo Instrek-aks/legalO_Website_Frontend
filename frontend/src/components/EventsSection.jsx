@@ -13,7 +13,7 @@ const events = [
   {
     id: 1,
     title: "LegalO Exam",
-    date: "14 Mar 2026",
+    date: "28 March 2026",
     time: "10AM",
     location: "ACROSS INDIA(In Your College)",
     image: "/event3.png",
@@ -22,7 +22,7 @@ const events = [
   {
     id: 2,
     title: "WEBINAR WITH VIKAS GOGNE",
-    date: "15 DEC",
+    date: "28 March 2026",
     time: "11AM",
     location: "WORLDWIDE",
     image: "/event1.png",
@@ -30,7 +30,7 @@ const events = [
   {
     id: 3,
     title: "WEBINAR WITH SATYAM CHATURVEDI",
-    date: "20 DEC",
+    date: "28 March 2026",
     time: "10AM",
     location: "WORLDWIDE",
     image: "/event2.png",
@@ -109,9 +109,8 @@ const EventsSection = () => {
           {events.map((event, index) => (
             <div
               key={event.id}
-              className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group fade-in-up stagger-${
-                index + 1
-              }`}
+              className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group fade-in-up stagger-${index + 1
+                }`}
             >
               <div className="relative overflow-hidden">
                 <img
