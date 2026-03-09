@@ -22,7 +22,7 @@ const events = [
   {
     id: 2,
     title: "WEBINAR WITH VIKAS GOGNE",
-    date: "28 March 2026",
+    date: "15 DECEMBER",
     time: "11AM",
     location: "WORLDWIDE",
     image: "/event1.png",
@@ -30,7 +30,7 @@ const events = [
   {
     id: 3,
     title: "WEBINAR WITH SATYAM CHATURVEDI",
-    date: "28 March 2026",
+    date: "20 DEC",
     time: "10AM",
     location: "WORLDWIDE",
     image: "/event2.png",
