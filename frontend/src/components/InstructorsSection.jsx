@@ -297,6 +297,15 @@ const studentMentors = [
     description: "A seasoned Legal Professional with 10 years of cross-border contract and compliance expertise.",
     linkedin: "https://www.linkedin.com/in/nehal-godhania-a94838166/",
   },
+  {
+    id: 27,
+    name: "Subham Chatterjee",
+    role: "Student Mentor",
+    image: "/subham.jpeg",
+    roleColor: "text-[#C6930A]",
+    description: "Legal academic with strong research, publications, and contributions to legal education.",
+    linkedin: "https://www.linkedin.com/in/subham-chatterjee-esq-829301246/",
+  },
 ];
 
 // Reusable component for team member cards
