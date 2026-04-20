@@ -79,7 +79,7 @@ const formatNumber = (num) => {
 export default useYouTubeVideo;
 
 // Usage example:
-// const { videoData, loading, error } = useYouTubeVideo('D9jiBPJqPTs');
+// const { videoData, loading, error } = useYouTubeVideo('i3-7xon7SxA');
 //
 // if (loading) return <div>Loading...</div>;
 // if (error) return <div>Error: {error}</div>;

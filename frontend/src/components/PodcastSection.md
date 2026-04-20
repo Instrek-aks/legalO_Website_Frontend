@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `PodcastSection` component is a beautiful, interactive section that showcases the Legal Olympiad Podcast's first episode featuring Senior Advocate Mr. Sanjay Jain. It includes video thumbnail, interactive controls, comments, likes, and subscribe functionality.
+The `PodcastSection` component is a beautiful, interactive section that showcases the Legal Olympiad Podcast featuring Senior Advocate Ms. Nandita Rao. It includes video thumbnail, interactive controls, comments, likes, and subscribe functionality.
 
 ## Features
 
@@ -68,7 +68,7 @@ The component includes a custom hook `useYouTubeVideo` for future API integratio
 import useYouTubeVideo from "../hooks/useYouTubeVideo";
 
 // Usage
-const { videoData, loading, error } = useYouTubeVideo("D9jiBPJqPTs");
+const { videoData, loading, error } = useYouTubeVideo("i3-7xon7SxA");
 ```
 
 ## Future Enhancements

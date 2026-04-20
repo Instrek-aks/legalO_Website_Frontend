@@ -20,7 +20,7 @@ import {
 
 const PodcastSection = () => {
   // YouTube Video ID - Change this to any video you want!
-  const VIDEO_ID = "D9jiBPJqPTs";
+  const VIDEO_ID = "i3-7xon7SxA";
 
   const [isLiked, setIsLiked] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -30,18 +30,18 @@ const PodcastSection = () => {
   // Static video data and statistics (fallback values)
   const [videoData, setVideoData] = useState({
     title:
-      "From Student Leader to India's Top Law Officer - Sr. Advocate Sanjay Jain's Inspiring Journey",
-    publishedAt: "2025-10-25T17:12:39Z",
+      "Law as an Instrument of Social Change | Sr. Adv. Nandita Rao | Ambedkar Jayanti Special",
+    publishedAt: "2024-04-14T10:00:00Z",
     description:
-      "Episode [01] – Legal Olympiad Podcast with Sr Advocate Sanjay Jain\n\nWelcome to the Legal Olympiad Podcast, where we bring you the most inspiring stories from the legal world - mentorship, career insights...",
+      "On the occasion of Ambedkar Jayanti, Legal Olympiad brings you a powerful conversation with Sr. Advocate Nandita Rao. In this episode, Nandita Ma’am shares insights about law as an instrument of social change.",
     channelTitle: "Legal Olympiad",
   });
 
   const [videoStats, setVideoStats] = useState({
-    views: "10,507",
-    likes: "45",
-    comments: "21",
-    subscribers: "49",
+    views: "2,203",
+    likes: "34",
+    comments: "2",
+    subscribers: "748",
   });
 
   // Mock comments data
@@ -50,7 +50,7 @@ const PodcastSection = () => {
       id: 1,
       author: "Legal Student",
       avatar: "/lawstudents.jpg",
-      text: "Amazing insights from Mr. Sanjay Jain! This episode really opened my eyes to the legal profession.",
+      text: "Amazing insights from Ms. Nandita Rao! This episode really opened my eyes to the power of law in social change.",
       time: "2 hours ago",
       likes: 12,
     },
@@ -66,7 +66,7 @@ const PodcastSection = () => {
       id: 3,
       author: "Legal Professional",
       avatar: "/judge.jpg",
-      text: "Mr. Jain's experience as ASG really shows in his practical advice. Looking forward to more episodes!",
+      text: "Ms. Rao's experience really shows in her practical advice. Looking forward to more episodes!",
       time: "1 day ago",
       likes: 15,
     },
@@ -175,8 +175,8 @@ const PodcastSection = () => {
             Latest Episode
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            From Student Leader to India's Top Law Officer - Sr. Advocate Sanjay
-            Jain's Inspiring Journey
+            Law as an Instrument of Social Change - Sr. Advocate Nandita Rao's
+            Insights
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Exclusive conversations with legal luminaries, featuring insights
@@ -301,25 +301,24 @@ const PodcastSection = () => {
                 </h3>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                  Join us for an exclusive conversation with Senior Advocate Mr.
-                  Sanjay Jain, Former Additional Solicitor General and BCI
-                  Chairman, as he shares invaluable insights about the legal
-                  profession, career guidance, and the future of legal
-                  education.
+                  Join us for an exclusive conversation with Senior Advocate Ms.
+                  Nandita Rao, as she shares invaluable insights about law as an
+                  instrument of social change, career guidance, and the future
+                  of legal education.
                 </p>
 
                 {/* Guest Info */}
                 <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-xl border border-orange-200">
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#C6930A] to-orange-600 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-xl">SJ</span>
+                      <span className="text-white font-bold text-xl">NR</span>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">
-                        Senior Advocate Mr. Sanjay Jain
+                        Senior Advocate Ms. Nandita Rao
                       </h4>
                       <p className="text-sm text-gray-600">
-                        Former ASG & BCI Chairman
+                        Distinguished Legal Expert
                       </p>
                       <div className="flex items-center gap-2 mt-1">
                         <Star
