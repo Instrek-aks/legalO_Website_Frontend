@@ -89,10 +89,6 @@ export const structuredData = {
         "@type": "Person",
         name: "Sanjana Wadhwa",
       },
-      {
-        "@type": "Person",
-        name: "Praveen Sharma",
-      },
     ],
     address: {
       "@type": "PostalAddress",
