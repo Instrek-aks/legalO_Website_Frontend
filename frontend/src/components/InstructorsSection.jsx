@@ -24,7 +24,6 @@ const instructors = [
     image: "/keshav.jpeg",
     roleColor: "text-[#C6930A]",
     description: "Offers profound legal research paired with meticulous drafting.",
-    badgeClass: "absolute top-1 right-2 sm:right-4",
     linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
   },
 ];
