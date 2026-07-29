@@ -19,13 +19,13 @@ const instructors = [
   },
   {
     id: 3,
-    name: "Tithika Mittal",
-    role: "Technology Ecosystem Coordinator",
-    image: "/tithika_mittal.jpeg",
+    name: "Keshav Tomar",
+    role: "Research Contributor",
+    image: "/keshav.jpeg",
     roleColor: "text-[#C6930A]",
-    description: "Orchestrating technology integration and digital platforms",
+    description: "Offers profound legal research paired with meticulous drafting.",
     badgeClass: "absolute top-1 right-2 sm:right-4",
-    linkedin: "https://in.linkedin.com/in/tithika-mittal-504775321/",
+    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
   },
 ];
 
