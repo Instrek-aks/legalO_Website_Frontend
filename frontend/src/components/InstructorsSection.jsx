@@ -53,7 +53,7 @@ const studentMentors = [
   {
     id: 28,
     name: "Keshav Tomar",
-    role: "Mentor",
+    role: "Research Contributor",
     image: "/keshav.jpeg",
     roleColor: "text-[#C6930A]",
     description: "Offers profound legal research paired with meticulous drafting.",
