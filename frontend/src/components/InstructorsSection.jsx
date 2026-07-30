@@ -51,6 +51,15 @@ const studentMentors = [
     linkedin: "https://www.linkedin.com/in/aprajita-budhwar-122b87162/",
   },
   {
+    id: 28,
+    name: "Keshav Tomar",
+    role: "Mentor",
+    image: "/keshav.jpeg",
+    roleColor: "text-[#C6930A]",
+    description: "Offers profound legal research paired with meticulous drafting.",
+    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
+  },
+  {
     id: 4,
     name: "Nitish Dham",
     role: "Mentor",
@@ -274,15 +283,6 @@ const studentMentors = [
     description: "Legal academic with strong research, publications, and contributions to legal education.",
     linkedin: "https://www.linkedin.com/in/subham-chatterjee-esq-829301246/",
   },
-  {
-    id: 28,
-    name: "Keshav Tomar",
-    role: "Mentor",
-    image: "/keshav.jpeg",
-    roleColor: "text-[#C6930A]",
-    description: "Offers profound legal research paired with meticulous drafting.",
-    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
-  },
 ];
 
 // Reusable component for team member cards
@@ -376,13 +376,14 @@ const InstructorsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
           {instructors.map((instructor, index) => (
-            <TeamMemberCard
-              key={instructor.id}
-              member={instructor}
-              index={index}
-            />
+            <div key={instructor.id} className="w-full sm:w-72 lg:w-80">
+              <TeamMemberCard
+                member={instructor}
+                index={index}
+              />
+            </div>
           ))}
         </div>
 
