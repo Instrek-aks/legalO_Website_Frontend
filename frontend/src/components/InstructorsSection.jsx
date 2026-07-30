@@ -17,15 +17,6 @@ const instructors = [
     description: "Driving innovation in legal education and mentorship",
     linkedin: "https://in.linkedin.com/in/sanjanawadhwa94/",
   },
-  {
-    id: 3,
-    name: "Keshav Tomar",
-    role: "Research Contributor",
-    image: "/keshav.jpeg",
-    roleColor: "text-[#C6930A]",
-    description: "Offers profound legal research paired with meticulous drafting.",
-    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
-  },
 ];
 
 const studentMentors = [
@@ -282,6 +273,15 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description: "Legal academic with strong research, publications, and contributions to legal education.",
     linkedin: "https://www.linkedin.com/in/subham-chatterjee-esq-829301246/",
+  },
+  {
+    id: 28,
+    name: "Keshav Tomar",
+    role: "Mentor",
+    image: "/keshav.jpeg",
+    roleColor: "text-[#C6930A]",
+    description: "Offers profound legal research paired with meticulous drafting.",
+    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
   },
 ];
 
