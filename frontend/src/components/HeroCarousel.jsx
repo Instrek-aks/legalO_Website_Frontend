@@ -38,16 +38,6 @@ const slides = [
       desktop: "/pic3M.png",
     },
   },
-  {
-    id: 4,
-    tagline: "",
-    title: "",
-    description: "",
-    image: {
-      mobile: "/b.png",
-      desktop: "/b.png",
-    },
-  },
 ];
 
 const HeroCarousel = () => {
