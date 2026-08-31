@@ -48,10 +48,10 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          {/* <WelcomePopup
+          <WelcomePopup
             isOpen={isPopupOpen}
             onClose={() => setIsPopupOpen(false)}
-          /> */}
+          />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />

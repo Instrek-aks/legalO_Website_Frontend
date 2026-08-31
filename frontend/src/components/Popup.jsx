@@ -6,7 +6,7 @@ import React from "react";
 export default function WelcomePopup({ isOpen, onClose }) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-[90vw] max-w-md sm:max-w-lg p-0 bg-black border-2 border-[#C6930A] shadow-2xl rounded-xl overflow-hidden [&>button[data-state]]:hidden">
+      <DialogContent className="w-[85vw] max-w-sm p-0 bg-black border-2 border-[#C6930A] shadow-2xl rounded-xl overflow-hidden [&>button[data-state]]:hidden">
         {/* Close button - Top Right */}
         <button
           onClick={onClose}
@@ -17,32 +17,35 @@ export default function WelcomePopup({ isOpen, onClose }) {
         </button>
 
         {/* Content */}
-        <div className="flex flex-col p-6 sm:p-8">
+        <div className="flex flex-col p-4 sm:p-6">
           {/* Logo */}
-          <div className="mb-6 sm:mb-8  flex justify-center">
+          <div className="mb-4 sm:mb-6 flex justify-center">
             <img
-              src="/logopng.png"
+              src="/l.png"
               alt="LegalO Logo"
-              className="w-40 h-16 sm:w-48 sm:h-20 object-contain bg-white"
+              className="w-32 h-12 sm:w-40 sm:h-16 object-contain"
             />
           </div>
 
           {/* Content Text */}
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#C6930A] mb-4 leading-tight">
-              LegalO Exam Rescheduled!
+          <div className="text-center mb-4 sm:mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#C6930A] mb-1 leading-tight">
+              Legal Olympiad 2.o
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed">
-              Now on 28th March 2026 - More time to prepare, more power to you
+            <p className="text-lg sm:text-xl font-bold text-white mb-1">
+              18th Oct 2026
+            </p>
+            <p className="text-base sm:text-lg text-white uppercase tracking-wider font-semibold">
+              ONLINE THIS TIME
             </p>
           </div>
 
-          {/* Registration Button - Bottom Right */}
-          <div className="flex justify-end">
+          {/* Registration Button - Centered */}
+          <div className="flex justify-center mt-2">
             <Button
               onClick={() => {
                 window.open(
-                  "https://app.legalolympiad.com",
+                  "https://app.legalolympiad.com/exam/registration",
                   "_blank",
                   "noopener,noreferrer"
                 );

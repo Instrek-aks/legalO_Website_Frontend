@@ -1,69 +1,27 @@
 import { useState, useEffect } from "react";
 import { Button } from "../components/ui/Button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-
-const slides = [
-  {
-    id: 1,
-    tagline: "BECOME WARRIORS OF JUSTICE – CHOOSE YOUR OWN PATH IN LAW",
-    title: "LEGAL OLYMPIAD: DISCOVER YOUR LEGAL CALLING",
-    description:
-      "India doesn't just need more lawyers it needs bold, visionary legal minds. ",
-    image: {
-      mobile: "/imageM.jpg",
-      desktop: "/pic2.jpg",
-    },
-    cta: "Join the Movement",
-  },
-  {
-    id: 2,
-    tagline: "UNLOCK YOUR POTENTIAL",
-    title: "TRANSFORM YOUR CAREER WITH EXPERT GUIDANCE",
-    description:
-      "The Legal Olympiad isn't just an exam it's a journey to discover your purpose.",
-    image: {
-      mobile: "/studentlaw.png",
-      desktop: "/studentlaw.png",
-    },
-  },
-  {
-    id: 3,
-    tagline: "LEARN FROM THE BEST",
-    title: "INDUSTRY EXPERTS AT YOUR FINGERTIPS",
-    description:
-      " It's a battlefield of ideas, a test of conviction, and a launchpad for changemakers.",
-    image: {
-      mobile: "/pic3M.png",
-      desktop: "/pic3M.png",
-    },
-  },
-];
 
 const HeroCarousel = () => {
-  const navigate = useNavigate();
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlay, setIsAutoPlay] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const [screenSize, setScreenSize] = useState("desktop");
 
-  useEffect(() => {
-    if (!isAutoPlay) return;
-
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlay]);
+  const heroContent = {
+    image: {
+      mobile: "/1080px x 1920px.jpg.jpeg",
+      tablet: "/1024px × 768px.jpg.jpeg",
+      desktop: "/1920px x 1080px.jpg.jpeg",
+    },
+  };
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const mobile = window.innerWidth < 768;
-      setIsMobile(mobile);
-      console.log("Screen size check:", {
-        width: window.innerWidth,
-        isMobile: mobile,
-      });
+      const width = window.innerWidth;
+      if (width < 768) {
+        setScreenSize("mobile");
+      } else if (width < 1024) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("desktop");
+      }
     };
 
     checkScreenSize();
@@ -72,106 +30,58 @@ const HeroCarousel = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-    setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 10000);
+  const getAspectRatio = () => {
+    // Increased the width-to-height ratio to decrease the overall height of the section.
+    // This will effectively crop out the bottom black space when combined with backgroundSize: "cover".
+    if (screenSize === "mobile") return 1080 / 1700;
+    if (screenSize === "tablet") return 1024 / 750;
+    return 1920 / 850;
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-    setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 10000);
+  const getButtonPosition = () => {
+    // You can independently adjust the button position for mobile and tablet here
+    if (screenSize === "mobile") {
+      return { top: "72%", left: "50%" }; 
+    }
+    if (screenSize === "tablet") {
+      return { top: "75%", left: "50%" };
+    }
+    // Desktop position (do not change this if it's already perfect)
+    return { top: "85%", left: "92%" };
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
-            index === currentSlide
-              ? "translate-x-0"
-              : index < currentSlide
-              ? "-translate-x-full"
-              : "translate-x-full"
-          }`}
-          style={{
-            backgroundImage: `url(${
-              isMobile ? slide.image.mobile : slide.image.desktop
-            })`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+    <div 
+      className="relative w-full overflow-hidden flex items-center bg-black bg-no-repeat"
+      style={{
+        aspectRatio: getAspectRatio(),
+        backgroundImage: `url("${
+          heroContent.image[screenSize] || heroContent.image.desktop
+        }")`,
+        backgroundSize: "cover",
+        backgroundPosition: "top center",
+      }}
+    >
+      {/* Absolute positioning container for the button */}
+      <div 
+        className="absolute z-10 flex flex-row gap-3 sm:gap-4"
+        style={{
+          ...getButtonPosition(),
+          transform: "translate(-50%, -50%)"
+        }}
+      >
+        <Button
+          className="bg-white hover:bg-gray-100 text-black text-sm sm:text-base md:text-lg w-36 sm:w-auto px-6 sm:px-8 py-2 sm:py-3 shadow-lg font-bold"
+          onClick={() =>
+            window.open(
+              "http://app.legalolympiad.com/exam/registration",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
         >
-          <div className="container mx-auto px-4 h-full flex items-center">
-            <div className="text-white max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl slide-in-left">
-              <p className="text-[#C6930A] text-sm sm:text-base md:text-lg font-medium mb-2 sm:mb-4">
-                {slide.tagline}
-              </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight text-white">
-                {slide.title}
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 leading-relaxed opacity-90">
-                {slide.description}
-              </p>
-              <div className="flex flex-row gap-3 sm:gap-4">
-                <Button
-                  size="sm"
-                  className="bg-[#C6930A] hover:bg-[#C6930A] text-white text-xs sm:text-sm w-32 sm:w-auto px-4 sm:px-6"
-                  onClick={() =>
-                    window.open(
-                      "https://app.legalolympiad.com",
-                      "_blank",
-                      "noopener,noreferrer"
-                    )
-                  }
-                >
-                  Register Now
-                </Button>
-                {/* <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-white text-white hover:text-[#C6930A] hover:bg-white text-xs sm:text-sm w-32 sm:w-auto px-4 sm:px-6"
-                  onClick={() => navigate("/register")}
-                >
-                  GET STARTED
-                </Button> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12"
-      >
-        <ChevronLeft size={24} className="sm:w-6 sm:h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12"
-      >
-        <ChevronRight size={24} className="sm:w-6 sm:h-6" />
-      </button>
-
-      {/* Dots Indicator */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-3">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => {
-              setCurrentSlide(index);
-              setIsAutoPlay(false);
-              setTimeout(() => setIsAutoPlay(true), 10000);
-            }}
-            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 carousel-dot ${
-              index === currentSlide ? "bg-[#C6930A] scale-125" : "bg-white/50"
-            }`}
-          />
-        ))}
+          Register Now
+        </Button>
       </div>
     </div>
   );

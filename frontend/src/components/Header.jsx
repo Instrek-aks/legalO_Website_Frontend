@@ -24,7 +24,7 @@ const Header = () => {
     //{ name: "HOME", href: "/" },
     {
       name: "Login/Register",
-      href: "https://App.legalolympiad.com",
+      href: "http://app.legalolympiad.com/exam/registration",
       isButton: true,
       isExternal: true,
     },
@@ -122,7 +122,7 @@ const Header = () => {
       </div> */}
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 border-b border-gray-800 bg-[rgba(255,255,255,0.8)] backdrop-blur-md shadow-lg">
+      <header className="sticky top-0 z-50 bg-[#0F0601]">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
@@ -132,7 +132,7 @@ const Header = () => {
                 onClick={() => setTimeout(() => window.location.reload(), 100)}
               >
                 <img
-                  src="/logopng.png"
+                  src="/l.png"
                   alt="Legal Olympiad Logo"
                   className="h-12 w-auto sm:h-16 object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="eager"
@@ -153,12 +153,12 @@ const Header = () => {
                         className="flex items-center gap-1 cursor-pointer touch-manipulation"
                         onClick={handleLegalOToggle}
                       >
-                        <span className="text-sm xl:text-base font-semibold transition-colors duration-200 text-black group-hover:text-[#C6930A]">
+                        <span className="text-sm xl:text-base font-semibold transition-colors duration-200 text-white group-hover:text-[#C6930A]">
                           {item.name}
                         </span>
                         <ChevronDown
                           size={16}
-                          className={`text-black group-hover:text-[#C6930A] transition-all duration-200 ${
+                          className={`text-white group-hover:text-[#C6930A] transition-all duration-200 ${
                             isDesktopLegalODropdownOpen ? "rotate-180" : ""
                           }`}
                         />
@@ -214,7 +214,7 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      className={`text-sm xl:text-base font-semibold transition-colors duration-200 text-black hover:text-[#C6930A] flex items-center relative group`}
+                      className={`text-sm xl:text-base font-semibold transition-colors duration-200 text-white hover:text-[#C6930A] flex items-center relative group`}
                     >
                       {item.name}
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C6930A] transition-all duration-300 group-hover:w-full"></span>
@@ -228,7 +228,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden text-black hover:text-[#C6930A] hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200"
+              className="lg:hidden text-white hover:text-[#C6930A] hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
