@@ -5,10 +5,10 @@ const PerformanceOptimizer = () => {
     // Preload critical resources
     const preloadCriticalResources = () => {
       const criticalImages = [
-        "/logopng.png",
-        "/heroImg.jpg",
-        "/pic2.jpg",
-        "/studentlaw.png",
+        "/logopng.webp",
+        "/heroImg.webp",
+        "/pic2.webp",
+        "/studentlaw.webp",
       ];
 
       criticalImages.forEach((src) => {

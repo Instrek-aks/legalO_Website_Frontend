@@ -16,7 +16,7 @@ const events = [
     date: "28 March 2026",
     time: "10AM",
     location: "ACROSS INDIA(In Your College)",
-    image: "/event3.png",
+    image: "/event3.webp",
     description: "",
   },
   {
@@ -25,7 +25,7 @@ const events = [
     date: "15 DECEMBER",
     time: "11AM",
     location: "WORLDWIDE",
-    image: "/event1.png",
+    image: "/event1.webp",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const events = [
     date: "20 DEC",
     time: "10AM",
     location: "WORLDWIDE",
-    image: "/event2.png",
+    image: "/event2.webp",
   },
 ];
 

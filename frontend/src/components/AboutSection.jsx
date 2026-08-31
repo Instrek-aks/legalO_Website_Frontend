@@ -45,7 +45,7 @@ const AboutSection = () => {
           {/* Right Content: Image */}
           <div className="slide-in-right order-1 lg:order-2 flex justify-center">
             <img
-              src="/hero2.jpg"
+              src="/hero2.webp"
               alt="Legal Olympiad"
               className="w-full max-w-sm sm:max-w-md h-64 sm:h-80 object-cover rounded-lg shadow-lg"
             />

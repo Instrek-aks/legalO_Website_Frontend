@@ -6,9 +6,9 @@ const HeroCarousel = () => {
 
   const heroContent = {
     image: {
-      mobile: "/1080px x 1920px.jpg.jpeg",
-      tablet: "/1024px × 768px.jpg.jpeg",
-      desktop: "/1920px x 1080px.jpg.jpeg",
+      mobile: "/1080px x 1920px.webp",
+      tablet: "/1024px × 768px.webp",
+      desktop: "/1920px x 1080px.webp",
     },
   };
 

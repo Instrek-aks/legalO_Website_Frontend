@@ -49,7 +49,7 @@ const PodcastSection = () => {
     {
       id: 1,
       author: "Legal Student",
-      avatar: "/lawstudents.jpg",
+      avatar: "/lawstudents.webp",
       text: "Amazing insights from Ms. Nandita Rao! This episode really opened my eyes to the power of law in social change.",
       time: "2 hours ago",
       likes: 12,
@@ -57,7 +57,7 @@ const PodcastSection = () => {
     {
       id: 2,
       author: "Aspiring Lawyer",
-      avatar: "/lawyer_photo.jpg",
+      avatar: "/lawyer_photo.webp",
       text: "The discussion about BCI and legal education was incredibly valuable. Thank you for this content!",
       time: "5 hours ago",
       likes: 8,
@@ -65,7 +65,7 @@ const PodcastSection = () => {
     {
       id: 3,
       author: "Legal Professional",
-      avatar: "/judge.jpg",
+      avatar: "/judge.webp",
       text: "Ms. Rao's experience really shows in her practical advice. Looking forward to more episodes!",
       time: "1 day ago",
       likes: 15,

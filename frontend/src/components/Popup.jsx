@@ -1,4 +1,4 @@
-import { Dialog, DialogContent } from "../components/ui/Dialogs";
+import { Dialog, DialogContent, DialogTitle } from "../components/ui/Dialogs";
 import { Button } from "../components/ui/Button";
 import { X } from "lucide-react";
 import React from "react";
@@ -6,7 +6,8 @@ import React from "react";
 export default function WelcomePopup({ isOpen, onClose }) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-[85vw] sm:w-[70vw] max-w-xs md:max-w-sm p-0 bg-black border-2 border-[#C6930A] shadow-2xl rounded-xl overflow-hidden [&>button[data-state]]:hidden">
+      <DialogContent aria-describedby={undefined} className="w-[85vw] sm:w-[70vw] max-w-xs md:max-w-sm p-0 bg-black border-2 border-[#C6930A] shadow-2xl rounded-xl overflow-hidden [&>button[data-state]]:hidden">
+        <DialogTitle className="sr-only">Legal Olympiad Welcome</DialogTitle>
         {/* Close button - Top Right */}
         <button
           onClick={onClose}
@@ -21,7 +22,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
           {/* Logo */}
           <div className="mb-2 md:mb-4 flex justify-center">
             <img
-              src="/l.png"
+              src="/l.webp"
               alt="LegalO Logo"
               className="w-24 h-10 md:w-32 md:h-12 object-contain"
             />

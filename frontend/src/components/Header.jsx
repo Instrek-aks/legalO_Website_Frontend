@@ -132,7 +132,7 @@ const Header = () => {
                 onClick={() => setTimeout(() => window.location.reload(), 100)}
               >
                 <img
-                  src="/l.png"
+                  src="/l.webp"
                   alt="Legal Olympiad Logo"
                   className="h-12 w-auto sm:h-16 object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="eager"

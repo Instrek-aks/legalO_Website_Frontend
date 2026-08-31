@@ -1,14 +1,14 @@
 import { LogoSection } from "./LogoSection";
 
 const engagementLogos = [
-  { name: "", image: "/img1.jpeg", scale: "scale-110" },
-  { name: "", image: "/img2.jpeg" },
-  { name: "", image: "/img3.jpeg" },
-  { name: "", image: "/img4.jpeg" },
-  { name: "", image: "/img6.jpeg" },
-  { name: "", image: "/img7.jpeg" },
-  { name: "", image: "/img8.jpeg", scale: "scale-125" },
-  { name: "", image: "/img9.jpeg", scale: "scale-150" },
+  { name: "", image: "/img1.webp", scale: "scale-110" },
+  { name: "", image: "/img2.webp" },
+  { name: "", image: "/img3.webp" },
+  { name: "", image: "/img4.webp" },
+  { name: "", image: "/img6.webp" },
+  { name: "", image: "/img7.webp" },
+  { name: "", image: "/img8.webp", scale: "scale-125" },
+  { name: "", image: "/img9.webp", scale: "scale-150" },
 ];
 
 export const LogoCarousel = () => {

@@ -8,7 +8,7 @@ const testimonials = [
     role: "Graphic Designer",
     content:
       "I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.png",
+    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.webp",
     rating: 5,
     roleColor: "text-brand-orange",
   },
@@ -18,7 +18,7 @@ const testimonials = [
     role: "CEO & Founder Crfx",
     content:
       "I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.png",
+    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.webp",
     rating: 5,
     roleColor: "text-brand-orange",
   },
@@ -28,7 +28,7 @@ const testimonials = [
     role: "Marketing Director",
     content:
       "The courses here transformed my career completely. The instructors are top-notch and the content is always up-to-date with industry standards.",
-    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.png",
+    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.webp",
     rating: 5,
     roleColor: "text-brand-orange",
   },
@@ -38,7 +38,7 @@ const testimonials = [
     role: "Software Developer",
     content:
       "Amazing learning platform! The interactive approach and practical projects helped me land my dream job in tech.",
-    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.png",
+    avatar: "/lovable-uploads/3762b4fe-4758-4c46-8857-21480c79d2a5.webp",
     rating: 4,
     roleColor: "text-brand-orange",
   },
