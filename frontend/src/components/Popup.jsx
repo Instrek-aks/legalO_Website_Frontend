@@ -32,7 +32,7 @@ export default function WelcomePopup({ isOpen, onClose }) {
           <div className="text-center mb-4 md:mb-6">
             <h2 className="text-lg md:text-xl font-bold text-[#C6930A] mb-1 leading-tight flex items-center justify-center gap-1.5">
               <span>Legal Olympiad</span>
-              <span className="font-serif font-bold text-[#FFE600] tracking-tight inline-block transform scale-y-[1.12] text-lg md:text-xl origin-bottom lining-nums">
+              <span className="font-serif font-bold text-[#A47A08] tracking-tight inline-block transform scale-y-[1.12] text-lg md:text-xl origin-bottom lining-nums">
                 2.0
               </span>
             </h2>
