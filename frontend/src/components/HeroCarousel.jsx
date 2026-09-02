@@ -15,10 +15,17 @@ const HeroCarousel = () => {
   useEffect(() => {
     const checkScreenSize = () => {
       const width = window.innerWidth;
+      const isIpad =
+        (navigator.userAgent.includes("Macintosh") && navigator.maxTouchPoints > 1) ||
+        /iPad/i.test(navigator.userAgent) ||
+        (navigator.maxTouchPoints > 0 && width >= 1024 && width <= 1366);
+
       if (width < 768) {
         setScreenSize("mobile");
       } else if (width < 1024) {
         setScreenSize("tablet");
+      } else if (isIpad || (width >= 1024 && width <= 1366)) {
+        setScreenSize("ipad-pro");
       } else {
         setScreenSize("desktop");
       }
@@ -35,6 +42,7 @@ const HeroCarousel = () => {
     // This will effectively crop out the bottom black space when combined with backgroundSize: "cover".
     if (screenSize === "mobile") return 1080 / 1700;
     if (screenSize === "tablet") return 1024 / 750;
+    if (screenSize === "ipad-pro") return 1920 / 850;
     return 1920 / 850;
   };
 
@@ -45,6 +53,10 @@ const HeroCarousel = () => {
     }
     if (screenSize === "tablet") {
       return { top: "75%", left: "50%" };
+    }
+    if (screenSize === "ipad-pro") {
+      // Shifted a little to the left specifically for iPad Pro
+      return { top: "85%", left: "83%" };
     }
     // Desktop position (do not change this if it's already perfect)
     return { top: "85%", left: "92%" };
