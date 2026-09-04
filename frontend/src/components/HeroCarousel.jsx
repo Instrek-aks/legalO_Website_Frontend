@@ -8,6 +8,7 @@ const HeroCarousel = () => {
     image: {
       mobile: "/1080px x 1920px.webp",
       tablet: "/1024px × 768px.webp",
+      "ipad-pro": "/1024px × 768px.webp",
       desktop: "/1920px x 1080px.webp",
     },
   };
@@ -42,7 +43,7 @@ const HeroCarousel = () => {
     // This will effectively crop out the bottom black space when combined with backgroundSize: "cover".
     if (screenSize === "mobile") return 1080 / 1700;
     if (screenSize === "tablet") return 1024 / 750;
-    if (screenSize === "ipad-pro") return 1920 / 850;
+    if (screenSize === "ipad-pro") return 1024 / 750;
     return 1920 / 850;
   };
 
@@ -55,8 +56,7 @@ const HeroCarousel = () => {
       return { top: "75%", left: "50%" };
     }
     if (screenSize === "ipad-pro") {
-      // Shifted a little to the left specifically for iPad Pro
-      return { top: "85%", left: "83%" };
+      return { top: "75%", left: "50%" };
     }
     // Desktop position (do not change this if it's already perfect)
     return { top: "85%", left: "92%" };
