@@ -184,33 +184,25 @@ const Footer = () => {
                   size={16}
                   className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
                 />
-                <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  +91-9999026602
-                </span>
+                <a
+                  href="tel:+917827050511"
+                  className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
+                >
+                  +91-7827050511
+                </a>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
                 <Mail
                   size={16}
                   className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
                 />
-                <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  Partner@legalolympiad.com
-                </span>
-              </div>
-
-              {/* Phone */}
-              {/* <div className="flex items-start gap-2 sm:gap-3">
-                <Phone
-                  size={16}
-                  className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
-                />
                 <a
-                  href="tel:+19748845246937"
+                  href="mailto:Partner@legalolympiad.com"
                   className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
                 >
-                  +91-9999026602
+                  Partner@legalolympiad.com
                 </a>
-              </div> */}
+              </div>
               {/* Email */}
               {/* <div className="flex items-start gap-2 sm:gap-3">
                 <Mail
