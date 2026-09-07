@@ -12,10 +12,10 @@ import {
 const events = [
   {
     id: 1,
-    title: "LegalO Exam",
-    date: "28 March 2026",
+    title: "Legal Olympiad 2.0",
+    date: "18 Oct 2026",
     time: "10AM",
-    location: "ACROSS INDIA(In Your College)",
+    location: "Across India (Online)",
     image: "/event3.webp",
     description: "",
   },
