@@ -10,7 +10,7 @@ const BenefitsSection = () => {
           </h2>
           <p className="lede">
             Not just the toppers. Every single student who sits the exam receives all
-            five, plus a sixth if you finish in the top 200.
+            five, plus a sixth if you finish in the top 100.
           </p>
         </div>
 
@@ -75,10 +75,10 @@ const BenefitsSection = () => {
               ★
             </div>
             <h3 style={{ color: "var(--ivory)" }}>
-              Top 200: internships and jobs
+              Top 100: internships and jobs
             </h3>
             <p style={{ color: "var(--jade)" }}>
-              The top 200 rankers are put directly in front of leading lawyers for
+              The top 100 rankers are put directly in front of leading lawyers for
               internship and job opportunities.
             </p>
           </div>

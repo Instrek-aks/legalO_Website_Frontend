@@ -38,7 +38,7 @@ const RegistrationSteps = () => {
             <b>4</b>
             <h3>Internships and jobs</h3>
             <p>
-              Top 200 rankers are put in front of leading lawyers and hiring firms.
+              Top 100 rankers are put in front of leading lawyers and hiring firms.
             </p>
           </div>
         </div>

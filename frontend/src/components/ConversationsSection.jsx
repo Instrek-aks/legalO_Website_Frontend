@@ -58,7 +58,7 @@ const ConversationsSection = () => {
       <div className="jaali"></div>
       <div className="wrap">
         <div className="head">
-          <div className="eyebrow">THE PODCAST</div>
+          <div className="eyebrow">OUR PODCASTS</div>
           <h2>
             The senior Bar sits down with us, on<br />
             the record

@@ -372,7 +372,7 @@ header {
 
 /* Ticker Strip */
 .strip {
-  background: var(--panel);
+  background: #DAAA30;
   padding: 20px 0;
   overflow: hidden;
   border-block: 1px solid rgba(7, 39, 30, .07);
@@ -389,8 +389,8 @@ header {
 .strip span {
   font-size: 13px;
   font-weight: 600;
-  color: var(--ink);
-  opacity: .7;
+  color: #ffffff;
+  opacity: 1;
 }
 
 @keyframes slide {

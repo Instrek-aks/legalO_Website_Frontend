@@ -42,7 +42,7 @@ const FAQSection = () => {
     },
     {
       q: "What do I actually receive after the exam?",
-      a: "All India Rank, State Rank, an official certificate, one-to-one mentorship with practising advocates and one year free on app.legalolympiad.com. Top 200 rankers also receive internship and job opportunities.",
+      a: "All India Rank, State Rank, an official certificate, one-to-one mentorship with practising advocates and one year free on app.legalolympiad.com. Top 100 rankers also receive internship and job opportunities.",
     },
     {
       q: "Does everyone get mentorship, or only rankers?",
