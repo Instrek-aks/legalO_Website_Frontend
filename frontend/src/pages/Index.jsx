@@ -24,7 +24,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Legal Olympiad 2.0 — India's National Benchmark Exam for Law Students"
-        description="Find out where you actually stand among law students in India. Legal Olympiad 2.0, Sunday 18 October 2026. Online, proctored, Rs 500. All India Rank, State Rank, mentorship and internships. Open to every law student and CLAT aspirant in India."
+        description="Find out where you actually stand among law students in India. Legal Olympiad 2.0, Sunday 18 October 2026. Online, proctored, Rs 499. All India Rank, State Rank, mentorship and internships. Open to every law student and CLAT aspirant in India."
         keywords="legal olympiad 2.0, legal olympiad, law benchmark exam, law students india, All India Rank law, legal reasoning exam, LL.B. benchmark"
         url="https://legalolympiad.com"
       />

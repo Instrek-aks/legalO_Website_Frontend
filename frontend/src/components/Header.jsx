@@ -31,7 +31,7 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Register — ₹500
+            Register — ₹499
           </a>
           <button
             className="burger"

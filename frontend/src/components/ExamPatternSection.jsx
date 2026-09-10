@@ -69,7 +69,7 @@ const ExamPatternSection = () => {
               <b>₹299</b>
             </div>
             <p style={{ marginTop: "24px", color: "var(--jade)", fontSize: "13px", lineHeight: "1.4" }}>
-              Registration is ₹500 on its own. The handbook is never required to sit the paper.
+              Registration is ₹499 on its own. The handbook is never required to sit the paper.
             </p>
           </div>
         </div>

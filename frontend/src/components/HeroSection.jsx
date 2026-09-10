@@ -23,7 +23,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register now — ₹500 →
+              Register now — ₹499 →
             </a>
             <a className="btn btn-o" href="#benefits">
               See what you get
@@ -65,7 +65,7 @@ const HeroSection = () => {
             </li>
             <li>
               <b>Fee</b>
-              <span>₹500, all inclusive</span>
+              <span>₹499, all inclusive</span>
             </li>
             <li>
               <b>Who</b>

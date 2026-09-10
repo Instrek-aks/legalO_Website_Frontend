@@ -34,7 +34,7 @@ const FAQSection = () => {
     },
     {
       q: "Is the handbook compulsory?",
-      a: "No. Registration is ₹500 on its own. The handbook is optional at ₹99 digital or ₹299 physical, and it is the only place the sample questions appear.",
+      a: "No. Registration is ₹499 on its own. The handbook is optional at ₹99 digital or ₹299 physical, and it is the only place the sample questions appear.",
     },
     {
       q: "When are results declared?",

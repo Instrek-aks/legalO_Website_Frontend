@@ -5,7 +5,7 @@ const BenefitsSection = () => {
         <div className="head">
           <div className="eyebrow">WHAT EVERY PARTICIPANT GETS</div>
           <h2>
-            ₹500 buys a great deal more than a<br />
+            ₹499 buys a great deal more than a<br />
             question paper
           </h2>
           <p className="lede">
@@ -92,7 +92,7 @@ const BenefitsSection = () => {
             color: "var(--body)",
           }}
         >
-          All of it is included in the ₹500. The handbook is the only optional add-on.
+          All of it is included in the ₹499. The handbook is the only optional add-on.
         </p>
         <p className="center" style={{ marginTop: "16px" }}>
           <a
@@ -101,7 +101,7 @@ const BenefitsSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Register for ₹500 →
+            Register for ₹499 →
           </a>
         </p>
       </div>

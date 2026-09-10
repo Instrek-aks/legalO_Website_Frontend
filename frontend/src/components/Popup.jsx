@@ -514,7 +514,7 @@ export default function WelcomePopup({ isOpen: controlledIsOpen, onClose: contro
                 {/* 6. Feature Chips */}
                 <div className="lo-chips">
                   <span className="lo-chip">
-                    <b>₹500</b> all inclusive
+                    <b>₹499</b> all inclusive
                   </span>
                   <span className="lo-chip">No negative marking</span>
                   <span className="lo-chip">Nothing to cram</span>
@@ -538,7 +538,7 @@ export default function WelcomePopup({ isOpen: controlledIsOpen, onClose: contro
                   className="lo-alt bg-transparent border-0"
                   onClick={() => handleClose("#benefits")}
                 >
-                  See what you get for ₹500
+                  See what you get for ₹499
                 </button>
 
                 {/* 9. Footer Note */}

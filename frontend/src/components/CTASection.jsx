@@ -10,7 +10,7 @@ const CTASection = () => {
           rank.
         </h2>
         <p className="lede center" style={{ marginBottom: "28px" }}>
-          Registration is open to every law student and CLAT aspirant in India. Two minutes, ₹500.
+          Registration is open to every law student and CLAT aspirant in India. Two minutes, ₹499.
         </p>
         <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
           <a

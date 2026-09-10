@@ -6,7 +6,7 @@ const MidPageCTA = () => {
           <div className="jaali"></div>
           <h2>18 October 2026</h2>
           <p>
-            Two minutes to register. ₹500. One rank that follows you for the rest of
+            Two minutes to register. ₹499. One rank that follows you for the rest of
             your career.
           </p>
           <a

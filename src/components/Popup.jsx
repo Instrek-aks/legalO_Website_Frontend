@@ -1,58 +1,85 @@
-import { Dialog, DialogContent } from "../components/ui/Dialogs";
-import { Button } from "../components/ui/Button";
+import { Dialog, DialogContent, DialogTitle } from "../components/ui/Dialogs";
 import { X } from "lucide-react";
 import React from "react";
 
 export default function WelcomePopup({ isOpen, onClose }) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-[90vw] max-w-md sm:max-w-lg p-0 bg-black border-2 border-[#C6930A] shadow-2xl rounded-xl overflow-hidden [&>button[data-state]]:hidden">
-        {/* Close button - Top Right */}
+      <DialogContent
+        aria-describedby={undefined}
+        className="!block !h-auto !min-h-fit !max-h-none w-[calc(100vw-32px)] sm:w-[410px] max-w-[420px] p-0 overflow-hidden [&>button:not(.custom-close)]:!hidden border-0"
+        style={{
+          background: "#104432",
+          border: "1.5px solid #d4a017",
+          boxShadow:
+            "0 0 30px rgba(212, 160, 23, 0.25), 0 20px 50px rgba(0, 0, 0, 0.95)",
+          borderRadius: "14px",
+        }}
+      >
+        <DialogTitle className="sr-only">Legal Olympiad 2.0</DialogTitle>
+
+        {/* Close Button - Top Right with Gold Circle Border */}
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 z-20 rounded-full p-1.5 bg-[#C6930A]/20 hover:bg-[#C6930A]/30 text-white transition-all duration-300 hover:scale-110"
+          className="custom-close absolute right-3.5 top-3.5 z-30 flex items-center justify-center rounded-full w-7 h-7 bg-[#104432] hover:bg-white/10 text-white border border-[#d4a017] transition-all duration-200 cursor-pointer"
           aria-label="Close"
         >
-          <X className="h-5 w-5" />
+          <X className="h-3.5 w-3.5 stroke-[2.2]" />
         </button>
 
-        {/* Content */}
-        <div className="flex flex-col p-6 sm:p-8">
-          {/* Logo */}
-          <div className="mb-6 sm:mb-8  flex justify-center">
+        {/* Main Content Container */}
+        <div className="relative z-10 flex flex-col items-center text-center px-6 sm:px-8 pt-7 sm:pt-8 pb-7 sm:pb-8 gap-4">
+          
+          {/* Logo Crest */}
+          <div className="flex items-center justify-center mb-1 pt-1">
             <img
-              src="/logopng.png"
-              alt="LegalO Logo"
-              className="w-40 h-16 sm:w-48 sm:h-20 object-contain bg-white"
+              src="/images/img_38.png"
+              alt="Legal Olympiad Logo"
+              className="h-10 sm:h-12 object-contain"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "/legelLogo.webp";
+              }}
             />
           </div>
 
-          {/* Content Text */}
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#C6930A] mb-4 leading-tight">
-              LegalO Exam Rescheduled!
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed">
-              Now on 14th March 2026 - More time to prepare, more power to you
+          {/* Headline: Legal Olympiad 2.0 (White text for Legal Olympiad) */}
+          <h2 className="font-serif font-bold text-[24px] sm:text-[28px] text-white leading-tight tracking-wide">
+            Legal Olympiad <span className="font-serif font-bold text-[#d4a017]">2.0</span>
+          </h2>
+
+          {/* Sub-details */}
+          <div className="flex flex-col items-center gap-1.5 my-0.5">
+            {/* Date */}
+            <p className="font-sans font-bold text-white text-[19px] sm:text-[22px] tracking-wide">
+              18th Oct 2026
+            </p>
+
+            {/* Mode */}
+            <p className="font-sans font-bold text-white text-[14.5px] sm:text-[16.5px] tracking-wider uppercase">
+              ONLINE THIS TIME
             </p>
           </div>
 
-          {/* Registration Button - Bottom Right */}
-          <div className="flex justify-end">
-            <Button
-              onClick={() => {
-                window.open(
-                  "https://app.legalolympiad.com",
-                  "_blank",
-                  "noopener,noreferrer"
-                );
-                onClose();
-              }}
-              className="bg-[#C6930A] hover:bg-[#C6930A]/90 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Register Now
-            </Button>
-          </div>
+          {/* CTA Button */}
+          <button
+            onClick={() => {
+              window.open(
+                "https://app.legalolympiad.com/exam/registration",
+                "_blank",
+                "noopener,noreferrer"
+              );
+              onClose();
+            }}
+            className="mt-1 px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-sans font-bold text-[15px] sm:text-[16px] text-white tracking-wide transition-all duration-200 hover:brightness-110 active:scale-[0.98] cursor-pointer shadow-md"
+            style={{
+              background: "linear-gradient(180deg, #d89a0c 0%, #b57e03 100%)",
+              border: "1px solid #e2aa22",
+              boxShadow: "0 4px 14px rgba(181, 126, 3, 0.4)",
+            }}
+          >
+            Register Now
+          </button>
         </div>
       </DialogContent>
     </Dialog>

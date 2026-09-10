@@ -215,7 +215,7 @@ const StickyBottomBar = () => {
       <div className={`lo-sticky-bar ${show ? "show" : ""}`} id="stickyBar">
         <div className="lo-sticky-content">
           <p className="lo-sticky-text">
-            <b>Legal Olympiad 2.0</b> · Sunday, 18 October 2026 · ₹500 · open to every law student and CLAT aspirant in India
+            <b>Legal Olympiad 2.0</b> · Sunday, 18 October 2026 · ₹499 · open to every law student and CLAT aspirant in India
           </p>
 
           <a
