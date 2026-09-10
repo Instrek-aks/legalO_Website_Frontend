@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import { Toaster } from "./components/ui/Toaster";
 import { Toaster as Sonner } from "./components/ui/Sonner";
 import { TooltipProvider } from "./components/ui/ToolTip";
@@ -30,28 +30,12 @@ import TermsOfService from "./components/TermsOfService";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  useEffect(() => {
-    // Show popup when website loads
-    const timer = setTimeout(() => {
-      setIsPopupOpen(true);
-    }, 500); // Small delay for better UX
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <WelcomePopup
-            isOpen={isPopupOpen}
-            onClose={() => setIsPopupOpen(false)}
-          />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
@@ -76,6 +60,9 @@ const App = () => {
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <WelcomePopup />
+          <Toaster />
+          <Sonner />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

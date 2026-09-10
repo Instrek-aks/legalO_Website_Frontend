@@ -20,7 +20,7 @@ import {
 
 const PodcastSection = () => {
   // YouTube Video ID - Change this to any video you want!
-  const VIDEO_ID = "i3-7xon7SxA";
+  const VIDEO_ID = "1rA9bZkgsvE";
 
   const [isLiked, setIsLiked] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -30,18 +30,18 @@ const PodcastSection = () => {
   // Static video data and statistics (fallback values)
   const [videoData, setVideoData] = useState({
     title:
-      "Law as an Instrument of Social Change | Sr. Adv. Nandita Rao | Ambedkar Jayanti Special",
-    publishedAt: "2024-04-14T10:00:00Z",
+      "Additional Solicitor General of India on What Law Students Get Wrong | Legal Olympiad Podcast",
+    publishedAt: "2024-05-15T10:00:00Z",
     description:
-      "On the occasion of Ambedkar Jayanti, Legal Olympiad brings you a powerful conversation with Sr. Advocate Nandita Rao. In this episode, Nandita Ma’am shares insights about law as an instrument of social change.",
+      "Legal Olympiad brings you a powerful conversation with Additional Solicitor General of India, Mr. Chetan Sharma. In this episode, Chetan Sir shares invaluable insights on what law students get wrong, career guidance, and key advice for legal practice.",
     channelTitle: "Legal Olympiad",
   });
 
   const [videoStats, setVideoStats] = useState({
-    views: "2,203",
-    likes: "34",
-    comments: "2",
-    subscribers: "748",
+    views: "14.2K",
+    likes: "485",
+    comments: "32",
+    subscribers: "1.2K",
   });
 
   // Mock comments data
@@ -50,25 +50,25 @@ const PodcastSection = () => {
       id: 1,
       author: "Legal Student",
       avatar: "/lawstudents.webp",
-      text: "Amazing insights from Ms. Nandita Rao! This episode really opened my eyes to the power of law in social change.",
+      text: "Incredible guidance from Additional Solicitor General Chetan Sharma sir! Every law student must watch this.",
       time: "2 hours ago",
-      likes: 12,
+      likes: 24,
     },
     {
       id: 2,
       author: "Aspiring Lawyer",
       avatar: "/lawyer_photo.webp",
-      text: "The discussion about BCI and legal education was incredibly valuable. Thank you for this content!",
+      text: "The practical insights on advocacy and legal practice were invaluable. Thank you for hosting Chetan sir!",
       time: "5 hours ago",
-      likes: 8,
+      likes: 18,
     },
     {
       id: 3,
       author: "Legal Professional",
       avatar: "/judge.webp",
-      text: "Ms. Rao's experience really shows in her practical advice. Looking forward to more episodes!",
+      text: "Chetan sir's experience really shines through. Exceptional interview for young legal minds.",
       time: "1 day ago",
-      likes: 15,
+      likes: 31,
     },
   ];
 
@@ -98,7 +98,7 @@ const PodcastSection = () => {
             });
 
             setVideoStats({
-              views: d.statistics?.viewCount?.toLocaleString() || "10,507",
+              views: d.statistics?.viewCount?.toLocaleString() || "14.2K",
               likes: d.statistics?.likeCount?.toLocaleString() || "42",
               comments: d.statistics?.commentCount?.toLocaleString() || "20",
               subscribers:
@@ -175,8 +175,7 @@ const PodcastSection = () => {
             Latest Episode
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Law as an Instrument of Social Change - Sr. Advocate Nandita Rao's
-            Insights
+            What Law Students Get Wrong - Additional Solicitor General Chetan Sharma's Insights
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Exclusive conversations with legal luminaries, featuring insights
@@ -226,74 +225,15 @@ const PodcastSection = () => {
 
             {/* Content Section */}
             <div className="p-6 md:p-8">
-              {/* Podcast Player Section */}
-              {/* <div className="bg-gradient-to-r from-gray-50 to-orange-50 p-6 rounded-xl border border-orange-200 mb-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#C6930A] to-orange-600 rounded-full flex items-center justify-center">
-                    <Headphones size={24} className="text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900">Audio Available</h4>
-                    <p className="text-sm text-gray-600">
-                      Listen on the go with our podcast player
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <button
-                    onClick={() => setIsPlaying(!isPlaying)}
-                    className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isPlaying
-                        ? "bg-red-500 hover:bg-red-600 text-white"
-                        : "bg-[#C6930A] hover:bg-[#C6930A]/90 text-white"
-                    }`}
-                  >
-                    {isPlaying ? (
-                      <div className="flex gap-1">
-                        <div className="w-1 h-4 bg-white rounded-full animate-pulse"></div>
-                        <div
-                          className="w-1 h-4 bg-white rounded-full animate-pulse"
-                          style={{ animationDelay: "0.1s" }}
-                        ></div>
-                        <div
-                          className="w-1 h-4 bg-white rounded-full animate-pulse"
-                          style={{ animationDelay: "0.2s" }}
-                        ></div>
-                      </div>
-                    ) : (
-                      <Play size={20} className="ml-0.5" />
-                    )}
-                  </button>
-
-                  <div className="flex-1">
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-[#C6930A] h-2 rounded-full w-1/3 transition-all duration-300"></div>
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-600 mt-1">
-                      <span>12:30</span>
-                      <span>45:30</span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <Volume2 size={16} className="text-gray-600" />
-                    <div className="w-16 bg-gray-200 rounded-full h-1">
-                      <div className="bg-[#C6930A] h-1 rounded-full w-3/4"></div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-
               {/* Episode Info */}
               <div className="mb-6">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-2 h-2 bg-[#C6930A] rounded-full"></div>
                   <span className="text-sm font-semibold text-[#C6930A]">
-                    Episode 1
+                    Latest Episode
                   </span>
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-600">45 minutes</span>
+                  <span className="text-sm text-gray-600">30 minutes</span>
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -301,24 +241,21 @@ const PodcastSection = () => {
                 </h3>
 
                 <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                  Join us for an exclusive conversation with Senior Advocate Ms.
-                  Nandita Rao, as she shares invaluable insights about law as an
-                  instrument of social change, career guidance, and the future
-                  of legal education.
+                  Join us for an exclusive conversation with Additional Solicitor General of India, Mr. Chetan Sharma, as he shares invaluable insights on what law students get wrong, career guidance, and key advice for legal practice.
                 </p>
 
                 {/* Guest Info */}
                 <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-xl border border-orange-200">
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#C6930A] to-orange-600 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-xl">NR</span>
+                      <span className="text-white font-bold text-xl">CS</span>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">
-                        Senior Advocate Ms. Nandita Rao
+                        Mr. Chetan Sharma
                       </h4>
-                      <p className="text-sm text-gray-600">
-                        Distinguished Legal Expert
+                      <p className="text-sm text-gray-600 font-medium">
+                        Additional Solicitor General of India
                       </p>
                       <div className="flex items-center gap-2 mt-1">
                         <Star
@@ -326,7 +263,7 @@ const PodcastSection = () => {
                           className="text-yellow-500 fill-yellow-500"
                         />
                         <span className="text-sm text-gray-600">
-                          Distinguished Legal Expert
+                          Senior Advocate & Legal Luminary
                         </span>
                       </div>
                     </div>
