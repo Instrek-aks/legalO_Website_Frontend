@@ -1,6 +1,6 @@
 const CTASection = () => {
   return (
-    <section className="dark" style={{ textAlign: "center" }}>
+    <section className="dark cta-rank" style={{ textAlign: "center" }}>
       <div className="jaali"></div>
       <div className="wrap">
         <div className="eyebrow">Legal Olympiad 2.0 · 18 October 2026</div>

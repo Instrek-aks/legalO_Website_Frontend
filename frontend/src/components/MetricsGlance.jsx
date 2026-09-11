@@ -1,6 +1,7 @@
 const MetricsGlance = () => {
   return (
-    <section id="why">
+    <section id="why" className="dark">
+      <div className="jaali"></div>
       <div className="wrap">
         <div className="head center">
           <div className="eyebrow">Why this exam exists</div>

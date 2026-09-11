@@ -323,11 +323,14 @@ header {
 }
 
 .hero-card {
-  background: rgba(255, 255, 255, .04);
-  border: 1px solid rgba(216, 184, 92, .28);
+  position: relative;
+  background: linear-gradient(180deg, rgba(7, 39, 30, 0.88) 0%, rgba(7, 39, 30, 0.94) 100%), url('/image.webp') center / cover no-repeat;
+  border: 1px solid rgba(216, 184, 92, .32);
   border-radius: 20px;
   padding: 30px 28px 24px;
   backdrop-filter: blur(8px);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .hero-card h4 {
@@ -497,6 +500,25 @@ header {
 
 .dark .bigstat span {
   color: var(--jade);
+}
+
+/* Background Image Sections */
+#why {
+  position: relative;
+  background: linear-gradient(135deg, rgba(7, 39, 30, 0.86) 0%, rgba(7, 39, 30, 0.76) 50%, rgba(7, 39, 30, 0.90) 100%), url('/pic1.webp') center / cover no-repeat;
+  overflow: hidden;
+}
+
+#after {
+  position: relative;
+  background: linear-gradient(180deg, rgba(243, 240, 230, 0.90) 0%, rgba(243, 240, 230, 0.94) 100%), url('/pic3.webp') center top / cover no-repeat;
+  overflow: hidden;
+}
+
+.cta-rank {
+  position: relative;
+  background: linear-gradient(180deg, rgba(7, 39, 30, 0.82) 0%, rgba(7, 39, 30, 0.72) 50%, rgba(7, 39, 30, 0.88) 100%), url('/hero1.webp') center / cover no-repeat !important;
+  overflow: hidden;
 }
 
 /* Exam Section */
