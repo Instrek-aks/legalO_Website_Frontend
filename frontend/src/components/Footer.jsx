@@ -34,7 +34,9 @@ const Footer = () => {
           <div>
             <h5>CONTACT</h5>
             <a href="mailto:connect@legalolympiad.com">connect@legalolympiad.com</a>
-            <a href="tel:+917827050511">+91 78270 50511</a>
+            <a href="tel:+918200510440">+91 82005 10440</a>
+            <a href="tel:+919879506080">+91 98795 06080</a>
+            <a href="tel:+919173845447">+91 91738 45447</a>
             <a href="https://legalolympiad.com">legalolympiad.com</a>
             <a href="mailto:connect@legalolympiad.com">Colleges &amp; firms: partner with us</a>
           </div>

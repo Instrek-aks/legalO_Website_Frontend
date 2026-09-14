@@ -309,12 +309,9 @@ export default function FAQsPage() {
                 connect@legalolympiad.com
               </a>{" "}
               or call{" "}
-              <a
-                href="tel:+917827050511"
-                style={{ color: "var(--gold)", fontWeight: 600 }}
-              >
-                +91 78270 50511
-              </a>
+              <a href="tel:+918200510440" style={{ color: "var(--gold)", fontWeight: 600 }}>+91 82005 10440</a>,{" "}
+              <a href="tel:+919879506080" style={{ color: "var(--gold)", fontWeight: 600 }}>+91 98795 06080</a>, or{" "}
+              <a href="tel:+919173845447" style={{ color: "var(--gold)", fontWeight: 600 }}>+91 91738 45447</a>
               . We reply within 24 hours.
             </p>
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
