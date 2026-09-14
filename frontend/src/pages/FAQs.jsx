@@ -68,7 +68,7 @@ const allFAQs = [
       },
       {
         q: "Is the handbook compulsory?",
-        a: "No. Registration is Rs 500 on its own. The handbook is optional at Rs 99 for a digital copy or Rs 299 for a physical copy, and it is the only place the sample questions appear.",
+        a: "No. Registration is Rs 499 on its own. The handbook is optional at Rs 99 for a digital copy or Rs 299 for a physical copy, and it is the only place the sample questions appear.",
       },
     ],
   },
@@ -183,7 +183,7 @@ export default function FAQsPage() {
             }}
           >
             Sunday, 18 October 2026&nbsp;&nbsp;|&nbsp;&nbsp;Online and
-            proctored&nbsp;&nbsp;|&nbsp;&nbsp;Rs 500&nbsp;&nbsp;|&nbsp;&nbsp;Open
+            proctored&nbsp;&nbsp;|&nbsp;&nbsp;Rs 499&nbsp;&nbsp;|&nbsp;&nbsp;Open
             to every law student in India and to CLAT aspirants
           </p>
           <p
@@ -325,7 +325,7 @@ export default function FAQsPage() {
                 rel="noopener noreferrer"
                 style={{ fontSize: "14px" }}
               >
-                Register &mdash; Rs 500
+                Register &mdash; Rs 499
               </a>
               <a
                 href="https://app.legalolympiad.com/exam/syllabus"
