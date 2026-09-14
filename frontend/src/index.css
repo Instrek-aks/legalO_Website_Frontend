@@ -324,7 +324,7 @@ header {
 
 .hero-card {
   position: relative;
-  background: linear-gradient(180deg, rgba(7, 39, 30, 0.88) 0%, rgba(7, 39, 30, 0.94) 100%), url('/image.webp') center / cover no-repeat;
+  background: linear-gradient(180deg, rgba(7, 39, 30, 0.92) 0%, rgba(7, 39, 30, 0.96) 100%), url('/image.webp') center / cover no-repeat;
   border: 1px solid rgba(216, 184, 92, .32);
   border-radius: 20px;
   padding: 30px 28px 24px;
