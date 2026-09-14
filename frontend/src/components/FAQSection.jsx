@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FAQSection = () => {
   const faqs = [
     {
@@ -6,59 +8,23 @@ const FAQSection = () => {
     },
     {
       q: "Who can sit the Legal Olympiad?",
-      a: "Every law student and CLAT aspirant in India. Three-year and five-year programmes, any year of study, any college, any state.",
+      a: "Every law student in India, in three-year and five-year programmes, any year of study, any college, any state. CLAT aspirants preparing for law school are also eligible.",
     },
     {
       q: "Do I need my college to enrol me?",
       a: "No. You register directly. No college tie-up or permission is required.",
     },
     {
-      q: "Is this only for NLU students?",
-      a: "No. Every law student and CLAT aspirant in India is eligible, from any college in any state. Your rank depends only on your reasoning, not your institution.",
-    },
-    {
-      q: "How long is the exam and how many questions?",
-      a: "Two hours, 80 to 100 multiple choice questions.",
-    },
-    {
       q: "Is there negative marking?",
       a: "No. Attempt every question.",
-    },
-    {
-      q: "Is the exam proctored?",
-      a: "Yes. It is a proctored online exam, which is what makes the rank credible.",
-    },
-    {
-      q: "Do I need to study a syllabus?",
-      a: "No cramming is required. The paper tests logical reasoning and critical thinking across five areas. The full pattern is on the syllabus page.",
-    },
-    {
-      q: "Is the handbook compulsory?",
-      a: "No. Registration is ₹499 on its own. The handbook is optional at ₹99 digital or ₹299 physical, and it is the only place the sample questions appear.",
     },
     {
       q: "When are results declared?",
       a: "Two weeks after the exam. You receive your All India Rank, State Rank and certificate.",
     },
     {
-      q: "What do I actually receive after the exam?",
-      a: "All India Rank, State Rank, an official certificate, one-to-one mentorship with practising advocates and one year free on app.legalolympiad.com. Top 100 rankers also receive internship and job opportunities.",
-    },
-    {
       q: "Does everyone get mentorship, or only rankers?",
       a: "Every participant. Mentorship is not restricted to toppers.",
-    },
-    {
-      q: "Is the certificate useful on a CV?",
-      a: "Yes. A national rank is a verified result rather than a self-reported claim, which is what makes it worth putting on a CV.",
-    },
-    {
-      q: "I am in my first year. Should I wait?",
-      a: "No. Sitting it early gives you a benchmark and three or four years to improve on it.",
-    },
-    {
-      q: "Can I get a refund?",
-      a: "Registration fees are non-refundable. Genuine exceptions such as a duplicate payment are resolved by our team.",
     },
   ];
 
@@ -79,7 +45,42 @@ const FAQSection = () => {
           ))}
         </div>
 
-        <p className="center" style={{ marginTop: "26px", fontSize: "14.5px" }}>
+        {/* View All FAQs Button */}
+        <div className="center" style={{ marginTop: "36px" }}>
+          <Link
+            to="/faqs"
+            className="btn btn-d"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              fontSize: "15px",
+              fontWeight: 600,
+              padding: "13px 32px",
+              borderRadius: "999px",
+              border: "1.5px solid rgba(7,39,30,0.22)",
+              color: "var(--ink)",
+              textDecoration: "none",
+              transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
+          >
+            View all FAQs
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+
+        <p className="center" style={{ marginTop: "28px", fontSize: "14.5px" }}>
           Still have a question? Write to{" "}
           <a
             href="mailto:connect@legalolympiad.com"
