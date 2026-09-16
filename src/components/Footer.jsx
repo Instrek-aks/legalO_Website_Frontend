@@ -184,11 +184,9 @@ const Footer = () => {
                   size={16}
                   className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
                 />
-                <div className="text-xs sm:text-sm text-gray-300 leading-relaxed flex flex-col gap-1">
-                  <a href="tel:+918200510440" className="hover:text-[#C6930A] transition-colors">+91 82005 10440</a>
-                  <a href="tel:+919879506080" className="hover:text-[#C6930A] transition-colors">+91 98795 06080</a>
-                  <a href="tel:+919173845447" className="hover:text-[#C6930A] transition-colors">+91 91738 45447</a>
-                </div>
+                <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                  +91-9999026602
+                </span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
                 <Mail
