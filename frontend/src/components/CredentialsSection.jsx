@@ -46,6 +46,13 @@ const CredentialsSection = () => {
     { name: "Meenal Duggal", role: "Advocate, 8+ Years Legal Practice", img: "/meenal.webp" },
     { name: "Nehal Godhania", role: "Cross-Border Contracts & Compliance", img: "/nehal.webp" },
     { name: "Subham Chatterjee", role: "Legal academic and research scholar", img: "/subham.webp" },
+    { name: "Nishank Tripathi", role: "Supreme Court of India and Delhi High Court, Advocate", img: "/images/Nishank Tripathi.jpg.jpeg" },
+    { name: "Apoorv Gupta", role: "Assistant Professor, Jindal Global Law School", img: "/images/apporv.png" },
+    { name: "Archisha Satyarthi", role: "Advocate Delhi High Court", img: "/images/arish.png" },
+    { name: "Kajal Rajput Sharma", role: "Founder, Chambers of Kajal Rajput Sharma", img: "/images/kajal.png" },
+    { name: "Priyanka Popat", role: "Advocate & Legal Practitioner", img: "/images/priyanka.png" },
+    { name: "Sumit Ranjana", role: "Government Pleader, Delhi HC & Senior Panel Counsel, CAT", img: "/images/sumit.png" },
+    { name: "Heena Sharma", role: "Litigation and Dispute Resolution", img: "/images/heena.png" },
     { name: "Keshav Tomar", role: "Profound legal research and drafting", img: "/keshav.webp" },
   ];
 

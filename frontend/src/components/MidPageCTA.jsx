@@ -4,7 +4,7 @@ const MidPageCTA = () => {
       <div className="wrap">
         <div className="band reveal">
           <div className="jaali"></div>
-          <h2>18 October 2026</h2>
+          <h2>18 October 2026, 12pm - 2pm</h2>
           <p>
             Two minutes to register. ₹499. One rank that follows you for the rest of
             your career.

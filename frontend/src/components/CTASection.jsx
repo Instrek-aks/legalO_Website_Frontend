@@ -3,7 +3,7 @@ const CTASection = () => {
     <section className="dark cta-rank" style={{ textAlign: "center" }}>
       <div className="jaali"></div>
       <div className="wrap">
-        <div className="eyebrow">Legal Olympiad 2.0 · 18 October 2026</div>
+        <div className="eyebrow">Legal Olympiad 2.0 · 18 October 2026 · 12pm - 2pm</div>
         <h2 style={{ maxWidth: "20ch", margin: "0 auto 16px" }}>
           You can inherit a name.<br />
           You cannot inherit a<br />

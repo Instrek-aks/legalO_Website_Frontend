@@ -5,7 +5,7 @@ const HeroSection = () => {
       <div className="wrap hero-grid">
         <div>
           <div className="eyebrow">
-            Legal Olympiad 2.0 &nbsp;·&nbsp; Sunday, 18 October 2026
+            Legal Olympiad 2.0 &nbsp;·&nbsp; Sunday, 18 October 2026 &nbsp;·&nbsp; 12pm - 2pm
           </div>
           <h1>
             Find out where you actually stand among<br />
@@ -48,8 +48,8 @@ const HeroSection = () => {
           <h4>THE EXAM AT A GLANCE</h4>
           <ul>
             <li>
-              <b>Date</b>
-              <span>Sunday, 18 October 2026</span>
+              <b>Date & Time</b>
+              <span>Sunday, 18 October 2026, 12pm - 2pm</span>
             </li>
             <li>
               <b>Mode</b>

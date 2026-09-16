@@ -503,7 +503,7 @@ export default function WelcomePopup({ isOpen: controlledIsOpen, onClose: contro
                 {/* 4. Pulsing Date Badge */}
                 <div className="lo-date">
                   <span className="lo-dot"></span>
-                  Sunday, 18 October 2026
+                  Sunday, 18 October 2026, 12pm - 2pm
                 </div>
 
                 {/* 5. Subtitle */}
