@@ -185,7 +185,7 @@ const Footer = () => {
                   className="sm:w-5 sm:h-5 text-[#C6930A] mt-1 flex-shrink-0"
                 />
                 <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  +91-9999026602
+                  +91 78270 50511
                 </span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
@@ -205,10 +205,10 @@ const Footer = () => {
                   className="sm:w-5 sm:h-5 text-[#C6930A] flex-shrink-0"
                 />
                 <a
-                  href="tel:+19748845246937"
+                  href="tel:+917827050511"
                   className="text-xs sm:text-sm text-gray-300 hover:text-[#C6930A] transition-colors leading-relaxed"
                 >
-                  +91-9999026602
+                  +91 78270 50511
                 </a>
               </div> */}
               {/* Email */}
