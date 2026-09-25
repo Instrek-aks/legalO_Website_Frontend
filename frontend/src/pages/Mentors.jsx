@@ -197,8 +197,8 @@ const Mentors = () => {
           }
           @media (max-width: 480px) {
             .mentor-grid-exact {
-              grid-template-columns: repeat(1, 1fr) !important;
-              gap: 32px 0 !important;
+              grid-template-columns: repeat(2, 1fr) !important;
+              gap: 32px 16px !important;
             }
           }
         `}</style>

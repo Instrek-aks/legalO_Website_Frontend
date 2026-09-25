@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import Pages from "./pages/Pages";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import Mentors from "./pages/Mentors";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
 
@@ -64,6 +65,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/pages" element={<Pages />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/mentor" element={<Mentors />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
 

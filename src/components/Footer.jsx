@@ -135,6 +135,15 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/mentor"
+                  onClick={handleLinkClick}
+                  className="text-sm sm:text-base text-gray-300 hover:text-[#C6930A] transition-colors"
+                >
+                  Our Mentors
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/events"
                   onClick={handleLinkClick}
                   className="text-sm sm:text-base text-gray-300 hover:text-[#C6930A] transition-colors"
