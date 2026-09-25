@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Pages from "./pages/Pages";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import Mentors from "./pages/Mentors";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
 import FAQsPage from "./pages/FAQs";
@@ -50,6 +51,7 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/faqs" element={<FAQsPage />} />
+            <Route path="/mentor" element={<Mentors />} />
 
             {/* LegalO Routes */}
             {/* <Route path="/legal-o/olympiad" element={<Olympiad />} />

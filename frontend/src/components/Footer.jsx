@@ -26,6 +26,7 @@ const Footer = () => {
           <div>
             <h5>EXPLORE</h5>
             {/* <a href="#steps">Training programmes</a> */}
+            <a href="/mentor">Our Mentors</a>
             <a href="#magazine">The Working Lawyer</a>
             <a href="#bar">Our podcasts</a>
             <a href="#about">About us</a>
