@@ -232,7 +232,7 @@ const Mentors = () => {
             }}
           >
             <strong style={{ color: "#E5C268", fontWeight: 700 }}>Legal Olympiad 2.0</strong>
-            {" - Sunday, 18 October 2026, 12pm - 2pm - ₹499 - open to every law student and CLAT aspirant in India"}
+            {" - Sunday, 15 November 2026, 12pm - 2pm - ₹499 - open to every law student and CLAT aspirant in India"}
           </div>
           <button
             onClick={() => setShowBanner(false)}

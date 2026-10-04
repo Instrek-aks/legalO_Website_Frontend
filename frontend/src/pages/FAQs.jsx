@@ -182,7 +182,7 @@ export default function FAQsPage() {
               marginBottom: "8px",
             }}
           >
-            Sunday, 18 October 2026&nbsp;&nbsp;|&nbsp;&nbsp;Online and
+            Sunday, 15 November 2026&nbsp;&nbsp;|&nbsp;&nbsp;Online and
             proctored&nbsp;&nbsp;|&nbsp;&nbsp;Rs 499&nbsp;&nbsp;|&nbsp;&nbsp;Open
             to every law student in India and to CLAT aspirants
           </p>
