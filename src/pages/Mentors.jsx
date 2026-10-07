@@ -383,6 +383,16 @@ const allMentors = [
   },
   {
     id: 39,
+    name: "Adv. Rishika Agrawal",
+    role: "Associate at chambers of Mr. Sanjay Jain, Sr. Advocate",
+    category: "Mentor",
+    image: "/rishika.jpeg",
+    description:
+      "Associate at chambers of Mr. Sanjay Jain, Sr. Advocate.",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 40,
     name: "Kashav Tomar",
     role: "Profound Legal Research and Drafting",
     category: "Mentor",
