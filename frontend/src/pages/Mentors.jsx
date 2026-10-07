@@ -50,7 +50,8 @@ const mentors = [
   { id: 33, name: "Sumit Ranjana",         desc: "Government Pleader, Delhi HC & Senior Panel Counsel, CAT", image: "/images/sumit.png" },
   // Row 12
   { id: 34, name: "Heena Sharma",          desc: "Litigation and Dispute Resolution",                      image: "/images/heena.png" },
-  { id: 35, name: "Keshav Tomar",          desc: "Profound legal research and drafting",                   image: "/keshav.webp" },
+  { id: 35, name: "Adv. Rishika Agrawal",  desc: "Associate at chambers of Mr. Sanjay Jain, Sr. Advocate", image: "/images/rishika.jpeg" },
+  { id: 36, name: "Keshav Tomar",          desc: "Profound legal research and drafting",                   image: "/keshav.webp" },
 ];
 
 const Mentors = () => {

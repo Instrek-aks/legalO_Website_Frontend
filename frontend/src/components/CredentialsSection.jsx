@@ -53,6 +53,7 @@ const CredentialsSection = () => {
     { name: "Priyanka Popat", role: "Advocate & Legal Practitioner", img: "/images/priyanka.png" },
     { name: "Sumit Ranjana", role: "Government Pleader, Delhi HC & Senior Panel Counsel, CAT", img: "/images/sumit.png" },
     { name: "Heena Sharma", role: "Litigation and Dispute Resolution", img: "/images/heena.png" },
+    { name: "Adv. Rishika Agrawal", role: "Associate at chambers of Mr. Sanjay Jain, Sr. Advocate", img: "/images/rishika.jpeg" },
     { name: "Keshav Tomar", role: "Profound legal research and drafting", img: "/keshav.webp" },
   ];
 

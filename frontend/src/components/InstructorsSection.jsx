@@ -51,15 +51,6 @@ const studentMentors = [
     linkedin: "https://www.linkedin.com/in/aprajita-budhwar-122b87162/",
   },
   {
-    id: 28,
-    name: "Keshav Tomar",
-    role: "Research Contributor",
-    image: "/keshav.webp",
-    roleColor: "text-[#C6930A]",
-    description: "Offers profound legal research paired with meticulous drafting.",
-    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
-  },
-  {
     id: 4,
     name: "Nitish Dham",
     role: "Mentor",
@@ -282,6 +273,24 @@ const studentMentors = [
     roleColor: "text-[#C6930A]",
     description: "Legal academic with strong research, publications, and contributions to legal education.",
     linkedin: "https://www.linkedin.com/in/subham-chatterjee-esq-829301246/",
+  },
+  {
+    id: 29,
+    name: "Adv. Rishika Agrawal",
+    role: "Mentor",
+    image: "/images/rishika.jpeg",
+    roleColor: "text-[#C6930A]",
+    description: "Associate at chambers of Mr. Sanjay Jain, Sr. Advocate",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 28,
+    name: "Keshav Tomar",
+    role: "Research Contributor",
+    image: "/keshav.webp",
+    roleColor: "text-[#C6930A]",
+    description: "Offers profound legal research paired with meticulous drafting.",
+    linkedin: "https://www.linkedin.com/in/keshav-tomar-9531a9203",
   },
 ];
 
