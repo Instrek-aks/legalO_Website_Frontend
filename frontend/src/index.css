@@ -231,6 +231,66 @@ header {
   background: rgba(7, 39, 30, .06);
 }
 
+.btn-brochure {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(7, 39, 30, .25);
+  color: var(--ink) !important;
+}
+
+.btn-brochure:hover {
+  background: #ffffff;
+  border-color: var(--gold);
+  color: var(--gold) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 39, 30, .08);
+}
+
+.btn-brochure:active {
+  transform: translateY(0);
+}
+
+.brochure-short-text {
+  display: none;
+}
+
+.brochure-long-text {
+  display: inline;
+}
+
+.mobile-only-item {
+  display: none;
+}
+
+.nav.mobile-open .mobile-only-item {
+  display: block;
+}
+
+.nav.mobile-open .mobile-only-item a {
+  color: var(--gold) !important;
+  font-weight: 600;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(7, 39, 30, .08);
+}
+
+@media (max-width: 640px) {
+  .brochure-long-text {
+    display: none;
+  }
+  .brochure-short-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 420px) {
+  .brochure-short-text {
+    display: none;
+  }
+  .btn-brochure {
+    padding: 6px 10px !important;
+  }
+}
+
 .burger {
   display: none;
   background: none;

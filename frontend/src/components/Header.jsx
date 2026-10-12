@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -22,9 +22,30 @@ const Header = () => {
           <li><a href="#mentors" onClick={() => setMobileOpen(false)}>Mentors</a></li>
           <li><a href="#after" onClick={() => setMobileOpen(false)}>After the exam</a></li>
           <li><a href="#faq" onClick={() => setMobileOpen(false)}>FAQs</a></li>
+          <li className="mobile-only-item">
+            <a
+              href="/images/Legal%20Olympiad%202.0.pdf"
+              download="Legal Olympiad 2.0.pdf"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center gap-2"
+            >
+              <Download size={16} />
+              <span>Download Brochure</span>
+            </a>
+          </li>
         </ul>
 
         <div className="navcta">
+          <a
+            href="/images/Legal%20Olympiad%202.0.pdf"
+            download="Legal Olympiad 2.0.pdf"
+            className="btn btn-brochure"
+            title="Download Brochure"
+          >
+            <Download size={15} />
+            <span className="brochure-long-text">Download Brochure</span>
+            <span className="brochure-short-text">Brochure</span>
+          </a>
           <a
             href="https://app.legalolympiad.com/exam/registration"
             className="btn btn-g"

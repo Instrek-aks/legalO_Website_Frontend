@@ -50,8 +50,8 @@ const ConversationsSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const ytViews = useAnimatedCount(60, 1600, hasEntered);
-  const igViews = useAnimatedCount(90, 1800, hasEntered);
+  const ytViews = useAnimatedCount(85, 1600, hasEntered);
+  const igViews = useAnimatedCount(1000, 1800, hasEntered);
 
   return (
     <section className="dark" id="bar" ref={sectionRef}>
@@ -149,7 +149,7 @@ const ConversationsSection = () => {
               <span>Views on YouTube</span>
             </div>
             <div>
-              <b style={{ fontVariantNumeric: "tabular-nums" }}>{hasEntered ? `${igViews}K+` : "0K+"}</b>
+              <b style={{ fontVariantNumeric: "tabular-nums" }}>{hasEntered ? (igViews >= 1000 ? "1M+" : `${igViews}K+`) : "0K+"}</b>
               <span>Views on Instagram</span>
             </div>
           </div>
