@@ -14,20 +14,20 @@ const Header = () => {
           />
         </a>
 
-        <ul>
-          <li><a href="#why" onClick={() => setMobileOpen(false)}>Why sit it</a></li>
-          <li><a href="#benefits" onClick={() => setMobileOpen(false)}>What you get</a></li>
-          <li><a href="#paper" onClick={() => setMobileOpen(false)}>The paper</a></li>
-          <li><a href="#proof" onClick={() => setMobileOpen(false)}>Proof</a></li>
-          <li><a href="#mentors" onClick={() => setMobileOpen(false)}>Mentors</a></li>
-          <li><a href="#after" onClick={() => setMobileOpen(false)}>After the exam</a></li>
-          <li><a href="#faq" onClick={() => setMobileOpen(false)}>FAQs</a></li>
-          <li className="mobile-only-item">
+        <ul className="whitespace-nowrap">
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#why" onClick={() => setMobileOpen(false)}>Why sit it</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#benefits" onClick={() => setMobileOpen(false)}>What you get</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#paper" onClick={() => setMobileOpen(false)}>The paper</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#proof" onClick={() => setMobileOpen(false)}>Proof</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#mentors" onClick={() => setMobileOpen(false)}>Mentors</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#after" onClick={() => setMobileOpen(false)}>After the exam</a></li>
+          <li className="whitespace-nowrap shrink-0"><a className="whitespace-nowrap" href="#faq" onClick={() => setMobileOpen(false)}>FAQs</a></li>
+          <li className="mobile-only-item whitespace-nowrap shrink-0">
             <a
               href="/images/Legal%20Olympiad%202.0.pdf"
               download="Legal Olympiad 2.0.pdf"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 whitespace-nowrap"
             >
               <Download size={16} />
               <span>Download Brochure</span>

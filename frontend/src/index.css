@@ -154,10 +154,17 @@ header {
 
 .nav ul {
   display: flex;
-  gap: 26px;
+  align-items: center;
+  gap: clamp(14px, 1.8vw, 24px);
   list-style: none;
   font-size: 14px;
   font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav ul li {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav ul a,
@@ -166,6 +173,8 @@ header {
   text-decoration: none;
   opacity: .85;
   transition: opacity 0.2s, color 0.2s;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .nav ul a:hover,
@@ -1194,6 +1203,23 @@ footer a:hover {
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .nav {
+    gap: 16px;
+  }
+  .nav ul {
+    gap: 14px;
+    font-size: 13.5px;
+  }
+  .navcta {
+    gap: 8px;
+  }
+  .navcta .btn {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1202,9 +1228,7 @@ footer a:hover {
   .people {
     grid-template-columns: repeat(4, 1fr);
   }
-}
 
-@media (max-width: 960px) {
   .nav {
     height: 56px;
     gap: 14px;
@@ -1239,6 +1263,9 @@ footer a:hover {
   .burger {
     display: block;
   }
+}
+
+@media (max-width: 960px) {
 
   .exam {
     grid-template-columns: 1fr;
